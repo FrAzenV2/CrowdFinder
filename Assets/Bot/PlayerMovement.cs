@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MovingBehaviour
 {
+    [SerializeField] SpriteRenderer sprite;
 
     Vector2 _pointerPosition;
 
@@ -13,18 +14,29 @@ public class PlayerMovement : MovingBehaviour
         base.Start();
     }
 
+    protected override void Update()
+    {
+        base.Update();
+    }
+
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
     }
 
+    protected override void AnimationsUpdate(){
+        sprite.flipX = _targetDirection.x <= 0;
+    }
+
     // Callbacks
-    void OnClick(InputValue value){
+    void OnClick(InputValue value)
+    {
         Vector2 worldPosition = (Vector2) Camera.main.ScreenToWorldPoint(_pointerPosition);
         MoveAt(worldPosition);
     }
 
-    void OnPointerPosition(InputValue value){
+    void OnPointerPosition(InputValue value)
+    {
         _pointerPosition = value.Get<Vector2>();
     }
 }

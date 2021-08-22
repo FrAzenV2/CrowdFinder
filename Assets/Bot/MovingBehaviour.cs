@@ -10,16 +10,20 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     [SerializeField] float movementSmooth = 24.0f;
     [SerializeField] float stopDistance = 0.1f;
 
-    bool _isMoving;
-    float _currentSpeed;
-    Vector2 _targetDirection;
-    Vector2 _targetPosition;
+    protected bool _isMoving;
+    protected float _currentSpeed;
+    protected Vector2 _targetDirection;
+    protected Vector2 _targetPosition;
 
     Rigidbody2D _rb;
 
     protected virtual void Start()
     {
         _rb = GetComponent<Rigidbody2D>();   
+    }
+
+    protected virtual void Update(){
+        AnimationsUpdate();
     }
 
     protected virtual void FixedUpdate()
@@ -34,6 +38,11 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         float targetSpeed = _isMoving ? movementSpeed : 0f;
         _currentSpeed = Mathf.Lerp(_currentSpeed, targetSpeed, Time.deltaTime * movementSmooth);
         _rb.velocity = _targetDirection * _currentSpeed;
+    }
+
+    protected virtual void AnimationsUpdate()
+    {
+
     }
 
     public void MoveAt(Vector2 point)
