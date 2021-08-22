@@ -12,17 +12,10 @@ public class BotMovement : MovingBehaviour
         base.Start();
     }
 
-    protected override void Update()
-    {
-        base.Update();
-    }
-
-    protected override void FixedUpdate()
-    {
-        base.FixedUpdate();
-    }
-
     protected override void AnimationsUpdate(){
-        sprite.flipX = _targetDirection.x <= 0;
+        if (_targetDirection.x > 0)
+            sprite.flipX = false;
+        else if (_targetDirection.x < 0)
+            sprite.flipX = true;
     }
 }
