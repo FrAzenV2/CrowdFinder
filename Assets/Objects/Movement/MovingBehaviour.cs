@@ -22,7 +22,8 @@ public class MovingBehaviour : MonoBehaviour, IMoving
 
     protected virtual void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();   
+        _rb = GetComponent<Rigidbody2D>();
+        Stop();
     }
 
     protected virtual void Update(){
