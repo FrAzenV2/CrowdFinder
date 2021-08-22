@@ -17,6 +17,10 @@ namespace Bots_Configs.ScriptableObjectConfig
             set => _botId = value;
         }
 
+        public string BotName => _botName;
+        public ClothesConfig[] Clothes => _clothes;
+        public Sprite BodySprite => _baseSprite;
+
         public void SetName(string botName)
         {
             _botName = botName;
