@@ -1,0 +1,2099 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'ru' Physical Memory: 12161 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\GameDev\Actual unity editor\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/GameDev/Unity Projects/GitHub/Self-projects/CrowdFinder
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59299
+Successfully changed project path to: C:/GameDev/Unity Projects/GitHub/Self-projects/CrowdFinder
+C:/GameDev/Unity Projects/GitHub/Self-projects/CrowdFinder
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path C:/GameDev/Actual unity editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/GameDev/Unity Projects/GitHub/Self-projects/CrowdFinder/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   
+    VRAM:     4019 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'C:/GameDev/Actual unity editor/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/GameDev/Actual unity editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/GameDev/Actual unity editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/GameDev/Actual unity editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001579 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 41.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.581 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001683 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.06 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.989 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.6 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2561.
+Total: 2.281900 ms (FindLiveObjects: 0.210300 ms CreateObjectMapping: 0.090100 ms MarkObjects: 1.871300 ms  DeleteObjects: 0.109200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/names.txt
+  artifactKey: Guid(e8f20995d043b0140b1474a412328a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/names.txt using Guid(e8f20995d043b0140b1474a412328a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '153dc962cd5fbd11034b3b7c2b419a58') in 0.040746 seconds
+  Import took 0.044071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(e6608a93038e344479ce346f47a117ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(e6608a93038e344479ce346f47a117ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d744a8608eefbee2ddfad0d4e27ca25') in 0.006560 seconds
+  Import took 0.010713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Resources/DOTweenSettings.asset
+  artifactKey: Guid(5b12745790e9a9541822e935108e40c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/DOTweenSettings.asset using Guid(5b12745790e9a9541822e935108e40c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5450a516f4730fee900d0eb4f32a808c') in 0.008734 seconds
+  Import took 0.012029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 129.677214 seconds.
+  path: Assets/Editor
+  artifactKey: Guid(7085010878538684abe6a4afc2df7630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor using Guid(7085010878538684abe6a4afc2df7630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f05f683bf92c67c91308ce6a4d9ac74') in 0.008387 seconds
+  Import took 0.012322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.784978 seconds.
+  path: Assets/Editor/BotSetCreator.cs
+  artifactKey: Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/BotSetCreator.cs using Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b100e2c3681b99627815ad3435e65133') in 0.011110 seconds
+  Import took 0.016833 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003042 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.873 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.08 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.8 MB.
+System memory in use after: 95.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2566.
+Total: 2.781600 ms (FindLiveObjects: 0.251900 ms CreateObjectMapping: 0.080300 ms MarkObjects: 2.350300 ms  DeleteObjects: 0.097700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1140.937018 seconds.
+  path: Assets/Editor/BotSetCreator.cs
+  artifactKey: Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/BotSetCreator.cs using Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d51c8a427d4a283609a506153c2ff84') in 0.005929 seconds
+  Import took 0.009773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017011 seconds.
+  path: Assets/Editor/BotSetCreator.cs
+  artifactKey: Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/BotSetCreator.cs using Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d51c8a427d4a283609a506153c2ff84') in 0.002570 seconds
+  Import took 0.006692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1467.200120 seconds.
+  path: Assets/Editor/BotSetCreator.cs
+  artifactKey: Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/BotSetCreator.cs using Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d292db1d0b1340794312283c4e76f7') in 0.004183 seconds
+  Import took 0.009296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 627.030129 seconds.
+  path: Assets/Editor/BotSetCreator.cs
+  artifactKey: Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/BotSetCreator.cs using Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996357d4e12557cae349d16dc46205a7') in 0.003721 seconds
+  Import took 0.009683 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002036 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.934 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 95.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2574.
+Total: 2.411100 ms (FindLiveObjects: 0.290600 ms CreateObjectMapping: 0.084800 ms MarkObjects: 1.915400 ms  DeleteObjects: 0.118500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.887159 seconds.
+  path: Assets/Editor/BotSetCreator.cs
+  artifactKey: Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/BotSetCreator.cs using Guid(9ce0e7a746588ed44b2d2780683cb389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23684b7e9fdee46883e2962632f4663a') in 0.005441 seconds
+  Import took 0.009180 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.915 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2578.
+Total: 2.220300 ms (FindLiveObjects: 0.208600 ms CreateObjectMapping: 0.084300 ms MarkObjects: 1.801000 ms  DeleteObjects: 0.124800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.863137 seconds.
+  path: Assets/Bots Configs
+  artifactKey: Guid(3418d3343198c42419e1105845811f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs using Guid(3418d3343198c42419e1105845811f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76016a9c66054051f09cfd6ea33db241') in 0.007851 seconds
+  Import took 0.011264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.703519 seconds.
+  path: Assets/Bots Configs/ScriptableObjectConfig
+  artifactKey: Guid(64e7b3d17dfb498dbfd89ba58b45912c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/ScriptableObjectConfig using Guid(64e7b3d17dfb498dbfd89ba58b45912c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9e374ff7bce388a244d6aed527ad67') in 0.007822 seconds
+  Import took 0.011249 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002284 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2582.
+Total: 2.488800 ms (FindLiveObjects: 0.230900 ms CreateObjectMapping: 0.098700 ms MarkObjects: 2.061400 ms  DeleteObjects: 0.096600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001667 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2586.
+Total: 1.917100 ms (FindLiveObjects: 0.187100 ms CreateObjectMapping: 0.070900 ms MarkObjects: 1.563100 ms  DeleteObjects: 0.095100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.001620 seconds.
+  path: Assets/Bots Configs/Base Bots Set
+  artifactKey: Guid(02bf4936d0544a843a2745b9fefce4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set using Guid(02bf4936d0544a843a2745b9fefce4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b703ff3acde78889085f0b556b144439') in 0.008120 seconds
+  Import took 0.011447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003216 seconds.
+  path: Assets/Bots Configs/Base Bots Set
+  artifactKey: Guid(02bf4936d0544a843a2745b9fefce4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set using Guid(02bf4936d0544a843a2745b9fefce4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b703ff3acde78889085f0b556b144439') in 0.001858 seconds
+  Import took 0.005055 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001705 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.873 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2590.
+Total: 3.306600 ms (FindLiveObjects: 0.430400 ms CreateObjectMapping: 0.151700 ms MarkObjects: 2.596800 ms  DeleteObjects: 0.125900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002089 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.863 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2594.
+Total: 2.498600 ms (FindLiveObjects: 0.215600 ms CreateObjectMapping: 0.071300 ms MarkObjects: 2.114100 ms  DeleteObjects: 0.096600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.699320 seconds.
+  path: Assets/Bots Configs/Base Bots Set/1_Bot.asset
+  artifactKey: Guid(dc3081fff1070b546a63b7d7fff6585d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/1_Bot.asset using Guid(dc3081fff1070b546a63b7d7fff6585d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79f87ea340d14c89c1835f75a75aaf9') in 0.017103 seconds
+  Import took 0.021358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Bots Configs/Base Bots Set/13_Bot.asset
+  artifactKey: Guid(4bab09ba1d2441d438b1607e19df2638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/13_Bot.asset using Guid(4bab09ba1d2441d438b1607e19df2638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f2e620b634f8ff57672bfc1ea3be05') in 0.007182 seconds
+  Import took 0.011462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Bots Configs/Base Bots Set/12_Bot.asset
+  artifactKey: Guid(085047224f697d94ca9537566be6f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/12_Bot.asset using Guid(085047224f697d94ca9537566be6f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14d89cd7c8ed4fdef6398a86e2d4fb6') in 0.005785 seconds
+  Import took 0.008589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Bots Configs/Base Bots Set/6_Bot.asset
+  artifactKey: Guid(e3d5739ffe7324e4fb2762072849b861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/6_Bot.asset using Guid(e3d5739ffe7324e4fb2762072849b861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578f6a5785c69d0000640a8d921c5d47') in 0.006150 seconds
+  Import took 0.009175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Bots Configs/Base Bots Set/8_Bot.asset
+  artifactKey: Guid(da5b2299f79b03f418895a870a5cb4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/8_Bot.asset using Guid(da5b2299f79b03f418895a870a5cb4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1e1e026955a6da28afda617b295974') in 0.005633 seconds
+  Import took 0.008336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Bots Configs/Base Bots Set/11_Bot.asset
+  artifactKey: Guid(d74a58c41c9e1724099dec51b7dc0fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/11_Bot.asset using Guid(d74a58c41c9e1724099dec51b7dc0fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c561a65c63212f6d34fb57fa7487669') in 0.007561 seconds
+  Import took 0.010320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/2_Bot.asset
+  artifactKey: Guid(da34c835bb80e794291caa5c709734f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/2_Bot.asset using Guid(da34c835bb80e794291caa5c709734f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e344214f61cd554ad1993d4575cdbf') in 0.097813 seconds
+  Import took 0.100536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Bots Configs/Base Bots Set/BotProfiles.asset
+  artifactKey: Guid(ccae06e626a4dcf4b81245a971f90f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/BotProfiles.asset using Guid(ccae06e626a4dcf4b81245a971f90f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33edb7dbcd0c577e33f08e9266cc56b1') in 0.008777 seconds
+  Import took 0.011625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/10_Bot.asset
+  artifactKey: Guid(114c1b3ff3fd0f848a721639ca588643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/10_Bot.asset using Guid(114c1b3ff3fd0f848a721639ca588643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49839875dbedc2f2612ad2718c3aa284') in 0.005302 seconds
+  Import took 0.008034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Bots Configs/Base Bots Set/14_Bot.asset
+  artifactKey: Guid(29a8b477500ab044bb4fe073a7927c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/14_Bot.asset using Guid(29a8b477500ab044bb4fe073a7927c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefce948b532d497071d2785c345caba') in 0.006277 seconds
+  Import took 0.009454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Bots Configs/Base Bots Set/4_Bot.asset
+  artifactKey: Guid(8f38db048bb8769449e5ed5d84f5653a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/4_Bot.asset using Guid(8f38db048bb8769449e5ed5d84f5653a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95766dd0b9db7726beb8b7acfdbd34fa') in 0.006921 seconds
+  Import took 0.012018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Bots Configs/Base Bots Set/3_Bot.asset
+  artifactKey: Guid(c8385fa2b7cd9654694e95d32b3eedb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/3_Bot.asset using Guid(c8385fa2b7cd9654694e95d32b3eedb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c13474be0180c8c20b22b2fdf78854') in 0.005494 seconds
+  Import took 0.009040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Bots Configs/Base Bots Set/9_Bot.asset
+  artifactKey: Guid(cc1b34c74330de445a2f46611354ed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/9_Bot.asset using Guid(cc1b34c74330de445a2f46611354ed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84acaca89e98e0dc89af221d6567c28c') in 0.007022 seconds
+  Import took 0.009839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/Bots Configs/Base Bots Set/5_Bot.asset
+  artifactKey: Guid(58dc6207b33079444826d1d2547ed18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/5_Bot.asset using Guid(58dc6207b33079444826d1d2547ed18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab3779e7cb0cd554af778a37e9f4ca7') in 0.020115 seconds
+  Import took 0.023437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Bots Configs/Base Bots Set/15_Bot.asset
+  artifactKey: Guid(fdde80ff90938a04aab1e9656b5c308c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/15_Bot.asset using Guid(fdde80ff90938a04aab1e9656b5c308c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a70b16c9ea3655842a42de1e0149a7') in 0.007810 seconds
+  Import took 0.011569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/Bots Configs/Base Bots Set/7_Bot.asset
+  artifactKey: Guid(0a3a7458439b02f44bc92a76d15426ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/7_Bot.asset using Guid(0a3a7458439b02f44bc92a76d15426ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a025895ae5ad7191405d0deee61d0625') in 0.006786 seconds
+  Import took 0.010675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.967486 seconds.
+  path: Assets/Bots Configs/Base Bots Set/1_Bot.asset
+  artifactKey: Guid(dc3081fff1070b546a63b7d7fff6585d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/1_Bot.asset using Guid(dc3081fff1070b546a63b7d7fff6585d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16d7de69e2d737e87a9df2baee697e3') in 0.003327 seconds
+  Import took 0.008120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Bots Configs/Base Bots Set/6_Bot.asset
+  artifactKey: Guid(e3d5739ffe7324e4fb2762072849b861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/6_Bot.asset using Guid(e3d5739ffe7324e4fb2762072849b861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39913011a3cab18f9bb4394ea4dfd8e2') in 0.005732 seconds
+  Import took 0.009479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Bots Configs/Base Bots Set/22_Bot.asset
+  artifactKey: Guid(3159b726090d7b94481013942fe9be45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/22_Bot.asset using Guid(3159b726090d7b94481013942fe9be45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef75af661e3b13a8a1fcad84bcb1b270') in 0.005333 seconds
+  Import took 0.008231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/30_Bot.asset
+  artifactKey: Guid(2f5ba14af0e1c104bbc105ee4d3b0f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/30_Bot.asset using Guid(2f5ba14af0e1c104bbc105ee4d3b0f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7591e062d33cd41506393541c6ae01e') in 0.005259 seconds
+  Import took 0.008231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Bots Configs/Base Bots Set/41_Bot.asset
+  artifactKey: Guid(79a7f84bbe74c9d4189edc50ccd3d1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/41_Bot.asset using Guid(79a7f84bbe74c9d4189edc50ccd3d1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54156ab57a9bcf68f73af6113410ac39') in 0.005246 seconds
+  Import took 0.008657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Bots Configs/Base Bots Set/20_Bot.asset
+  artifactKey: Guid(18745e233bdb19845a75c0bbe4322763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/20_Bot.asset using Guid(18745e233bdb19845a75c0bbe4322763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896471a65b585feaca89662e71c21386') in 0.005488 seconds
+  Import took 0.008722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Bots Configs/Base Bots Set/54_Bot.asset
+  artifactKey: Guid(21ce12e7b407bb64598ba23d06f9b927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/54_Bot.asset using Guid(21ce12e7b407bb64598ba23d06f9b927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7716ddf673e10e618892f1a9aa92f168') in 0.005357 seconds
+  Import took 0.008378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Bots Configs/Base Bots Set/55_Bot.asset
+  artifactKey: Guid(55505282d44a2b44c8817d3d1c06fff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/55_Bot.asset using Guid(55505282d44a2b44c8817d3d1c06fff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1351e8fac329c9c680d47af89d1cafed') in 0.009284 seconds
+  Import took 0.012454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Bots Configs/Base Bots Set/12_Bot.asset
+  artifactKey: Guid(085047224f697d94ca9537566be6f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/12_Bot.asset using Guid(085047224f697d94ca9537566be6f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bb997757275ef06e12881b15ecb33c') in 0.002551 seconds
+  Import took 0.005657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Bots Configs/Base Bots Set/36_Bot.asset
+  artifactKey: Guid(c2662494120305c4bad3c90eb437386d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/36_Bot.asset using Guid(c2662494120305c4bad3c90eb437386d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0ca593dbdb45893f3e4988ba558751') in 0.006760 seconds
+  Import took 0.009469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Bots Configs/Base Bots Set/17_Bot.asset
+  artifactKey: Guid(8f017c2de0210f447b94a3735b4b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/17_Bot.asset using Guid(8f017c2de0210f447b94a3735b4b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfdd152a7ca7e31a3425eae7fcf675f') in 0.005615 seconds
+  Import took 0.008357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Bots Configs/Base Bots Set/50_Bot.asset
+  artifactKey: Guid(3a90db7d7ce7b784c9f23845cf5fd6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/50_Bot.asset using Guid(3a90db7d7ce7b784c9f23845cf5fd6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea8cdf2795b4975867c94ad1bfb2080') in 0.005079 seconds
+  Import took 0.007979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Bots Configs/Base Bots Set/51_Bot.asset
+  artifactKey: Guid(a3b802ed180e0444885bb55f5e593605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/51_Bot.asset using Guid(a3b802ed180e0444885bb55f5e593605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b071c47f9521416fed3c6bf4509184a4') in 0.005620 seconds
+  Import took 0.008362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Bots Configs/Base Bots Set/35_Bot.asset
+  artifactKey: Guid(e13b2f19c3b38b546bc6f0e6ab92f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/35_Bot.asset using Guid(e13b2f19c3b38b546bc6f0e6ab92f2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578ebdeb3d7f09bc66579e1af092eb71') in 0.005419 seconds
+  Import took 0.008594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Bots Configs/Base Bots Set/31_Bot.asset
+  artifactKey: Guid(454b2c602d21f6441bb0e833f9a8cd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/31_Bot.asset using Guid(454b2c602d21f6441bb0e833f9a8cd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55facb2868a034707e01c27943ed2f94') in 0.007763 seconds
+  Import took 0.012247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Bots Configs/Base Bots Set/8_Bot.asset
+  artifactKey: Guid(da5b2299f79b03f418895a870a5cb4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/8_Bot.asset using Guid(da5b2299f79b03f418895a870a5cb4e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1af2ce1ac381321edc9cd561a40726') in 0.002565 seconds
+  Import took 0.006869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Bots Configs/Base Bots Set/43_Bot.asset
+  artifactKey: Guid(80eb6347cce8963418fa6656865c95d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/43_Bot.asset using Guid(80eb6347cce8963418fa6656865c95d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69512792d08b44b6cec930a1e8f502f2') in 0.005554 seconds
+  Import took 0.009056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Bots Configs/Base Bots Set/25_Bot.asset
+  artifactKey: Guid(ba6d506a53255e14d89cb397c195472f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/25_Bot.asset using Guid(ba6d506a53255e14d89cb397c195472f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf2519a8584509bc58c125eb0baa16a') in 0.005353 seconds
+  Import took 0.008252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Bots Configs/Base Bots Set/56_Bot.asset
+  artifactKey: Guid(0ba5451c574efb24586c30f63d6ba684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/56_Bot.asset using Guid(0ba5451c574efb24586c30f63d6ba684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58306baa7b2d33260aa658d5ca4fc58') in 0.005600 seconds
+  Import took 0.008379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/2_Bot.asset
+  artifactKey: Guid(da34c835bb80e794291caa5c709734f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/2_Bot.asset using Guid(da34c835bb80e794291caa5c709734f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309fa644057018ae3a1ef099a3d9da4c') in 0.002282 seconds
+  Import took 0.005134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Bots Configs/Base Bots Set/46_Bot.asset
+  artifactKey: Guid(ebd4c987b904fe044a87759c2cc88781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/46_Bot.asset using Guid(ebd4c987b904fe044a87759c2cc88781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32fca3c47cca15ceb6eea5cc724f80c') in 0.005639 seconds
+  Import took 0.008447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Bots Configs/Base Bots Set/28_Bot.asset
+  artifactKey: Guid(fcca54a7e0c41844c8971c18d38ce507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/28_Bot.asset using Guid(fcca54a7e0c41844c8971c18d38ce507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b502ea54a4f3b06a9a32bcef89fa60') in 0.005454 seconds
+  Import took 0.008487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Bots Configs/Base Bots Set/37_Bot.asset
+  artifactKey: Guid(79ef7ca80a99fe949be058fd5d551077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/37_Bot.asset using Guid(79ef7ca80a99fe949be058fd5d551077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d84b97d6cd3b8d4f31188e94880932') in 0.009578 seconds
+  Import took 0.013489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Bots Configs/Base Bots Set/32_Bot.asset
+  artifactKey: Guid(dd76b5797d4300b4cb7c82f39736eff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/32_Bot.asset using Guid(dd76b5797d4300b4cb7c82f39736eff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e6e2111de434aca7190fd1c337ecb2') in 0.007206 seconds
+  Import took 0.010927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Bots Configs/Base Bots Set/40_Bot.asset
+  artifactKey: Guid(2bda7367447c7bd408872c07763d7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/40_Bot.asset using Guid(2bda7367447c7bd408872c07763d7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cbddb738e850cf2a02bd0f152fea8d9') in 0.005724 seconds
+  Import took 0.008860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Bots Configs/Base Bots Set/4_Bot.asset
+  artifactKey: Guid(8f38db048bb8769449e5ed5d84f5653a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/4_Bot.asset using Guid(8f38db048bb8769449e5ed5d84f5653a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcdf83b4346b54a875af7255a356ffe6') in 0.005044 seconds
+  Import took 0.008207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Bots Configs/Base Bots Set/34_Bot.asset
+  artifactKey: Guid(d76d91710493d484eada6539ff4efd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/34_Bot.asset using Guid(d76d91710493d484eada6539ff4efd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386a798f3191397b615c54da22b476bc') in 0.005801 seconds
+  Import took 0.008721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Bots Configs/Base Bots Set/42_Bot.asset
+  artifactKey: Guid(8de533dc329e79146b65fb63d04d94ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/42_Bot.asset using Guid(8de533dc329e79146b65fb63d04d94ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f5e99e135454925f153cf36d84c289') in 0.005807 seconds
+  Import took 0.008904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Bots Configs/Base Bots Set/53_Bot.asset
+  artifactKey: Guid(03647f4e4c19e4f4d956a5a38ed51228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/53_Bot.asset using Guid(03647f4e4c19e4f4d956a5a38ed51228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e814d5aad80909dfb7f1f34503bfe1a9') in 0.005934 seconds
+  Import took 0.012073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/Bots Configs/Base Bots Set/33_Bot.asset
+  artifactKey: Guid(c4681398b7bc6b6459bdc27ef4410e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/33_Bot.asset using Guid(c4681398b7bc6b6459bdc27ef4410e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1e2cedeb8ef455e24e9b492ac97e1b') in 0.006346 seconds
+  Import took 0.011153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Bots Configs/Base Bots Set/9_Bot.asset
+  artifactKey: Guid(cc1b34c74330de445a2f46611354ed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/9_Bot.asset using Guid(cc1b34c74330de445a2f46611354ed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e6204489cc42f4451d653b698c0560') in 0.002303 seconds
+  Import took 0.005829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Bots Configs/Base Bots Set/48_Bot.asset
+  artifactKey: Guid(3559117b8a2022d41a0b7d2d75d0ce31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/48_Bot.asset using Guid(3559117b8a2022d41a0b7d2d75d0ce31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06fbd76c84d53067fa72b640c11cd66f') in 0.005365 seconds
+  Import took 0.008366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Bots Configs/Base Bots Set/5_Bot.asset
+  artifactKey: Guid(58dc6207b33079444826d1d2547ed18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/5_Bot.asset using Guid(58dc6207b33079444826d1d2547ed18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea498de15f6e566c3da515b22daad63') in 0.005237 seconds
+  Import took 0.008285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Bots Configs/Base Bots Set/21_Bot.asset
+  artifactKey: Guid(cbe6f10e6336e754bbdcf79aef50b373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/21_Bot.asset using Guid(cbe6f10e6336e754bbdcf79aef50b373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4774545411a831a762a8e54fa5c515d') in 0.006655 seconds
+  Import took 0.009672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Bots Configs/Base Bots Set/18_Bot.asset
+  artifactKey: Guid(d24e9d6009f7a3647b4f2e9cb1e7676c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/18_Bot.asset using Guid(d24e9d6009f7a3647b4f2e9cb1e7676c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938fb0b578d63d0c3154166dd3e004a9') in 0.005937 seconds
+  Import took 0.008638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Bots Configs/Base Bots Set/57_Bot.asset
+  artifactKey: Guid(5d6c29a78e253824e9d5340cd426ac58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/57_Bot.asset using Guid(5d6c29a78e253824e9d5340cd426ac58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'accae9ed5f900e3565f9cdc441c7a0ec') in 0.006167 seconds
+  Import took 0.010648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Bots Configs/Base Bots Set/26_Bot.asset
+  artifactKey: Guid(0a8a2c57c3767fd4392ec9474e6713e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/26_Bot.asset using Guid(0a8a2c57c3767fd4392ec9474e6713e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407c25fb50663f86253a1f8a28d0da82') in 0.006319 seconds
+  Import took 0.010528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Bots Configs/Base Bots Set/13_Bot.asset
+  artifactKey: Guid(4bab09ba1d2441d438b1607e19df2638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/13_Bot.asset using Guid(4bab09ba1d2441d438b1607e19df2638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e68d4aff4f6d9fa6859114fade85d19') in 0.002616 seconds
+  Import took 0.007036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Bots Configs/Base Bots Set/27_Bot.asset
+  artifactKey: Guid(c2ce924d2fa97cc4a8f4358439200564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/27_Bot.asset using Guid(c2ce924d2fa97cc4a8f4358439200564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af999371dfeb97a278fc9aa904e2f64') in 0.006352 seconds
+  Import took 0.009533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Bots Configs/Base Bots Set/19_Bot.asset
+  artifactKey: Guid(03dce96b598e1434883d2f1931f18111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/19_Bot.asset using Guid(03dce96b598e1434883d2f1931f18111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3fd84165216f7d857b1c1dd6ff0ad81') in 0.008305 seconds
+  Import took 0.012069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Bots Configs/Base Bots Set/44_Bot.asset
+  artifactKey: Guid(1808162c9cac8a642ac56aeee6e14ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/44_Bot.asset using Guid(1808162c9cac8a642ac56aeee6e14ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15324f3b2e3109c6d927f939c77598b6') in 0.005781 seconds
+  Import took 0.010357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Bots Configs/Base Bots Set/49_Bot.asset
+  artifactKey: Guid(445d9a243ca52554bbfcabbc65dad7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/49_Bot.asset using Guid(445d9a243ca52554bbfcabbc65dad7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064f8f4a7de188bd8782e0de0bf666ce') in 0.005196 seconds
+  Import took 0.008323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Bots Configs/Base Bots Set/23_Bot.asset
+  artifactKey: Guid(eb420116325e9a045b520295c288dd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/23_Bot.asset using Guid(eb420116325e9a045b520295c288dd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e388ae3fe0b7f27947027a154a0143d') in 0.005344 seconds
+  Import took 0.008142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Bots Configs/Base Bots Set/29_Bot.asset
+  artifactKey: Guid(4df9194afc59cf74bbc1d056367b41f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/29_Bot.asset using Guid(4df9194afc59cf74bbc1d056367b41f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5507983ad1cf19f814a830494c446c33') in 0.005125 seconds
+  Import took 0.008293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Bots Configs/Base Bots Set/24_Bot.asset
+  artifactKey: Guid(825acb7cf83ac4d4c962328fd194972e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/24_Bot.asset using Guid(825acb7cf83ac4d4c962328fd194972e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9f2f9a8f3e073d981d92854c7dd4cc') in 0.005422 seconds
+  Import took 0.008444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Bots Configs/Base Bots Set/52_Bot.asset
+  artifactKey: Guid(098af55a03250794e8fc1a59d2652842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/52_Bot.asset using Guid(098af55a03250794e8fc1a59d2652842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e0415f99a4c43ba20bfdbb65695cd7') in 0.005778 seconds
+  Import took 0.008904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/Bots Configs/Base Bots Set/11_Bot.asset
+  artifactKey: Guid(d74a58c41c9e1724099dec51b7dc0fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/11_Bot.asset using Guid(d74a58c41c9e1724099dec51b7dc0fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc3d9acdbecf59842881c2e64b71951') in 0.004322 seconds
+  Import took 0.009322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Bots Configs/Base Bots Set/10_Bot.asset
+  artifactKey: Guid(114c1b3ff3fd0f848a721639ca588643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/10_Bot.asset using Guid(114c1b3ff3fd0f848a721639ca588643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a154fc994a66e6c23f1ec58b100381a2') in 0.003065 seconds
+  Import took 0.006511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Bots Configs/Base Bots Set/14_Bot.asset
+  artifactKey: Guid(29a8b477500ab044bb4fe073a7927c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/14_Bot.asset using Guid(29a8b477500ab044bb4fe073a7927c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82f6db42e718e4263dbed7af1ad1691') in 0.002753 seconds
+  Import took 0.005718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Bots Configs/Base Bots Set/45_Bot.asset
+  artifactKey: Guid(b91971ad9ab38264f8111ab87384f5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/45_Bot.asset using Guid(b91971ad9ab38264f8111ab87384f5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '542955b4e5ff9dcaf8abb2fa1fd860cf') in 0.005168 seconds
+  Import took 0.008203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Bots Configs/Base Bots Set/3_Bot.asset
+  artifactKey: Guid(c8385fa2b7cd9654694e95d32b3eedb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/3_Bot.asset using Guid(c8385fa2b7cd9654694e95d32b3eedb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aca9bc33871e5b640e6f21dc568ad23') in 0.005842 seconds
+  Import took 0.008672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Bots Configs/Base Bots Set/16_Bot.asset
+  artifactKey: Guid(331dced55e872824ba526239b5ea83f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/16_Bot.asset using Guid(331dced55e872824ba526239b5ea83f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c4895f58b1fc01a9acd7a85d68a6f7') in 0.005505 seconds
+  Import took 0.008381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Bots Configs/Base Bots Set/39_Bot.asset
+  artifactKey: Guid(6d3f121b5b750254980526fa3e55be0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/39_Bot.asset using Guid(6d3f121b5b750254980526fa3e55be0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee9c6b9e4db260ec2f834dd1a1cf456') in 0.005639 seconds
+  Import took 0.008452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Bots Configs/Base Bots Set/38_Bot.asset
+  artifactKey: Guid(6aa87b0a560f44445955f3ff6fa95df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/38_Bot.asset using Guid(6aa87b0a560f44445955f3ff6fa95df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493e4746d262ccc8c7fa499ccf4a23f9') in 0.005626 seconds
+  Import took 0.008620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Bots Configs/Base Bots Set/47_Bot.asset
+  artifactKey: Guid(847ae70a4c855d64f992a3fe2ae05b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/47_Bot.asset using Guid(847ae70a4c855d64f992a3fe2ae05b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f8121735a53ddc989e9b184401b625') in 0.007342 seconds
+  Import took 0.011140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Bots Configs/Base Bots Set/15_Bot.asset
+  artifactKey: Guid(fdde80ff90938a04aab1e9656b5c308c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/15_Bot.asset using Guid(fdde80ff90938a04aab1e9656b5c308c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4748eaede06aa840a6c07a55170f653') in 0.002233 seconds
+  Import took 0.006139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Bots Configs/Base Bots Set/7_Bot.asset
+  artifactKey: Guid(0a3a7458439b02f44bc92a76d15426ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/7_Bot.asset using Guid(0a3a7458439b02f44bc92a76d15426ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1de028a6da7b86b8dcea69415e5fc4') in 0.004972 seconds
+  Import took 0.007934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.443907 seconds.
+  path: Assets/Bots Configs/Base Bots Set/58_Bot.asset
+  artifactKey: Guid(651cc280dc6df124fa8dfd69f8d0778a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/58_Bot.asset using Guid(651cc280dc6df124fa8dfd69f8d0778a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e8eca6c90f08c05ac9a08c62928554') in 0.006345 seconds
+  Import took 0.010395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Bots Configs/Base Bots Set/63_Bot.asset
+  artifactKey: Guid(9c76d9ee7b540ab44808c5506cc7c813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/63_Bot.asset using Guid(9c76d9ee7b540ab44808c5506cc7c813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59485225cb9c9a911960ec03b3d2a78f') in 0.005857 seconds
+  Import took 0.009748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Bots Configs/Base Bots Set/70_Bot.asset
+  artifactKey: Guid(da5300eab64967c46abaf04ecf3db08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/70_Bot.asset using Guid(da5300eab64967c46abaf04ecf3db08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30e93a52307c91a61e8207714e7ba4e') in 0.005542 seconds
+  Import took 0.008851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Bots Configs/Base Bots Set/71_Bot.asset
+  artifactKey: Guid(0158edd1c312a274590032f6c9f05226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/71_Bot.asset using Guid(0158edd1c312a274590032f6c9f05226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ed8da9404d4405812d5e7646299cf3') in 0.006024 seconds
+  Import took 0.009113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Bots Configs/Base Bots Set/64_Bot.asset
+  artifactKey: Guid(c42cf039043ef234b93a6cd95b66a79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/64_Bot.asset using Guid(c42cf039043ef234b93a6cd95b66a79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1ab7b18aec03a93fb5181142aa7132') in 0.005735 seconds
+  Import took 0.008459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Bots Configs/Base Bots Set/61_Bot.asset
+  artifactKey: Guid(7790862a1ba5a2f46bf2f35f4d9f15da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/61_Bot.asset using Guid(7790862a1ba5a2f46bf2f35f4d9f15da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333c88006ae7fa6539de61ad7d392cd9') in 0.005245 seconds
+  Import took 0.008242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Bots Configs/Base Bots Set/59_Bot.asset
+  artifactKey: Guid(3cbd716c42b6fc14eb22608cababa1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/59_Bot.asset using Guid(3cbd716c42b6fc14eb22608cababa1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab33269e728ac55c2015f4b1d3c5aac5') in 0.005989 seconds
+  Import took 0.010407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Bots Configs/Base Bots Set/60_Bot.asset
+  artifactKey: Guid(4800e23067ed0cd4f8caff3a399d7a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/60_Bot.asset using Guid(4800e23067ed0cd4f8caff3a399d7a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec7949e2c9985ddb228c78a4eeb4b7f') in 0.006753 seconds
+  Import took 0.011042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Bots Configs/Base Bots Set/69_Bot.asset
+  artifactKey: Guid(b0de8a88a3d8e19428fe602581727fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/69_Bot.asset using Guid(b0de8a88a3d8e19428fe602581727fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74a924b76711fba3ea362bf833e8418') in 0.005767 seconds
+  Import took 0.008492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Bots Configs/Base Bots Set/65_Bot.asset
+  artifactKey: Guid(bf4836912dde02545a10a964a9707638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/65_Bot.asset using Guid(bf4836912dde02545a10a964a9707638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e38b8ecb69ed19503b9b40a32ca414a') in 0.005283 seconds
+  Import took 0.007996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Bots Configs/Base Bots Set/68_Bot.asset
+  artifactKey: Guid(c5eaf59940e3bce499db67a434aa77c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/68_Bot.asset using Guid(c5eaf59940e3bce499db67a434aa77c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f98f93a3d744e7880c10a6d3967b17') in 0.005195 seconds
+  Import took 0.008128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Bots Configs/Base Bots Set/66_Bot.asset
+  artifactKey: Guid(278b6c1bca7d1c349be402374a6e9c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/66_Bot.asset using Guid(278b6c1bca7d1c349be402374a6e9c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf96193a1e206f54ada6bab0572342f') in 0.005846 seconds
+  Import took 0.008607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Bots Configs/Base Bots Set/67_Bot.asset
+  artifactKey: Guid(8ca6902ed64e7c94884406f491f4c21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/67_Bot.asset using Guid(8ca6902ed64e7c94884406f491f4c21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a58647b42550a77f8213def9765a332') in 0.005292 seconds
+  Import took 0.008435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Bots Configs/Base Bots Set/62_Bot.asset
+  artifactKey: Guid(8acf22c18805e3244b10130a271da93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/62_Bot.asset using Guid(8acf22c18805e3244b10130a271da93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f1cf681c917085a4c52be0f38d367d') in 0.006267 seconds
+  Import took 0.010279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071389 seconds.
+  path: Assets/Bots Configs/Base Bots Set/66_Bot.asset
+  artifactKey: Guid(278b6c1bca7d1c349be402374a6e9c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/66_Bot.asset using Guid(278b6c1bca7d1c349be402374a6e9c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf96193a1e206f54ada6bab0572342f') in 0.003501 seconds
+  Import took 0.006770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Bots Configs/Base Bots Set/73_Bot.asset
+  artifactKey: Guid(07382b3beda57014890f3b6372c9a08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/73_Bot.asset using Guid(07382b3beda57014890f3b6372c9a08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc649ee89761a803a2d85ad88872c9a') in 0.005432 seconds
+  Import took 0.008428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Bots Configs/Base Bots Set/77_Bot.asset
+  artifactKey: Guid(dacff09de9dcd8247b04b5c50af522c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/77_Bot.asset using Guid(dacff09de9dcd8247b04b5c50af522c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e022e79ce02f85be566c7ecee5728961') in 0.008167 seconds
+  Import took 0.012437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Bots Configs/Base Bots Set/82_Bot.asset
+  artifactKey: Guid(d34c279a43a7e1b46a87104c637174df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/82_Bot.asset using Guid(d34c279a43a7e1b46a87104c637174df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d25d39a42fba33d5668a315454fb9ea') in 0.006549 seconds
+  Import took 0.010872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Bots Configs/Base Bots Set/92_Bot.asset
+  artifactKey: Guid(c26792b7149f12545a72ff1be9f6947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/92_Bot.asset using Guid(c26792b7149f12545a72ff1be9f6947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc93109da0d064d5fdf143d1821f29a') in 0.005142 seconds
+  Import took 0.007923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Bots Configs/Base Bots Set/94_Bot.asset
+  artifactKey: Guid(f2e616a4d1b43f24e80c9a41277bb787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/94_Bot.asset using Guid(f2e616a4d1b43f24e80c9a41277bb787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d9b7488a48c2913c0f2a467265f7e5') in 0.005774 seconds
+  Import took 0.008570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Bots Configs/Base Bots Set/76_Bot.asset
+  artifactKey: Guid(826ce9e605fcedf478539ff5228f651e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/76_Bot.asset using Guid(826ce9e605fcedf478539ff5228f651e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f7df0b0084f7a51cb421628d091bc3') in 0.005250 seconds
+  Import took 0.007917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Bots Configs/Base Bots Set/75_Bot.asset
+  artifactKey: Guid(ab62ce0bee66a5544a5a5ef2e594bcc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/75_Bot.asset using Guid(ab62ce0bee66a5544a5a5ef2e594bcc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d440ef09e506cbf245dfcf292b830b') in 0.005430 seconds
+  Import took 0.008717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Bots Configs/Base Bots Set/80_Bot.asset
+  artifactKey: Guid(dc4e599b6dc93834ca499d53175dbead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/80_Bot.asset using Guid(dc4e599b6dc93834ca499d53175dbead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9212dbe2cb8ca4df6c6f93fb85da19f1') in 0.006291 seconds
+  Import took 0.009412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Bots Configs/Base Bots Set/83_Bot.asset
+  artifactKey: Guid(af8c13d298ed7484db78cfbf9a5903e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/83_Bot.asset using Guid(af8c13d298ed7484db78cfbf9a5903e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771d41742f332cfe12563ff0203e5fec') in 0.005594 seconds
+  Import took 0.009098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000916 seconds.
+  path: Assets/Bots Configs/Base Bots Set/78_Bot.asset
+  artifactKey: Guid(d65e3c19b258e7742a9ec4bdc85520de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/78_Bot.asset using Guid(d65e3c19b258e7742a9ec4bdc85520de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a184624c195c1e61800ed4573162e7e') in 0.007949 seconds
+  Import took 0.012912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Bots Configs/Base Bots Set/91_Bot.asset
+  artifactKey: Guid(80090807431516b49821633ec85ad018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/91_Bot.asset using Guid(80090807431516b49821633ec85ad018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5096ff64553f2ceac5a5a2da9ee275db') in 0.005519 seconds
+  Import took 0.008598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Bots Configs/Base Bots Set/88_Bot.asset
+  artifactKey: Guid(93b3dc5f9647c4a43991ba3ab58fa40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/88_Bot.asset using Guid(93b3dc5f9647c4a43991ba3ab58fa40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b381084ffb4c733158925b9b43c4fbc') in 0.005850 seconds
+  Import took 0.008699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Bots Configs/Base Bots Set/84_Bot.asset
+  artifactKey: Guid(e22d2172afddee143b8141098aa610dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/84_Bot.asset using Guid(e22d2172afddee143b8141098aa610dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e93933278e91a13a69d843d0326aac') in 0.005538 seconds
+  Import took 0.008596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Bots Configs/Base Bots Set/90_Bot.asset
+  artifactKey: Guid(5ff7bc135503bab499b1e5fe6a38465c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/90_Bot.asset using Guid(5ff7bc135503bab499b1e5fe6a38465c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9bb12bf4b370efab5c40acc962a5117') in 0.005391 seconds
+  Import took 0.008063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Bots Configs/Base Bots Set/74_Bot.asset
+  artifactKey: Guid(8a47dd5b0b1c21d4fa4f57672f9e50c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/74_Bot.asset using Guid(8a47dd5b0b1c21d4fa4f57672f9e50c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5dc15e7096f4ae0c59549e467d4f407') in 0.006045 seconds
+  Import took 0.008798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Bots Configs/Base Bots Set/98_Bot.asset
+  artifactKey: Guid(a14c92b2bc2228b48b2af1b0117439a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/98_Bot.asset using Guid(a14c92b2bc2228b48b2af1b0117439a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92149aca392874d7876a139af626a56') in 0.006108 seconds
+  Import took 0.009522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000642 seconds.
+  path: Assets/Bots Configs/Base Bots Set/96_Bot.asset
+  artifactKey: Guid(29fcd1b069ee76046b891f1d7026fa4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/96_Bot.asset using Guid(29fcd1b069ee76046b891f1d7026fa4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d563fdb22b0a3964be9afab95c9c2c8') in 0.006590 seconds
+  Import took 0.010948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Bots Configs/Base Bots Set/99_Bot.asset
+  artifactKey: Guid(723e35bd1260b88439d8968b8a66f6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/99_Bot.asset using Guid(723e35bd1260b88439d8968b8a66f6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea6f782f2c4598a1835375df4952420') in 0.005146 seconds
+  Import took 0.008106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Bots Configs/Base Bots Set/72_Bot.asset
+  artifactKey: Guid(45f0daea3f50fb3459bc9af1202b4e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/72_Bot.asset using Guid(45f0daea3f50fb3459bc9af1202b4e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2008e1f90f8758a0bf3d5282120212ab') in 0.005373 seconds
+  Import took 0.008301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/Bots Configs/Base Bots Set/79_Bot.asset
+  artifactKey: Guid(9fc8d01d047b7a24e92716cfeacb5ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/79_Bot.asset using Guid(9fc8d01d047b7a24e92716cfeacb5ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acba932188578f27ef5a665d9024f19') in 0.007072 seconds
+  Import took 0.010883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Bots Configs/Base Bots Set/89_Bot.asset
+  artifactKey: Guid(dd70c302f7c6881449865b16aaca40eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/89_Bot.asset using Guid(dd70c302f7c6881449865b16aaca40eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3382c3fe7213b869f8a3366f22911b85') in 0.005560 seconds
+  Import took 0.009536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Bots Configs/Base Bots Set/93_Bot.asset
+  artifactKey: Guid(75d77af64310f3e4c9bcc1480a642bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/93_Bot.asset using Guid(75d77af64310f3e4c9bcc1480a642bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da08cc4afbbb8502631a6f49b40b121') in 0.005459 seconds
+  Import took 0.009387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Bots Configs/Base Bots Set/86_Bot.asset
+  artifactKey: Guid(27bfb7d11dab8704d8f3eb64157e98b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/86_Bot.asset using Guid(27bfb7d11dab8704d8f3eb64157e98b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eefe6566f43cbe68f72e01e987df7c2') in 0.008310 seconds
+  Import took 0.011834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Bots Configs/Base Bots Set/81_Bot.asset
+  artifactKey: Guid(e5c14099f4c4b704ebf46d46f4da396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/81_Bot.asset using Guid(e5c14099f4c4b704ebf46d46f4da396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734121af265ec720cd4c495c4e1e3d81') in 0.006084 seconds
+  Import took 0.009071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Bots Configs/Base Bots Set/85_Bot.asset
+  artifactKey: Guid(a7ae17ec1bfc172478d1a387fdc9742f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/85_Bot.asset using Guid(a7ae17ec1bfc172478d1a387fdc9742f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457e1152c7cb51a0f17815c9aba02a20') in 0.006046 seconds
+  Import took 0.009206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Bots Configs/Base Bots Set/87_Bot.asset
+  artifactKey: Guid(7b31bc6fe2a23ae43bda7ad12c416f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/87_Bot.asset using Guid(7b31bc6fe2a23ae43bda7ad12c416f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb51df8334b6c9c6f2dd3d740e34225') in 0.005217 seconds
+  Import took 0.008193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Bots Configs/Base Bots Set/95_Bot.asset
+  artifactKey: Guid(31cf6cc04b61e984e882f4b991c23b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/95_Bot.asset using Guid(31cf6cc04b61e984e882f4b991c23b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d26e7938d5eb0e9a690e74f008e248') in 0.005384 seconds
+  Import took 0.009102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Bots Configs/Base Bots Set/97_Bot.asset
+  artifactKey: Guid(7bc0f9e412bed9e45838c786791634ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/97_Bot.asset using Guid(7bc0f9e412bed9e45838c786791634ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02403622eddea90830d08e51ac8dbbb5') in 0.005120 seconds
+  Import took 0.008256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024192 seconds.
+  path: Assets/Bots Configs/Base Bots Set/100_Bot.asset
+  artifactKey: Guid(b59b8ccf2fc01a245be53fe7dd27986c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/100_Bot.asset using Guid(b59b8ccf2fc01a245be53fe7dd27986c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905ab195ef40f6c2a5c14a7dfabd1642') in 0.005216 seconds
+  Import took 0.008597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Bots Configs/Base Bots Set/112_Bot.asset
+  artifactKey: Guid(4c183e1a119877f479c84cbc97a45bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/112_Bot.asset using Guid(4c183e1a119877f479c84cbc97a45bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46177b0cf53a27af8858e7a77ef215e7') in 0.102085 seconds
+  Import took 0.105087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/108_Bot.asset
+  artifactKey: Guid(098945c763c57e04d8424538474a1453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/108_Bot.asset using Guid(098945c763c57e04d8424538474a1453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3345396204e99f088036bb6f0c40818b') in 0.006110 seconds
+  Import took 0.010043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Bots Configs/Base Bots Set/110_Bot.asset
+  artifactKey: Guid(19d64deb7fb6797418dc1a78217e1683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/110_Bot.asset using Guid(19d64deb7fb6797418dc1a78217e1683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625322581e20d04ba06299ae52ec459c') in 0.006703 seconds
+  Import took 0.010649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/111_Bot.asset
+  artifactKey: Guid(f656c8d3f58c3d448a987161bf179494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/111_Bot.asset using Guid(f656c8d3f58c3d448a987161bf179494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a834eaa56c896cf9bd323086e4693f72') in 0.005453 seconds
+  Import took 0.008602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Bots Configs/Base Bots Set/118_Bot.asset
+  artifactKey: Guid(d932d8e177ae2a9469bf752f2231f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/118_Bot.asset using Guid(d932d8e177ae2a9469bf752f2231f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a5047a68dcd682292081f3926fd8a6') in 0.005478 seconds
+  Import took 0.008391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Bots Configs/Base Bots Set/127_Bot.asset
+  artifactKey: Guid(1b91cde1ff7a8df4da2347201f9a338b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/127_Bot.asset using Guid(1b91cde1ff7a8df4da2347201f9a338b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa783e3ea18d7f2ff9dcf64b6bd12454') in 0.005452 seconds
+  Import took 0.008222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Bots Configs/Base Bots Set/106_Bot.asset
+  artifactKey: Guid(2864cc431ea4e404f8c802b01d8447df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/106_Bot.asset using Guid(2864cc431ea4e404f8c802b01d8447df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35ad3e709bb9af2ce863a7e66190490') in 0.005862 seconds
+  Import took 0.008634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Bots Configs/Base Bots Set/123_Bot.asset
+  artifactKey: Guid(ff1f57bb8f8a5bd4da1873b298d213fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/123_Bot.asset using Guid(ff1f57bb8f8a5bd4da1873b298d213fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5486ebc62e0eea671b949087012dcd') in 0.005772 seconds
+  Import took 0.008571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Bots Configs/Base Bots Set/107_Bot.asset
+  artifactKey: Guid(4c955e56331b4f241aa107b87aa3df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/107_Bot.asset using Guid(4c955e56331b4f241aa107b87aa3df4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78832080ac66feca46b05fe8f5b60faa') in 0.006289 seconds
+  Import took 0.010002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Bots Configs/Base Bots Set/101_Bot.asset
+  artifactKey: Guid(e3d2e4eae97713c40bdc11e54d019a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/101_Bot.asset using Guid(e3d2e4eae97713c40bdc11e54d019a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23915a379def6fd1b72a5e7d10b2408') in 0.006477 seconds
+  Import took 0.010840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Bots Configs/Base Bots Set/113_Bot.asset
+  artifactKey: Guid(476549ccce296894abc4a1e2cb5982b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/113_Bot.asset using Guid(476549ccce296894abc4a1e2cb5982b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd32b4cb1b4f0d6369d14b2c5e54718') in 0.005545 seconds
+  Import took 0.008505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Bots Configs/Base Bots Set/105_Bot.asset
+  artifactKey: Guid(ef6c80d95bd7a5b42849b057a62ecad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/105_Bot.asset using Guid(ef6c80d95bd7a5b42849b057a62ecad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d04a435f1c27653316777c2df2f43a') in 0.005549 seconds
+  Import took 0.008550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Bots Configs/Base Bots Set/131_Bot.asset
+  artifactKey: Guid(cec6f18bf1fc8124ba176b3b419fd496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/131_Bot.asset using Guid(cec6f18bf1fc8124ba176b3b419fd496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9d0b735eef5bf4fa6d88a37ce0ee52') in 0.005779 seconds
+  Import took 0.008620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Bots Configs/Base Bots Set/136_Bot.asset
+  artifactKey: Guid(9f90089ec00553446ac2a3fe98dda639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/136_Bot.asset using Guid(9f90089ec00553446ac2a3fe98dda639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24462908d9ff385d09682995ad2541ce') in 0.005800 seconds
+  Import took 0.008721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Bots Configs/Base Bots Set/139_Bot.asset
+  artifactKey: Guid(b84ed7b62ca01cf4c93ccb5d08fb37ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/139_Bot.asset using Guid(b84ed7b62ca01cf4c93ccb5d08fb37ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06176c01a758072184e8540829a09c6f') in 0.005579 seconds
+  Import took 0.008545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Bots Configs/Base Bots Set/135_Bot.asset
+  artifactKey: Guid(91ccf4016582a3f49a6cfcb5016b45e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/135_Bot.asset using Guid(91ccf4016582a3f49a6cfcb5016b45e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b716aad72823859792d6bfa93c3ff3') in 0.005783 seconds
+  Import took 0.009127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000520 seconds.
+  path: Assets/Bots Configs/Base Bots Set/129_Bot.asset
+  artifactKey: Guid(7e1a99f5202cade40bd6ce452f458dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/129_Bot.asset using Guid(7e1a99f5202cade40bd6ce452f458dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f086d95e86726acbcef483bba2b62a8') in 0.006430 seconds
+  Import took 0.011214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Bots Configs/Base Bots Set/128_Bot.asset
+  artifactKey: Guid(59ea13e82c672f9458432716f8c85ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/128_Bot.asset using Guid(59ea13e82c672f9458432716f8c85ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1406426cfb1fa59a552833ef9158622') in 0.005364 seconds
+  Import took 0.008458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Bots Configs/Base Bots Set/133_Bot.asset
+  artifactKey: Guid(2cb021fa24f317b49a7bbb59b6a2b2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/133_Bot.asset using Guid(2cb021fa24f317b49a7bbb59b6a2b2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced938ec32af592af78d37a3e9382744') in 0.006133 seconds
+  Import took 0.009366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Bots Configs/Base Bots Set/132_Bot.asset
+  artifactKey: Guid(cbdcc66c88fc4084b89a59de55a4aba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/132_Bot.asset using Guid(cbdcc66c88fc4084b89a59de55a4aba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a435590620fa6bda69c760474bb71019') in 0.009435 seconds
+  Import took 0.013641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Bots Configs/Base Bots Set/109_Bot.asset
+  artifactKey: Guid(213042de68c52094cbea06050267e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/109_Bot.asset using Guid(213042de68c52094cbea06050267e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5784048872826adc68aef059069e3e7a') in 0.005474 seconds
+  Import took 0.008786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Bots Configs/Base Bots Set/121_Bot.asset
+  artifactKey: Guid(dfda63942d579ed459688d4a4dbf2c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/121_Bot.asset using Guid(dfda63942d579ed459688d4a4dbf2c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0c8677bfa3e42fcf134c4f21da9b91') in 0.005743 seconds
+  Import took 0.008887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Bots Configs/Base Bots Set/144_Bot.asset
+  artifactKey: Guid(31360908b1824524994cfb0685519cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/144_Bot.asset using Guid(31360908b1824524994cfb0685519cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e578b86e36665f06fd59d82e63f37b') in 0.005374 seconds
+  Import took 0.008179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Bots Configs/Base Bots Set/154_Bot.asset
+  artifactKey: Guid(df5ec7dc077d88d40bd7d9ab22acfb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/154_Bot.asset using Guid(df5ec7dc077d88d40bd7d9ab22acfb6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3520046431e8a728d7cc74792029ed6e') in 0.005848 seconds
+  Import took 0.008747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Bots Configs/Base Bots Set/167_Bot.asset
+  artifactKey: Guid(2ef2c8d2d5b786d44b124d3e48d75a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/167_Bot.asset using Guid(2ef2c8d2d5b786d44b124d3e48d75a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f11532233408e99eca5edd783bdb94') in 0.005450 seconds
+  Import took 0.008419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Bots Configs/Base Bots Set/164_Bot.asset
+  artifactKey: Guid(31369c7afb1f8134e82b1e28f6fd6c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/164_Bot.asset using Guid(31369c7afb1f8134e82b1e28f6fd6c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b2f24df08af456fbca8379c3996e5d') in 0.005751 seconds
+  Import took 0.009327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Bots Configs/Base Bots Set/165_Bot.asset
+  artifactKey: Guid(99b543660ccb89d47aed25d5ea2251e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/165_Bot.asset using Guid(99b543660ccb89d47aed25d5ea2251e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075e6ac411ff7644d2a771ab6ef55a1d') in 0.006435 seconds
+  Import took 0.011619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Bots Configs/Base Bots Set/168_Bot.asset
+  artifactKey: Guid(fef06e0d7fbb7b7438060d515a205934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/168_Bot.asset using Guid(fef06e0d7fbb7b7438060d515a205934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42ca5822be7384ae0f49d0724615b27') in 0.005171 seconds
+  Import took 0.008206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Bots Configs/Base Bots Set/166_Bot.asset
+  artifactKey: Guid(743c3c53674487c4894289b003977a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/166_Bot.asset using Guid(743c3c53674487c4894289b003977a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3589ab5911f44a89d5641eeebed3beed') in 0.005808 seconds
+  Import took 0.008613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Bots Configs/Base Bots Set/153_Bot.asset
+  artifactKey: Guid(603484c8e18628541b603bd864d1b60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/153_Bot.asset using Guid(603484c8e18628541b603bd864d1b60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ae79f3df2314b2446fb18ca4f4c12f') in 0.005058 seconds
+  Import took 0.007713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Bots Configs/Base Bots Set/155_Bot.asset
+  artifactKey: Guid(15de1daa37e549d4b83dc5f06e4a279a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/155_Bot.asset using Guid(15de1daa37e549d4b83dc5f06e4a279a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ce9683c4df3e58f06546798e3c9b3d') in 0.005731 seconds
+  Import took 0.008464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Bots Configs/Base Bots Set/148_Bot.asset
+  artifactKey: Guid(5f53a65daf5e2f34fa6c12fcc4b7f955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/148_Bot.asset using Guid(5f53a65daf5e2f34fa6c12fcc4b7f955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97e65ac5a86eb9a037929f411bbe648') in 0.005287 seconds
+  Import took 0.007998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Bots Configs/Base Bots Set/159_Bot.asset
+  artifactKey: Guid(ad12118afe42e704d920f19685ef3869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/159_Bot.asset using Guid(ad12118afe42e704d920f19685ef3869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774f5d094832ecc83146991fcb34ad31') in 0.006147 seconds
+  Import took 0.009099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Bots Configs/Base Bots Set/157_Bot.asset
+  artifactKey: Guid(66e5d8922c992ca4eadc6107d713251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/157_Bot.asset using Guid(66e5d8922c992ca4eadc6107d713251f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08361fd85f9d980bb559058c711243fc') in 0.008513 seconds
+  Import took 0.012571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Bots Configs/Base Bots Set/170_Bot.asset
+  artifactKey: Guid(e414d9090cc498c4aa349a5b678df8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/170_Bot.asset using Guid(e414d9090cc498c4aa349a5b678df8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77aa1020157e95e6a141b21bedf10cfe') in 0.005809 seconds
+  Import took 0.009093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Bots Configs/Base Bots Set/178_Bot.asset
+  artifactKey: Guid(4ebcd25a1fe40e44582bf13b18eda77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/178_Bot.asset using Guid(4ebcd25a1fe40e44582bf13b18eda77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9aca1dfd0d5f80d50ee848f6bc5e81') in 0.005168 seconds
+  Import took 0.008122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Bots Configs/Base Bots Set/173_Bot.asset
+  artifactKey: Guid(f193672062b4ef1428986fcd0e1b2a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/173_Bot.asset using Guid(f193672062b4ef1428986fcd0e1b2a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1387ae3242203ccb7430d6288f1545eb') in 0.005663 seconds
+  Import took 0.008527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Bots Configs/Base Bots Set/172_Bot.asset
+  artifactKey: Guid(8bf3bb602094fcf488721713a6efe5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/172_Bot.asset using Guid(8bf3bb602094fcf488721713a6efe5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71db4ada962131dfb52d41d40a26d09') in 0.005358 seconds
+  Import took 0.008760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Bots Configs/Base Bots Set/183_Bot.asset
+  artifactKey: Guid(8cfcb7a54e3ee644aad33f714190ea09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/183_Bot.asset using Guid(8cfcb7a54e3ee644aad33f714190ea09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db30ab5728e797a4415db9d7a65e14a') in 0.005219 seconds
+  Import took 0.008193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Bots Configs/Base Bots Set/177_Bot.asset
+  artifactKey: Guid(6b885e981f5e87449b11d3dda4c6c02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/177_Bot.asset using Guid(6b885e981f5e87449b11d3dda4c6c02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc08b279f61be6356cca9222906a349b') in 0.005521 seconds
+  Import took 0.008474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Bots Configs/Base Bots Set/175_Bot.asset
+  artifactKey: Guid(4e330a15418082e4da00cea68c35a89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/175_Bot.asset using Guid(4e330a15418082e4da00cea68c35a89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f91c0774e64de18575c389f517b9c9') in 0.006501 seconds
+  Import took 0.012151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Bots Configs/Base Bots Set/174_Bot.asset
+  artifactKey: Guid(e01387f109856644b9371624324333a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/174_Bot.asset using Guid(e01387f109856644b9371624324333a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad33e96493fc735a841c6a873f9b656') in 0.005790 seconds
+  Import took 0.009268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Bots Configs/Base Bots Set/158_Bot.asset
+  artifactKey: Guid(eb18dc89cd7518e4399958ba8aed2ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/158_Bot.asset using Guid(eb18dc89cd7518e4399958ba8aed2ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f6bbca1795f96696ffedda676e18fd1') in 0.006667 seconds
+  Import took 0.009921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Bots Configs/Base Bots Set/146_Bot.asset
+  artifactKey: Guid(bd29089378434a146ad04488ba16ec05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/146_Bot.asset using Guid(bd29089378434a146ad04488ba16ec05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293ad67ebe2c8c4522e2014075ba0e7a') in 0.005435 seconds
+  Import took 0.008461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Bots Configs/Base Bots Set/162_Bot.asset
+  artifactKey: Guid(4a0a1a1b4ef9753489aec7a9ff810357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/162_Bot.asset using Guid(4a0a1a1b4ef9753489aec7a9ff810357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4ee5273ab24e3035b81bc373fe3717') in 0.005934 seconds
+  Import took 0.009621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Bots Configs/Base Bots Set/171_Bot.asset
+  artifactKey: Guid(f393502bf960a264aad4111515345877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/171_Bot.asset using Guid(f393502bf960a264aad4111515345877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053ef4c00cac4afe23e7d11b4c395477') in 0.005609 seconds
+  Import took 0.008497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Bots Configs/Base Bots Set/182_Bot.asset
+  artifactKey: Guid(a27292e7537fae44392b0c0ef5b3046f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/182_Bot.asset using Guid(a27292e7537fae44392b0c0ef5b3046f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b9bd9e1e6d4ebf6fed8ec5dd8bbb33') in 0.007399 seconds
+  Import took 0.011562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Bots Configs/Base Bots Set/179_Bot.asset
+  artifactKey: Guid(2acb55a7cdf4d2546aceab6c7425d968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/179_Bot.asset using Guid(2acb55a7cdf4d2546aceab6c7425d968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358c269fc15fd27901ac475a98077b81') in 0.022912 seconds
+  Import took 0.026556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Bots Configs/Base Bots Set/152_Bot.asset
+  artifactKey: Guid(d54607bd0966ec54192d4a207d8fdefe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/152_Bot.asset using Guid(d54607bd0966ec54192d4a207d8fdefe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49e1f7928f94a6fee790a122a5650cb') in 0.005123 seconds
+  Import took 0.008067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Bots Configs/Base Bots Set/169_Bot.asset
+  artifactKey: Guid(fa8edf65fb7644548bc6467be793c5fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/169_Bot.asset using Guid(fa8edf65fb7644548bc6467be793c5fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1731fe93512665dc10f82dd3f46171f6') in 0.006068 seconds
+  Import took 0.008729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Bots Configs/Base Bots Set/156_Bot.asset
+  artifactKey: Guid(e8d26526ab37de14ea87590a200ef565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/156_Bot.asset using Guid(e8d26526ab37de14ea87590a200ef565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba82046fe12adc965360554337090f08') in 0.005470 seconds
+  Import took 0.008199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Bots Configs/Base Bots Set/150_Bot.asset
+  artifactKey: Guid(991fc036021aa4247b3520a4ded9182b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/150_Bot.asset using Guid(991fc036021aa4247b3520a4ded9182b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb4c7f66092a5df8774c4c732a92200') in 0.007848 seconds
+  Import took 0.011154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000587 seconds.
+  path: Assets/Bots Configs/Base Bots Set/145_Bot.asset
+  artifactKey: Guid(6c526ea6106c6d64f88b9f20d90e2c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/145_Bot.asset using Guid(6c526ea6106c6d64f88b9f20d90e2c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9ea45703ebdcc29b0f5180886df58f') in 0.007134 seconds
+  Import took 0.011631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Bots Configs/Base Bots Set/188_Bot.asset
+  artifactKey: Guid(6c2b920252e62fc46955ff3231a55e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/188_Bot.asset using Guid(6c2b920252e62fc46955ff3231a55e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0902e3e65a5a0043bf7deb02475117bf') in 0.005979 seconds
+  Import took 0.008891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Bots Configs/Base Bots Set/191_Bot.asset
+  artifactKey: Guid(919a3dcf8963e024c9ca789a196afb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/191_Bot.asset using Guid(919a3dcf8963e024c9ca789a196afb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5041330ccde915be93b5969248f7ebc6') in 0.005930 seconds
+  Import took 0.008881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Bots Configs/Base Bots Set/193_Bot.asset
+  artifactKey: Guid(6834007773581b641a3154527bc7eb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/193_Bot.asset using Guid(6834007773581b641a3154527bc7eb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8c85394fc1dc0da5cedee229de7c6c') in 0.005627 seconds
+  Import took 0.008637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Bots Configs/Base Bots Set/194_Bot.asset
+  artifactKey: Guid(38c2d35d8bdb81744b9e8617a7fe0a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/194_Bot.asset using Guid(38c2d35d8bdb81744b9e8617a7fe0a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4956b4dea44bc2f7868731035df9db') in 0.006692 seconds
+  Import took 0.009597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Bots Configs/Base Bots Set/196_Bot.asset
+  artifactKey: Guid(1cb797a89a1f1b84993294f69270f560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/196_Bot.asset using Guid(1cb797a89a1f1b84993294f69270f560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a502cd6c4ee86ea4bd8691a5b54332f') in 0.005196 seconds
+  Import took 0.008254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Bots Configs/Base Bots Set/195_Bot.asset
+  artifactKey: Guid(6d1e179d6058a204aa95730f4d052ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/195_Bot.asset using Guid(6d1e179d6058a204aa95730f4d052ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfd1cbb3ae7ca25947ac326b0bf05f6') in 0.007191 seconds
+  Import took 0.010767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/Bots Configs/Base Bots Set/184_Bot.asset
+  artifactKey: Guid(185c1d99d5a0c83408ba6f5ac73e62bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/184_Bot.asset using Guid(185c1d99d5a0c83408ba6f5ac73e62bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a84a396eeb5596c5c97281f025a32f') in 0.006352 seconds
+  Import took 0.010058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Bots Configs/Base Bots Set/192_Bot.asset
+  artifactKey: Guid(dc85cdeb0a0a6fb42a98e9e1019b02a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/192_Bot.asset using Guid(dc85cdeb0a0a6fb42a98e9e1019b02a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9787f3e45b2f1c39b1b3740664e0066d') in 0.005636 seconds
+  Import took 0.008323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Bots Configs/Base Bots Set/200_Bot.asset
+  artifactKey: Guid(007e97e486cf0d14bb848f2d426e3d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/200_Bot.asset using Guid(007e97e486cf0d14bb848f2d426e3d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c4c6470b33363de7cfabf92eccddc5') in 0.005402 seconds
+  Import took 0.008236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Bots Configs/Base Bots Set/186_Bot.asset
+  artifactKey: Guid(33c635afa254b88409eaf5cfd3eded55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/186_Bot.asset using Guid(33c635afa254b88409eaf5cfd3eded55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3cda3ad95514aba5ddbe9f1f3c799c') in 0.005285 seconds
+  Import took 0.008092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Bots Configs/Base Bots Set/187_Bot.asset
+  artifactKey: Guid(c60cf0dab31e15349998b074a8d5316f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/187_Bot.asset using Guid(c60cf0dab31e15349998b074a8d5316f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023d3e10d0210242646a3e04470a915e') in 0.006390 seconds
+  Import took 0.009368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Bots Configs/Base Bots Set/190_Bot.asset
+  artifactKey: Guid(6284b882c3867904d87b8203a516fffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/190_Bot.asset using Guid(6284b882c3867904d87b8203a516fffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279140840e003f4830728380ef17220f') in 0.005345 seconds
+  Import took 0.008722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Bots Configs/Base Bots Set/197_Bot.asset
+  artifactKey: Guid(5124d04a02d08cc46ab6e1c42ed6daec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/197_Bot.asset using Guid(5124d04a02d08cc46ab6e1c42ed6daec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7bc79ef06fc6161257dac5e6a958c46') in 0.007135 seconds
+  Import took 0.010470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/Bots Configs/Base Bots Set/185_Bot.asset
+  artifactKey: Guid(bca891f760029f24eacd1bec2b9b350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/185_Bot.asset using Guid(bca891f760029f24eacd1bec2b9b350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a469edb5609675fe93f4ef43862aa2b') in 0.006293 seconds
+  Import took 0.009749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Bots Configs/Base Bots Set/189_Bot.asset
+  artifactKey: Guid(cc37dac6a56179245a5e70fb51b15560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/189_Bot.asset using Guid(cc37dac6a56179245a5e70fb51b15560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97bf274bb9e3eac2dd7a0fc669c8298') in 0.005465 seconds
+  Import took 0.008523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Bots Configs/Base Bots Set/160_Bot.asset
+  artifactKey: Guid(5635454d5b684e944aa3236abf3522b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/160_Bot.asset using Guid(5635454d5b684e944aa3236abf3522b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4deca939a614b4bb4763913f73a506c') in 0.005277 seconds
+  Import took 0.008193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Bots Configs/Base Bots Set/151_Bot.asset
+  artifactKey: Guid(37193c7bdf89657428eaa23fd2b0fa80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/151_Bot.asset using Guid(37193c7bdf89657428eaa23fd2b0fa80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879445af709295c95364675c0fc8bf81') in 0.006079 seconds
+  Import took 0.009862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/181_Bot.asset
+  artifactKey: Guid(be5b7639520455a40bf65f86fee13cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/181_Bot.asset using Guid(be5b7639520455a40bf65f86fee13cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'accf51150dd410d6a425621f6252f591') in 0.005393 seconds
+  Import took 0.008377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Bots Configs/Base Bots Set/149_Bot.asset
+  artifactKey: Guid(adcc541882abe774582530ac6d677988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/149_Bot.asset using Guid(adcc541882abe774582530ac6d677988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb865a15413bc1be03d148cdc9a0b86') in 0.005144 seconds
+  Import took 0.008021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Bots Configs/Base Bots Set/198_Bot.asset
+  artifactKey: Guid(771f305fd2ed23e44ae3b63c83173906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/198_Bot.asset using Guid(771f305fd2ed23e44ae3b63c83173906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52261e0bd0df567c7c6ee7b2e47d2ca') in 0.007213 seconds
+  Import took 0.010524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/Bots Configs/Base Bots Set/134_Bot.asset
+  artifactKey: Guid(e10b0283094705d428421a0bd6ec3097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/134_Bot.asset using Guid(e10b0283094705d428421a0bd6ec3097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47083a083b9b9e9dc6ed6dabd77af12f') in 0.006709 seconds
+  Import took 0.010393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Bots Configs/Base Bots Set/142_Bot.asset
+  artifactKey: Guid(8e652e34362043c409da153c0ef4a3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/142_Bot.asset using Guid(8e652e34362043c409da153c0ef4a3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2d680bef2a9be05a9bc9f309c12281') in 0.005833 seconds
+  Import took 0.008960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Bots Configs/Base Bots Set/199_Bot.asset
+  artifactKey: Guid(1f7027403a0164941a5a563e8c8c2d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/199_Bot.asset using Guid(1f7027403a0164941a5a563e8c8c2d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7a8bf401c3f7c923c8a73ddeca69d4') in 0.005812 seconds
+  Import took 0.008680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Bots Configs/Base Bots Set/125_Bot.asset
+  artifactKey: Guid(ce762876e4813ff44a8494fd141386d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/125_Bot.asset using Guid(ce762876e4813ff44a8494fd141386d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088ceff7bb2844672d6358f515363bff') in 0.005365 seconds
+  Import took 0.008464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Bots Configs/Base Bots Set/BotProfiles.asset
+  artifactKey: Guid(ccae06e626a4dcf4b81245a971f90f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/BotProfiles.asset using Guid(ccae06e626a4dcf4b81245a971f90f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9704d81f0819d6f61d6c623aaff0e73e') in 0.036059 seconds
+  Import took 0.040226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Bots Configs/Base Bots Set/126_Bot.asset
+  artifactKey: Guid(0529c768b25d6a344a78a801638a1580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/126_Bot.asset using Guid(0529c768b25d6a344a78a801638a1580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8108e67963968cd797715a3180e2b5') in 0.005102 seconds
+  Import took 0.008265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Bots Configs/Base Bots Set/116_Bot.asset
+  artifactKey: Guid(b5fb4ead3039ec9488899ae63c075455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/116_Bot.asset using Guid(b5fb4ead3039ec9488899ae63c075455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0c14b96cc434eab2d47007502983e3') in 0.063302 seconds
+  Import took 0.066663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Bots Configs/Base Bots Set/176_Bot.asset
+  artifactKey: Guid(4f85ad8d223aab64cb8bd6b3cc8f0ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/176_Bot.asset using Guid(4f85ad8d223aab64cb8bd6b3cc8f0ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c896f90fc2dbf6cfdde6805b85f52f') in 0.006169 seconds
+  Import took 0.009431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000500 seconds.
+  path: Assets/Bots Configs/Base Bots Set/137_Bot.asset
+  artifactKey: Guid(6969669d0bc74544a87761e801614bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/137_Bot.asset using Guid(6969669d0bc74544a87761e801614bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe95478b1f0c7c24faf85e8b57bb5e45') in 0.006568 seconds
+  Import took 0.010766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Bots Configs/Base Bots Set/104_Bot.asset
+  artifactKey: Guid(abac37bdfe2d5284d9fcca948a45b2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/104_Bot.asset using Guid(abac37bdfe2d5284d9fcca948a45b2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1708c9a5c7436ba6ae2733d0111220dc') in 0.005658 seconds
+  Import took 0.008494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Bots Configs/Base Bots Set/180_Bot.asset
+  artifactKey: Guid(1bb34b9ea1d5e1c4694ffb5741c27208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/180_Bot.asset using Guid(1bb34b9ea1d5e1c4694ffb5741c27208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323ec7d76801157d2f0bde091548354a') in 0.005544 seconds
+  Import took 0.008382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Bots Configs/Base Bots Set/138_Bot.asset
+  artifactKey: Guid(4c090b04421af69468c4d0c935abbb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/138_Bot.asset using Guid(4c090b04421af69468c4d0c935abbb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2bf187209a8bde7ad3ed783917a3a31') in 0.005449 seconds
+  Import took 0.008472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Bots Configs/Base Bots Set/180_Bot.asset
+  artifactKey: Guid(1bb34b9ea1d5e1c4694ffb5741c27208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/180_Bot.asset using Guid(1bb34b9ea1d5e1c4694ffb5741c27208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323ec7d76801157d2f0bde091548354a') in 0.002281 seconds
+  Import took 0.006143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Bots Configs/Base Bots Set/161_Bot.asset
+  artifactKey: Guid(2a15252e71abc95449d36f254c9d4548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/161_Bot.asset using Guid(2a15252e71abc95449d36f254c9d4548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbeb77d747ded1b1aeb9eaa35ec3e28') in 0.005619 seconds
+  Import took 0.009044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Bots Configs/Base Bots Set/141_Bot.asset
+  artifactKey: Guid(b822d831916e1214b8c17cdb71637aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/141_Bot.asset using Guid(b822d831916e1214b8c17cdb71637aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01aabd898f65113a139de8c61fb484d') in 0.005626 seconds
+  Import took 0.008657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Bots Configs/Base Bots Set/140_Bot.asset
+  artifactKey: Guid(a9e44c8bcfd3d5b40a659d9013f215c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/140_Bot.asset using Guid(a9e44c8bcfd3d5b40a659d9013f215c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9051467f92e0f10e4159e2f22ae422ab') in 0.006892 seconds
+  Import took 0.011665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Bots Configs/Base Bots Set/120_Bot.asset
+  artifactKey: Guid(76f89b51fd3647a47b846e6138975ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/120_Bot.asset using Guid(76f89b51fd3647a47b846e6138975ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c608dfaa18b7579cc9633fd3d96edf72') in 0.005595 seconds
+  Import took 0.009039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Bots Configs/Base Bots Set/143_Bot.asset
+  artifactKey: Guid(0160bfcc3ddf0ab4eb588a3257e0205a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/143_Bot.asset using Guid(0160bfcc3ddf0ab4eb588a3257e0205a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d593b5b5ffe227169a596ea50fe2dd8') in 0.004925 seconds
+  Import took 0.007674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Bots Configs/Base Bots Set/124_Bot.asset
+  artifactKey: Guid(a025106b6e58320498366ab5ff7bcb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/124_Bot.asset using Guid(a025106b6e58320498366ab5ff7bcb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b0cc121f1c0d6f7b8d6afecbad9ed5') in 0.005893 seconds
+  Import took 0.008709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Bots Configs/Base Bots Set/130_Bot.asset
+  artifactKey: Guid(6937957bafea39e4cb78c0280204dea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/130_Bot.asset using Guid(6937957bafea39e4cb78c0280204dea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15db81e68bd1387c9f14b59ce4861ec9') in 0.005290 seconds
+  Import took 0.008060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Bots Configs/Base Bots Set/103_Bot.asset
+  artifactKey: Guid(dc706c02f08106b4d82afc099c7fe53e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/103_Bot.asset using Guid(dc706c02f08106b4d82afc099c7fe53e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3f8fff9c29ecf96466e04c16a58d67') in 0.005405 seconds
+  Import took 0.008324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Bots Configs/Base Bots Set/163_Bot.asset
+  artifactKey: Guid(b28d259bde683d14a8563284f440d5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/163_Bot.asset using Guid(b28d259bde683d14a8563284f440d5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31df929547a8fab48c94fee982c1d471') in 0.005182 seconds
+  Import took 0.008256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Bots Configs/Base Bots Set/147_Bot.asset
+  artifactKey: Guid(856431d92b8a3fc48863ac8eea120942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/147_Bot.asset using Guid(856431d92b8a3fc48863ac8eea120942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75cd5e15b83b761490b63447d0bcee6') in 0.008161 seconds
+  Import took 0.011846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Bots Configs/Base Bots Set/117_Bot.asset
+  artifactKey: Guid(161ed13259d5acc44981bb12f08371c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/117_Bot.asset using Guid(161ed13259d5acc44981bb12f08371c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93af403365c35820f8a3e14694685be') in 0.006392 seconds
+  Import took 0.009287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Bots Configs/Base Bots Set/122_Bot.asset
+  artifactKey: Guid(7c50f1a83faed2347a066eee6562bf4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/122_Bot.asset using Guid(7c50f1a83faed2347a066eee6562bf4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa9059441aa3e2bad7c26dbd4c785ef') in 0.005007 seconds
+  Import took 0.007822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Bots Configs/Base Bots Set/102_Bot.asset
+  artifactKey: Guid(8c97c80b0c0d3c64d994a0db1c878b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/102_Bot.asset using Guid(8c97c80b0c0d3c64d994a0db1c878b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76dddb7c94fe1df3100357055151c0cb') in 0.005826 seconds
+  Import took 0.008591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Bots Configs/Base Bots Set/114_Bot.asset
+  artifactKey: Guid(b7a13d3d89705a74c8cbae16e451d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/114_Bot.asset using Guid(b7a13d3d89705a74c8cbae16e451d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3cb7594496cb594157abad6c512343') in 0.005105 seconds
+  Import took 0.007789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Bots Configs/Base Bots Set/119_Bot.asset
+  artifactKey: Guid(d698657ae5f38b24f89f9c5c7e3dfe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/119_Bot.asset using Guid(d698657ae5f38b24f89f9c5c7e3dfe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07bcdbed7eb5b7aba2c504c3af381e8') in 0.005902 seconds
+  Import took 0.008744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Bots Configs/Base Bots Set/115_Bot.asset
+  artifactKey: Guid(4dbc869cec2720448b03edee3feba302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bots Configs/Base Bots Set/115_Bot.asset using Guid(4dbc869cec2720448b03edee3feba302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a995a00c79bf8a8cf8a46405e79e3b63') in 0.005262 seconds
+  Import took 0.007947 seconds .
+
