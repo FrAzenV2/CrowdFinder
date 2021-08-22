@@ -15,7 +15,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     protected Vector2 _targetDirection;
     protected Vector2 _targetPosition;
 
-    Rigidbody2D _rb;
+    private Rigidbody2D _rb;
 
     protected virtual void Start()
     {

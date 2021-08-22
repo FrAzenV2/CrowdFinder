@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MovingBehaviour
+public class BotMovement : MovingBehaviour
 {
     [SerializeField] SpriteRenderer sprite;
-
-    Vector2 _pointerPosition;
 
     protected override void Start()
     {
@@ -26,17 +24,5 @@ public class PlayerMovement : MovingBehaviour
 
     protected override void AnimationsUpdate(){
         sprite.flipX = _targetDirection.x <= 0;
-    }
-
-    // Callbacks
-    void OnClick(InputValue value)
-    {
-        Vector2 worldPosition = (Vector2) Camera.main.ScreenToWorldPoint(_pointerPosition);
-        MoveAt(worldPosition);
-    }
-
-    void OnPointerPosition(InputValue value)
-    {
-        _pointerPosition = value.Get<Vector2>();
     }
 }

@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IMoving
 {
-    void MoveAt(Vector2 point);
-    void Stop();
+    public void MoveAt(Vector2 point);
+    public void Stop();
 }
