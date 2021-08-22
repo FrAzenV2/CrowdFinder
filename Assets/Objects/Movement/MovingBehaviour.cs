@@ -6,9 +6,12 @@ using UnityEngine;
 public class MovingBehaviour : MonoBehaviour, IMoving
 {
     [Header("Movement Settings")]
-    [SerializeField] float movementSpeed = 5.0f;
+    [SerializeField] float movementSpeed = 4.5f;
     [SerializeField] float movementSmooth = 24.0f;
-    [SerializeField] float stopDistance = 0.1f;
+    [SerializeField] float stopDistance = 0.25f;
+
+    [Header("Visual Settings")]
+    [SerializeField] SpriteRenderer sprite;
 
     protected bool _isMoving;
     protected float _currentSpeed;
@@ -42,7 +45,10 @@ public class MovingBehaviour : MonoBehaviour, IMoving
 
     protected virtual void AnimationsUpdate()
     {
-
+        if (_targetDirection.x > 0)
+            sprite.flipX = false;
+        else if (_targetDirection.x < 0)
+            sprite.flipX = true;
     }
 
     public void MoveAt(Vector2 point)
