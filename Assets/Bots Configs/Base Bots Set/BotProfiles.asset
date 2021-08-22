@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ba447fdf514c5fb377fd3e44b0f7b1, type: 3}
+  m_Name: BotProfiles
+  m_EditorClassIdentifier: 
+  BotConfigs:
+  - {fileID: 11400000, guid: 3825af1d90699bf48b83168591a190a6, type: 2}
+  - {fileID: 11400000, guid: 748d08bc6aa4d61489925258c29e4a5b, type: 2}
+  - {fileID: 11400000, guid: 8d2cac1786b978b43ad3ac8daf019e51, type: 2}
+  - {fileID: 11400000, guid: f2c9c9ece7b82b0479ef92447330aabd, type: 2}
+  - {fileID: 11400000, guid: 694b68ba791670f4f926811f28b952f3, type: 2}
+  - {fileID: 11400000, guid: efe99b5e3b69ef44895168c356d61fee, type: 2}
+  - {fileID: 11400000, guid: 24e216f8245724749b605d22a2c7fbc6, type: 2}
+  - {fileID: 11400000, guid: c47483982c9fe09459489f5d4f3cc17f, type: 2}
+  - {fileID: 11400000, guid: afb47db5e5adacd4dae1a76fa0db1d85, type: 2}
+  - {fileID: 11400000, guid: fc1be6e9f2b7f8344b623db7451ec241, type: 2}
+  - {fileID: 11400000, guid: 3ccc483ec77748f4699a239623afe271, type: 2}
+  - {fileID: 11400000, guid: 3abb85b85e5e32040b394a26830b203f, type: 2}
+  - {fileID: 11400000, guid: 714138396efafbd4b8931c2dba06dea4, type: 2}
+  - {fileID: 11400000, guid: 02a5b680de5e80340adf7811aea98313, type: 2}
+  - {fileID: 11400000, guid: 5ad05994a90ee634b99db1b2ccddf2ee, type: 2}
