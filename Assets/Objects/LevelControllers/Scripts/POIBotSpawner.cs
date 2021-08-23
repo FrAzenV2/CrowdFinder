@@ -9,6 +9,7 @@ namespace Objects.LevelControllers
 {
     public class POIBotSpawner : LevelBotSpawner
     {
+        [SerializeField] protected int _amountToSpawn;
         [SerializeField] protected PoiSpawnDistribution[] _spawnDistributions;
 
         protected override void Awake()

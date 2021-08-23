@@ -8,7 +8,6 @@ namespace Objects.LevelControllers
 {
     public class LevelBotSpawner : MonoBehaviour
     {
-        [SerializeField] protected int _amountToSpawn;
         [SerializeField] protected Transform _botsParent;
         
         [SerializeField] protected BotsSet _botsSet;
