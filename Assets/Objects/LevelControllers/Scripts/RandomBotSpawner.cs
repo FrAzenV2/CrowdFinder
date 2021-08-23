@@ -25,10 +25,12 @@ namespace Objects.LevelControllers
             _bots = new List<Bot.Scripts.Bot>();
 
             foreach (var spawnRegion in spawnRegions){
-                List<Vector2> sampledPositions = Gists.FastPoissonDiskSampling.Sampling(spawnRegion.bottomLeftCorner,
-                        spawnRegion.topRightCorner, spawnRegion.minDistance, iterationsPerPoint);
-                Assert.IsTrue(botsList.Count >= sampledPositions.Count);
-                for (int i = 0; i < sampledPositions.Count; i++){
+                List<Vector2> sampledPositions = FastPoissonDiskSampling.Sampling(spawnRegion.GetBottomLeftCorner(),
+                        spawnRegion.GetTopRightCorner(), spawnRegion.minDistance, iterationsPerPoint);
+                sampledPositions.Shuffle();
+                int spawnCount = Mathf.Min(sampledPositions.Count, spawnRegion.maxSpawnAmount);
+                Assert.IsTrue(botsList.Count >= spawnCount);
+                for (int i = 0; i < spawnCount; i++){
                     var newBot = Instantiate(_botPrefab, sampledPositions[i],
                             Quaternion.identity, _botsParent);
                     
@@ -40,12 +42,12 @@ namespace Objects.LevelControllers
             }
         }
 
-        void OnDrawGizmosSelected()
+        protected void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
             if (spawnRegions != null){
                 foreach (var spawnRegion in spawnRegions){
-                    Gizmos.DrawWireCube(spawnRegion.GetCenter(), spawnRegion.GetSize());
+                    Gizmos.DrawWireCube(spawnRegion.center, spawnRegion.size);
                 }
             }
         }
@@ -54,16 +56,17 @@ namespace Objects.LevelControllers
     [Serializable]
     public class SpawnRegion
     {
-        public Vector2 bottomLeftCorner;
-        public Vector2 topRightCorner;
+        public Vector2 center;
+        public Vector2 size;
+        public int maxSpawnAmount = 10;
         public float minDistance = 1.0f;
 
-        public Vector2 GetCenter(){
-            return 0.5f * (topRightCorner + bottomLeftCorner);
+        public Vector2 GetBottomLeftCorner(){
+            return center - size * 0.5f;
         }
 
-        public Vector2 GetSize(){
-            return topRightCorner - bottomLeftCorner;
+        public Vector2 GetTopRightCorner(){
+            return center + size * 0.5f;
         }
     }
 }
