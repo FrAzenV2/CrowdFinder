@@ -5,19 +5,21 @@ using UnityEngine;
 
 namespace Objects.Bots.Scripts
 {
+    [RequireComponent(typeof(ClickInteractor))]
     public class Bot : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _renderer;
-        [SerializeField] private InteractZone _playerInteractZone;
+        [SerializeField] private CollisionInteractor _playerInteractZone;
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
 
         public BotConfig Config => _config;
         public bool IsTarget;
 
-        private void Awake()
-        {
+        private void Awake(){
+            _clickInteractor = GetComponent<ClickInteractor>();
             _playerInteractZone.OnZoneEntered += OnPlayerEntered;
             _playerInteractZone.OnZoneExited += OnPlayerExited;
+            _clickInteractor.OnClicked += OnClicked;
         }
 
         public void Initialize(BotConfig config)
@@ -29,6 +31,7 @@ namespace Objects.Bots.Scripts
         public void AssignTrait(ITrait trait)
         {
             _trait = trait;
+
         }
 
         private void OnPlayerEntered(GameObject player)
@@ -41,8 +44,13 @@ namespace Objects.Bots.Scripts
             _nearPlayer = false;
         }
 
+        private void OnClicked(){
+            print("Clicked!");
+        }
+        
         private BotConfig _config;
         private ITrait _trait;
+        private ClickInteractor _clickInteractor;
         private bool _nearPlayer;
     }
 }

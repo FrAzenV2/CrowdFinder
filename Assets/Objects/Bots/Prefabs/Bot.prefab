@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 5529757030228761892}
   - component: {fileID: 5529757030228761893}
   - component: {fileID: 5529757030228761894}
+  - component: {fileID: 5039021332499292052}
   - component: {fileID: 4692975365591623083}
   m_Layer: 7
   m_Name: Bot
@@ -175,6 +176,18 @@ MonoBehaviour:
   wanderRadius: 1.5
   wanderTime: 5
   wanderTimeRandom: 1
+--- !u!114 &5039021332499292052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529757030228761895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bc7d18ed3b32f489b87a3954c5363d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4692975365591623083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +214,7 @@ GameObject:
   - component: {fileID: 4841019038910225355}
   - component: {fileID: 6754911579198764028}
   - component: {fileID: 6334639416884112500}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PlayerInteractZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +244,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7015837701713671572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d37eeeeaa250fe439f07bf458b86157, type: 3}
+  m_Script: {fileID: 11500000, guid: a155a449eec5cef4787d7f5c0cfb0151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interactLayers:
