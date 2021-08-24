@@ -16,8 +16,4 @@ public class InteractZone : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
         OnZoneExited.Invoke(other.gameObject);
     }
-
-    void OnMouseDown(){
-            print("Clicked!");
-        }
 }
