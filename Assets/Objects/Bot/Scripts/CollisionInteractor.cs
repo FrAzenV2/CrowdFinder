@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InteractZone : MonoBehaviour
+public class CollisionInteractor : MonoBehaviour
 {
     [SerializeField] private LayerMask _interactLayers;
     public UnityAction<GameObject> OnZoneEntered;

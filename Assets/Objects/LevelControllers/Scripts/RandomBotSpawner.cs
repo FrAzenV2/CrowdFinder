@@ -25,6 +25,7 @@ namespace Objects.LevelControllers
             _bots = new List<Bot.Scripts.Bot>();
 
             foreach (var spawnRegion in spawnRegions){
+                Assert.IsTrue(spawnRegion.size.x > 0 && spawnRegion.size.y > 0);
                 List<Vector2> sampledPositions = FastPoissonDiskSampling.Sampling(spawnRegion.GetBottomLeftCorner(),
                         spawnRegion.GetTopRightCorner(), spawnRegion.minDistance, iterationsPerPoint);
                 sampledPositions.Shuffle();
