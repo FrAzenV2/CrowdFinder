@@ -8,9 +8,10 @@ namespace Traits
     public class POITrait : ScriptableObject, ITrait
     {
         public POI TargetPoi;
-
         public Bot Target { get; set; }
         public Bot Sender { get; set; }
+
+        public bool IsTraitOfMainTarget { get; set; }
 
         public string GetTraitText()
         {
