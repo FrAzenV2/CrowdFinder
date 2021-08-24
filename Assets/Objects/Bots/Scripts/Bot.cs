@@ -43,7 +43,7 @@ namespace Objects.Bots.Scripts
 
         private void OnPlayerInteracted()
         {
-            // Open dialog etc.
+            // Request a trait if we don't have one
             if (_trait == null)
                 _traitEventChannel.RequestTrait(this);
             
@@ -52,8 +52,6 @@ namespace Objects.Bots.Scripts
                 dialog.text = _trait.GetTraitText();
             else
                 dialog.text = "No trait :(";
-
-            //DialogData dialog = new DialogData(_trait.GetTraitText());
 
             _dialogEventChannel.OpenDialog(dialog);
         }
