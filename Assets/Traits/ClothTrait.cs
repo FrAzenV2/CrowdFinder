@@ -14,7 +14,7 @@ namespace Traits
         
         public string GetTraitText()
         {
-            var trait =Target.Config.BotName + " wearing "+Cloth.ClothName;
+            var trait = Target.Config.BotName + " wearing " + Cloth.ClothName;
             return trait;
         }
     }

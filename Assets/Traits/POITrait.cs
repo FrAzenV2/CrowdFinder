@@ -14,7 +14,7 @@ namespace Traits
         
         public string GetTraitText()
         {
-            var trait = Target.Config.BotName + " around " + TargetPoi.POIName;
+            var trait = Target.Config.BotName + " is around " + TargetPoi.POIName;
             return trait;
         }
     }
