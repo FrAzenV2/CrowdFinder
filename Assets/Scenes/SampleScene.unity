@@ -855,13 +855,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 248e506f182fa1247849fa5017583018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _amountToSpawn: 15
   _botsParent: {fileID: 1050188349}
+  _fakeTargetsAmount: 2
   _botsSet: {fileID: 11400000, guid: c70bba53c1054d14cab07160b809f9fc, type: 2}
   _botPrefab: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
   spawnRegions:
-  - bottomLeftCorner: {x: -5.92, y: -7.26}
-    topRightCorner: {x: 6.95, y: 3.25}
+  - center: {x: 0, y: 0}
+    size: {x: 10, y: 10}
+    maxSpawnAmount: 10
     minDistance: 2
   iterationsPerPoint: 30
 --- !u!1001 &2044023241

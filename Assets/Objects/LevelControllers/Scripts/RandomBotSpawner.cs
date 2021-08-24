@@ -36,6 +36,7 @@ namespace Objects.LevelControllers
                 sampledPositions.Shuffle();
                 
                 var spawnCount = Mathf.Min(sampledPositions.Count, spawnRegion.maxSpawnAmount);
+                
                 Assert.IsTrue(botsList.Count >= spawnCount);
                 
                 for (var i = 0; i < spawnCount; i++)
@@ -44,7 +45,7 @@ namespace Objects.LevelControllers
                     var newBot = Instantiate(_botPrefab, sampledPositions[i],
                         Quaternion.identity, _botsParent);
                     newBot.Initialize(botsList[botConfigIndex]);
-                    if (!_targetBot)
+                    if (_targetBot==null)
                     {
                         _targetBot = newBot;
                         botsList.RemoveAt(botConfigIndex);
@@ -58,7 +59,7 @@ namespace Objects.LevelControllers
 
             for (var i = 0; i < _fakeTargetsAmount; i++)
             {
-                var fakeTarget = _bots[Random.Range(0, _bots.Count)];
+                var fakeTarget = _bots[Random.Range(0, _bots.Count-1)];
                 fakeTarget.Config.SetName(_targetBot.Config.BotName);
                 _bots.Remove(fakeTarget);
                 _fakeTargets.Add(fakeTarget);
