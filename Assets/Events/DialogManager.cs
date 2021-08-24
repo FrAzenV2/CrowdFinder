@@ -27,7 +27,7 @@ namespace Managers
 
         public void OpenDialog(DialogSO dialog)
         {
-            
+            print("Opening dialog with text " + dialog.text);
         }
 
         public void CloseDialog()

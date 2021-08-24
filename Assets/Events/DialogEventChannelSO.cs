@@ -5,6 +5,7 @@ using Dialogs;
 
 namespace EventChannels
 {
+    [CreateAssetMenu(fileName = "newDialogEventChannel", menuName = "Events/Dialog Event Channel")]
     public class DialogEventChannelSO : ScriptableObject
     {
         public UnityAction<DialogSO> OnDialogOpened;
@@ -12,12 +13,14 @@ namespace EventChannels
 
         public void OpenDialog(DialogSO dialog)
         {
-            OnDialogOpened.Invoke(dialog);
+            if (OnDialogOpened != null)
+                OnDialogOpened.Invoke(dialog);
         }
 
         public void CloseDialog()
         {
-            OnDialogClosed.Invoke();
+            if (OnDialogClosed != null)
+                OnDialogClosed.Invoke();
         }
     }
 }

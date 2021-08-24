@@ -202,7 +202,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderer: {fileID: 5529757030046555261}
   _playerInteractZone: {fileID: 6754911579198764028}
-  _traitEventChannel: {fileID: 0}
+  _traitEventChannel: {fileID: 11400000, guid: 2507fa77d6b13774482ee0258458594f, type: 2}
+  _dialogEventChannel: {fileID: 11400000, guid: d1d6826ed227a194a81fcdaa97b5fd75, type: 2}
+  IsTarget: 0
 --- !u!1 &7015837701713671572
 GameObject:
   m_ObjectHideFlags: 0

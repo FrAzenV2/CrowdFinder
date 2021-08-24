@@ -6,19 +6,22 @@ using Traits;
 
 namespace EventChannels
 {
+    [CreateAssetMenu(fileName = "newTraitEventChannel", menuName = "Events/Trait Event Channel")]
     public class TraitEventChannelSO : ScriptableObject
     {
-        public UnityAction<Bot> OnTraitRequested;
-        public UnityAction<ITrait> OnTraitGenerated;
+        public UnityAction<Bot> OnTraitRequested = default;
+        public UnityAction<ITrait> OnTraitGenerated = default;
 
         public void RequestTrait(Bot bot)
         {
-            OnTraitRequested.Invoke(bot);
+            if (OnTraitRequested != null)
+                OnTraitRequested.Invoke(bot);
         }
 
         public void GenerateTrait(ITrait trait)
         {
-            OnTraitGenerated.Invoke(trait);
+            if (OnTraitGenerated != null)
+                OnTraitGenerated.Invoke(trait);
         }
     }
 }
