@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
-using Objects.Bot.Scripts;
 using Dialogs;
 
 namespace EventChannels
@@ -10,7 +9,7 @@ namespace EventChannels
     {
         public UnityAction<DialogSO> OnDialogOpened;
         public UnityAction OnDialogClosed;
-        
+
         public void OpenDialog(DialogSO dialog)
         {
             OnDialogOpened.Invoke(dialog);

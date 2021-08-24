@@ -9,11 +9,13 @@ public class InteractZone : MonoBehaviour
     public UnityAction<GameObject> OnZoneEntered;
     public UnityAction<GameObject> OnZoneExited;
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
         OnZoneEntered.Invoke(other.gameObject);
     }
-    
-    private void OnTriggerExit2D(Collider2D other) {
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
         OnZoneExited.Invoke(other.gameObject);
     }
 }

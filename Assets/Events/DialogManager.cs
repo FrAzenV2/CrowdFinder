@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Objects.Bot.Scripts;
 using EventChannels;
 using Dialogs;
 
@@ -11,7 +10,7 @@ namespace Managers
     {
         //[SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
-        
+
         // Start is called before the first frame update
         private void Awake()
         {
@@ -20,9 +19,8 @@ namespace Managers
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            
         }
 
         public void OpenDialog(DialogSO dialog)
@@ -33,7 +31,6 @@ namespace Managers
 
         public void CloseDialog()
         {
-
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Objects.Bot.Scripts;
+﻿using Objects.Bots.Scripts;
 using UnityEngine;
 using СlothesConfigs.ScriptableObjectConfig;
 

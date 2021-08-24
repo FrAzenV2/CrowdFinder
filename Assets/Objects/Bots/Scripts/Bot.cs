@@ -1,9 +1,9 @@
 ﻿using Bots_Configs.ScriptableObjectConfig;
-using UnityEngine;
-using Traits;
 using EventChannels;
+using Traits;
+using UnityEngine;
 
-namespace Objects.Bot.Scripts
+namespace Objects.Bots.Scripts
 {
     public class Bot : MonoBehaviour
     {
@@ -13,11 +13,12 @@ namespace Objects.Bot.Scripts
 
         public BotConfig Config => _config;
 
-        private void Awake(){
+        private void Awake()
+        {
             _playerInteractZone.OnZoneEntered += OnPlayerEntered;
             _playerInteractZone.OnZoneExited += OnPlayerExited;
         }
-        
+
         public void Initialize(BotConfig config)
         {
             _config = config;
@@ -29,14 +30,16 @@ namespace Objects.Bot.Scripts
             _trait = trait;
         }
 
-        private void OnPlayerEntered(GameObject player){
+        private void OnPlayerEntered(GameObject player)
+        {
             _nearPlayer = true;
         }
 
-        private void OnPlayerExited(GameObject player){
+        private void OnPlayerExited(GameObject player)
+        {
             _nearPlayer = false;
         }
-        
+
         private BotConfig _config;
         private ITrait _trait;
         private bool _nearPlayer;

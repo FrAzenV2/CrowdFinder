@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Objects.Bot.Scripts;
 using Traits;
 using EventChannels;
+using Objects.Bots.Scripts;
 
 namespace Managers
 {
     public class TraitManager : MonoBehaviour
     {
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
-        
+
         // Start is called before the first frame update
         private void Awake()
         {
@@ -18,9 +18,8 @@ namespace Managers
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            
         }
 
         public void GenerateTrait(Bot bot)

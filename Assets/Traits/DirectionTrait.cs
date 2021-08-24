@@ -1,4 +1,4 @@
-﻿using Objects.Bot.Scripts;
+﻿using Objects.Bots.Scripts;
 using UnityEngine;
 
 namespace Traits
@@ -15,16 +15,16 @@ namespace Traits
         public string GetTraitText()
         {
             string traitText;
-            
+
             if (Direction.Equals(Vector2.down))
                 traitText = _directionsText[0];
             else if (Direction.Equals(Vector2.up))
-                traitText= _directionsText[1];
+                traitText = _directionsText[1];
             else if (Direction.Equals(Vector2.left))
-                traitText= _directionsText[2];
+                traitText = _directionsText[2];
             else
                 traitText = _directionsText[3];
-            
+
             return traitText;
         }
 
@@ -39,13 +39,9 @@ namespace Traits
             var y = direction.y;
 
             if (Mathf.Abs(x) > Mathf.Abs(y))
-            {
                 Direction = x > 0 ? Vector2.right : Vector2.left;
-            }
             else
-            {
                 Direction = y > 0 ? Vector2.up : Vector2.down;
-            }
         }
     }
 }
