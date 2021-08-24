@@ -30,7 +30,7 @@ namespace Bots_Configs.ScriptableObjectConfig
         {
             _baseSprite = sprite;
         }
-        
+
         public void SetClothes(ClothesConfig[] clothesConfigs)
         {
             _clothes = clothesConfigs;

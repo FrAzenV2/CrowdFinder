@@ -1,4 +1,4 @@
-﻿using Objects.Bot.Scripts;
+﻿using Objects.Bots.Scripts;
 
 namespace Traits
 {
@@ -7,6 +7,5 @@ namespace Traits
         public Bot Target { get; set; }
         public Bot Sender { get; set; }
         public string GetTraitText();
-
     }
 }

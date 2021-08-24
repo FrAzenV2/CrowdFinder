@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using Bots_Configs.ScriptableObjectConfig;
 using Gists;
+using Objects.Bots.Scripts;
+using Objects.LevelControllers.Scripts;
 using Random = UnityEngine.Random;
 
 namespace Objects.LevelControllers
@@ -21,36 +23,55 @@ namespace Objects.LevelControllers
 
         protected override void SpawnBots()
         {
+            base.SpawnBots();
             var botsList = new List<BotConfig>(_botsSet.BotConfigs);
-            _bots = new List<Bot.Scripts.Bot>();
+            botsList.Shuffle();
 
-            foreach (var spawnRegion in spawnRegions){
-                Assert.IsTrue(spawnRegion.size.x > 0 && spawnRegion.size.y > 0);
-                List<Vector2> sampledPositions = FastPoissonDiskSampling.Sampling(spawnRegion.GetBottomLeftCorner(),
-                        spawnRegion.GetTopRightCorner(), spawnRegion.minDistance, iterationsPerPoint);
+            spawnRegions.Shuffle();
+
+            foreach (var spawnRegion in spawnRegions)
+            {
+                var sampledPositions = FastPoissonDiskSampling.Sampling(spawnRegion.GetBottomLeftCorner(),
+                    spawnRegion.GetTopRightCorner(), spawnRegion.minDistance, iterationsPerPoint);
                 sampledPositions.Shuffle();
-                int spawnCount = Mathf.Min(sampledPositions.Count, spawnRegion.maxSpawnAmount);
+                
+                var spawnCount = Mathf.Min(sampledPositions.Count, spawnRegion.maxSpawnAmount);
+                
                 Assert.IsTrue(botsList.Count >= spawnCount);
-                for (int i = 0; i < spawnCount; i++){
-                    var newBot = Instantiate(_botPrefab, sampledPositions[i],
-                            Quaternion.identity, _botsParent);
-                    
+                
+                for (var i = 0; i < spawnCount; i++)
+                {
                     var botConfigIndex = Random.Range(0, botsList.Count);
+                    var newBot = Instantiate(_botPrefab, sampledPositions[i],
+                        Quaternion.identity, _botsParent);
                     newBot.Initialize(botsList[botConfigIndex]);
-                    botsList.RemoveAt(botConfigIndex);
-                    _bots.Add(newBot);
+                    if (_targetBot==null)
+                    {
+                        _targetBot = newBot;
+                        botsList.RemoveAt(botConfigIndex);
+                    }
+                    else
+                    {
+                        _bots.Add(newBot);
+                    }
                 }
+            }
+
+            for (var i = 0; i < _fakeTargetsAmount; i++)
+            {
+                var fakeTarget = _bots[Random.Range(0, _bots.Count-1)];
+                fakeTarget.Config.SetName(_targetBot.Config.BotName);
+                _bots.Remove(fakeTarget);
+                _fakeTargets.Add(fakeTarget);
             }
         }
 
         protected void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
-            if (spawnRegions != null){
-                foreach (var spawnRegion in spawnRegions){
+            if (spawnRegions != null)
+                foreach (var spawnRegion in spawnRegions)
                     Gizmos.DrawWireCube(spawnRegion.center, spawnRegion.size);
-                }
-            }
         }
     }
 
@@ -62,11 +83,13 @@ namespace Objects.LevelControllers
         public int maxSpawnAmount = 10;
         public float minDistance = 1.0f;
 
-        public Vector2 GetBottomLeftCorner(){
+        public Vector2 GetBottomLeftCorner()
+        {
             return center - size * 0.5f;
         }
 
-        public Vector2 GetTopRightCorner(){
+        public Vector2 GetTopRightCorner()
+        {
             return center + size * 0.5f;
         }
     }

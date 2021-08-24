@@ -1,9 +1,9 @@
 ﻿using Bots_Configs.ScriptableObjectConfig;
-using UnityEngine;
-using Traits;
 using EventChannels;
+using Traits;
+using UnityEngine;
 
-namespace Objects.Bot.Scripts
+namespace Objects.Bots.Scripts
 {
     [RequireComponent(typeof(ClickInteractor))]
     public class Bot : MonoBehaviour
@@ -20,7 +20,7 @@ namespace Objects.Bot.Scripts
             _playerInteractZone.OnZoneExited += OnPlayerExited;
             _clickInteractor.OnClicked += OnClicked;
         }
-        
+
         public void Initialize(BotConfig config)
         {
             _config = config;
@@ -33,11 +33,13 @@ namespace Objects.Bot.Scripts
 
         }
 
-        private void OnPlayerEntered(GameObject player){
+        private void OnPlayerEntered(GameObject player)
+        {
             _nearPlayer = true;
         }
 
-        private void OnPlayerExited(GameObject player){
+        private void OnPlayerExited(GameObject player)
+        {
             _nearPlayer = false;
         }
 

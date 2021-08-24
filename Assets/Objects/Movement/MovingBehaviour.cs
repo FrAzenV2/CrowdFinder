@@ -5,13 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MovingBehaviour : MonoBehaviour, IMoving
 {
-    [Header("Movement Settings")]
-    [SerializeField] float movementSpeed = 4.5f;
-    [SerializeField] float movementSmooth = 24.0f;
-    [SerializeField] float stopDistance = 0.25f;
+    [Header("Movement Settings")] [SerializeField]
+    private float movementSpeed = 4.5f;
 
-    [Header("Visual Settings")]
-    [SerializeField] SpriteRenderer sprite;
+    [SerializeField] private float movementSmooth = 24.0f;
+    [SerializeField] private float stopDistance = 0.25f;
+
+    [Header("Visual Settings")] [SerializeField]
+    private SpriteRenderer sprite;
 
     protected bool _isMoving;
     protected float _currentSpeed;
@@ -26,7 +27,8 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         Stop();
     }
 
-    protected virtual void Update(){
+    protected virtual void Update()
+    {
         AnimationsUpdate();
     }
 
@@ -39,7 +41,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         _targetDirection = (_targetPosition - (Vector2) transform.position).normalized;
 
         // Update velocity
-        float targetSpeed = _isMoving ? movementSpeed : 0f;
+        var targetSpeed = _isMoving ? movementSpeed : 0f;
         _currentSpeed = Mathf.Lerp(_currentSpeed, targetSpeed, Time.deltaTime * movementSmooth);
         _rb.velocity = _targetDirection * _currentSpeed;
     }
@@ -57,7 +59,8 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         _targetPosition = point;
     }
 
-    public void Stop(){
+    public void Stop()
+    {
         _targetPosition = transform.position;
     }
 }

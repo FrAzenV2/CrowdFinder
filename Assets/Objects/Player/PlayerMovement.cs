@@ -13,17 +13,18 @@ public class PlayerMovement : MovingBehaviour
     }
 
     // Callbacks
-    void OnClick()
+    private void OnClick()
     {
-        Vector2 worldPosition = (Vector2) Camera.main.ScreenToWorldPoint(_pointerPosition);
+        var worldPosition = (Vector2) Camera.main.ScreenToWorldPoint(_pointerPosition);
         MoveAt(worldPosition);
     }
 
-    void OnCancelMove(){
+    private void OnCancelMove()
+    {
         Stop();
     }
 
-    void OnPointerPosition(InputValue value)
+    private void OnPointerPosition(InputValue value)
     {
         _pointerPosition = value.Get<Vector2>();
     }
