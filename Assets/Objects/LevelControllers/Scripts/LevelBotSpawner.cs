@@ -12,6 +12,10 @@ namespace Objects.LevelControllers.Scripts
         [SerializeField] protected BotsSet _botsSet;
         [SerializeField] protected Bot _botPrefab;
 
+
+        public Bot TargetBot => _targetBot;
+        public IReadOnlyList<Bot> FakeTargets => _fakeTargets;
+        
         protected Bot _targetBot;
         protected List<Bot> _fakeTargets;
         protected List<Bot> _bots;

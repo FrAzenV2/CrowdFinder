@@ -13,6 +13,7 @@ namespace Objects.Bots.Scripts
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
 
         public BotConfig Config => _config;
+        public bool IsTarget;
 
         private void Awake(){
             _clickInteractor = GetComponent<ClickInteractor>();

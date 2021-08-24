@@ -48,6 +48,7 @@ namespace Objects.LevelControllers
                     if (_targetBot==null)
                     {
                         _targetBot = newBot;
+                        _targetBot.IsTarget = true;
                         botsList.RemoveAt(botConfigIndex);
                     }
                     else
