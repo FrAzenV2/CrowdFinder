@@ -11,11 +11,18 @@ public class CollisionInteractor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        OnZoneEntered.Invoke(other.gameObject);
+        if (IsInLayerMask(other.gameObject, _interactLayers))
+            OnZoneEntered.Invoke(other.gameObject);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        OnZoneExited.Invoke(other.gameObject);
+        if (IsInLayerMask(other.gameObject, _interactLayers))
+            OnZoneExited.Invoke(other.gameObject);
+    }
+
+    private bool IsInLayerMask(GameObject obj, LayerMask layerMask)
+    {
+        return ((layerMask.value & (1 << obj.layer)) > 0);
     }
 }

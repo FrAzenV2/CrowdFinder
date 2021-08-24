@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Objects.Bots.Scripts;
 using UnityEngine.InputSystem;
 
 namespace Managers
@@ -15,9 +16,16 @@ namespace Managers
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero, Mathf.Infinity, clickLayers);
             if (hit.collider != null) {
-                print(hit.collider.transform.name);
-                if (hit.collider.transform.TryGetComponent(out ClickInteractor clickInteractor))
+                if (hit.collider.TryGetComponent(out ClickInteractor clickInteractor)){
                     clickInteractor.Click();
+                    if (hit.collider.TryGetComponent(out Bot bot)){
+                        if (_lastBotClicked != null && _lastBotClicked != bot)
+                            _lastBotClicked.ReleaseClick();
+                        _lastBotClicked = bot;
+                    }
+                }
+                    
+               
             }
         }
 
@@ -27,5 +35,6 @@ namespace Managers
         }
 
         private Vector2 _pointerPosition;
+        private Bot _lastBotClicked;
     }
 }

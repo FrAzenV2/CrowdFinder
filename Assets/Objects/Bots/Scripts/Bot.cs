@@ -33,9 +33,24 @@ namespace Objects.Bots.Scripts
 
         }
 
+        public void ReleaseClick()
+        {
+            _waitingForPlayer = false;
+        }
+
+        private void OnPlayerInteracted()
+        {
+            // Open dialog etc.
+        }
+
         private void OnPlayerEntered(GameObject player)
         {
             _nearPlayer = true;
+            // If we were waiting for player, stop them
+            if (_waitingForPlayer){
+                player.GetComponent<PlayerMovement>().Stop();
+                OnPlayerInteracted();
+            }
         }
 
         private void OnPlayerExited(GameObject player)
@@ -43,13 +58,17 @@ namespace Objects.Bots.Scripts
             _nearPlayer = false;
         }
 
-        private void OnClicked(){
-            print("Clicked!");
+        private void OnClicked()
+        {
+            _waitingForPlayer = true;
         }
+
+
         
         private BotConfig _config;
         private ITrait _trait;
         private ClickInteractor _clickInteractor;
+        private bool _waitingForPlayer;
         private bool _nearPlayer;
     }
 }

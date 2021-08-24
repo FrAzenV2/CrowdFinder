@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Objects.Bots.Scripts;
 using EventChannels;
 using Dialogs;
 
@@ -10,7 +11,7 @@ namespace Managers
     {
         //[SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
-
+        
         // Start is called before the first frame update
         private void Awake()
         {
@@ -19,18 +20,19 @@ namespace Managers
         }
 
         // Update is called once per frame
-        private void Update()
+        void Update()
         {
+            
         }
 
         public void OpenDialog(DialogSO dialog)
         {
-            // Create a new trait based on bot data and assign it
-            //bot.AssignTrait()
+            
         }
 
         public void CloseDialog()
         {
+
         }
     }
 }
