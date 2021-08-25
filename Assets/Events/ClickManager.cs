@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Objects.Bots.Scripts;
 using UnityEngine.InputSystem;
 
 namespace Managers
@@ -18,11 +17,9 @@ namespace Managers
             if (hit.collider != null) {
                 if (hit.collider.TryGetComponent(out ClickInteractor clickInteractor)){
                     clickInteractor.Click();
-                    if (hit.collider.TryGetComponent(out Bot bot)){
-                        if (_lastBotClicked != null && _lastBotClicked != bot)
-                            _lastBotClicked.ReleaseClick();
-                        _lastBotClicked = bot;
-                    }
+                    if (_lastInteractorClicked != null && _lastInteractorClicked != clickInteractor)
+                        _lastInteractorClicked.Release();
+                    _lastInteractorClicked = clickInteractor;
                 }
             }
         }
@@ -33,6 +30,6 @@ namespace Managers
         }
 
         private Vector2 _pointerPosition;
-        private Bot _lastBotClicked;
+        private ClickInteractor _lastInteractorClicked;
     }
 }
