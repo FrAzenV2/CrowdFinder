@@ -1,29 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.InputSystem;
-using EventChannels;
 using Dialogs;
+using EventChannels;
+using UnityEngine;
 
-[RequireComponent(typeof(PlayerMovement))]
-public class Player : MonoBehaviour
+namespace Objects.Player
 {
-    [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
-    private PlayerMovement _playerMovement;
-
-    private void Awake() {
-        _playerMovement = GetComponent<PlayerMovement>();
-        _dialogEventChannel.OnDialogOpened += OnDialogOpened;
-        _dialogEventChannel.OnDialogClosed += OnDialogClosed;
-    }
-
-    private void OnDialogOpened(DialogSO dialog)
+    [RequireComponent(typeof(PlayerMovement))]
+    public class Player : MonoBehaviour
     {
-        _playerMovement.Freeze();
-    }
+        [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
+        private PlayerMovement _playerMovement;
 
-    private void OnDialogClosed()
-    {
-        _playerMovement.Unfreeze();
+        public bool IsChangingArea
+        {
+            get => _isChangningArea;
+            set
+            {
+                if (value)
+                {
+                    _playerMovement.DisableMovement(false);
+                }
+                else
+                {
+                    _playerMovement.EnableMovement();
+                }
+
+                _isChangningArea = value;
+            }
+        }
+
+        private void Awake() {
+            _playerMovement = GetComponent<PlayerMovement>();
+            _dialogEventChannel.OnDialogOpened += OnDialogOpened;
+            _dialogEventChannel.OnDialogClosed += OnDialogClosed;
+        }
+
+        private void OnDialogOpened(DialogSO dialog)
+        {
+            _playerMovement.DisableMovement();
+        }
+
+        private void OnDialogClosed()
+        {
+            _playerMovement.EnableMovement();
+        }
+
+        public void AdditionalMove(Vector2 additionalMove)
+        {
+            _playerMovement.MoveAt((Vector2)transform.position+additionalMove);
+        }
+
+        private bool _isChangningArea;
     }
 }
