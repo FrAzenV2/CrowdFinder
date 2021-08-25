@@ -18,6 +18,7 @@ namespace Objects.Bots.Scripts
         [SerializeField] private CollisionInteractor _playerInteractZone;
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
+        public Transform dialogPoint;
 
         [SerializeField] private ClickInteractor _clickInteractor;
         public BotConfig Config => _config;
@@ -64,6 +65,7 @@ namespace Objects.Bots.Scripts
 
         private void OnPlayerInteracted()
         {
+                //print("Found target!");
             _waitingForPlayer = false;
             if (_inDialog)
                 return;
@@ -77,6 +79,14 @@ namespace Objects.Bots.Scripts
                 dialog.text = _trait.GetTraitText();
             else
                 dialog.text = "No trait :(";
+            
+            // TODO: Use events
+            if (IsTarget)
+            {
+                GetComponentInChildren<SpriteRenderer>().color = Color.green;
+                dialog.text = "Hey! You found me!";
+            }
+                
 
             _dialogEventChannel.OpenDialog(dialog);
             _dialogEventChannel.OnDialogClosed += OnDialogClosed;
