@@ -20,16 +20,9 @@ namespace Managers
             _dialogEventChannel.OnDialogClosed = CloseDialog;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
-        }
-
         public void OpenDialog(DialogSO dialog)
         {
-            print("Opening dialog with text " + dialog.text);
-            DialogBox dialogBox = Instantiate(_dialogBoxPrefab, dialog.fromBot.transform.position, Quaternion.identity, dialog.fromBot.transform) as DialogBox;
+            DialogBox dialogBox = Instantiate(_dialogBoxPrefab, dialog.fromBot.transform.position, Quaternion.identity, dialog.fromBot.transform);
             dialogBox.Initialize(dialog);
             _currentDialog = dialogBox;
         }
