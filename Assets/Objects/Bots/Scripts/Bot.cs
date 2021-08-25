@@ -15,6 +15,7 @@ namespace Objects.Bots.Scripts
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
 
+        public Transform dialogPoint;
         public BotConfig Config => _config;
         public bool IsTarget;
 
@@ -53,6 +54,10 @@ namespace Objects.Bots.Scripts
                 dialog.text = _trait.GetTraitText();
             else
                 dialog.text = "No trait :(";
+            if (IsTarget){
+                dialog.text = "You found me!";
+                GetComponentInChildren<SpriteRenderer>().color = Color.green;
+            }
 
             _dialogEventChannel.OpenDialog(dialog);
             _dialogEventChannel.OnDialogClosed += OnDialogClosed;

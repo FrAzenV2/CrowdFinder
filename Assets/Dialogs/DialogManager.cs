@@ -22,7 +22,7 @@ namespace Managers
 
         public void OpenDialog(DialogSO dialog)
         {
-            DialogBox dialogBox = Instantiate(_dialogBoxPrefab, dialog.fromBot.transform.position, Quaternion.identity, dialog.fromBot.transform);
+            DialogBox dialogBox = Instantiate(_dialogBoxPrefab, dialog.fromBot.dialogPoint.position, Quaternion.identity, dialog.fromBot.dialogPoint);
             dialogBox.Initialize(dialog);
             _currentDialog = dialogBox;
         }

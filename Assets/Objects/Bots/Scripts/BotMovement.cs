@@ -27,8 +27,8 @@ public class BotMovement : MovingBehaviour
     // Coroutines
     IEnumerator WanderCoroutine(){
         while (doWander){
-            Wander();
             yield return new WaitForSeconds(wanderTime + Random.Range(-wanderTimeRandom, wanderTimeRandom));
+            Wander();
         }
     }
 
