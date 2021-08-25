@@ -1,4 +1,4 @@
-﻿using Objects.Bot.Scripts;
+﻿using Objects.Bots.Scripts;
 using UnityEngine;
 using СlothesConfigs.ScriptableObjectConfig;
 
@@ -11,10 +11,12 @@ namespace Traits
 
         public Bot Target { get; set; }
         public Bot Sender { get; set; }
-        
+
+        public bool IsTraitOfMainTarget { get; set; }
+
         public string GetTraitText()
         {
-            var trait =Target.Config.BotName + " wearing "+Cloth.ClothName;
+            var trait = Target.Config.BotName + " wearing " + Cloth.ClothName;
             return trait;
         }
     }

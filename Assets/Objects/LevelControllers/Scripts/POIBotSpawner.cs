@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Bots_Configs.ScriptableObjectConfig;
+using Objects.Bots.Scripts;
+using Objects.LevelControllers.Scripts;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -21,17 +23,17 @@ namespace Objects.LevelControllers
         protected override void SpawnBots()
         {
             var botsList = new List<BotConfig>(_botsSet.BotConfigs);
-            _bots = new List<Bot.Scripts.Bot>();
+            _bots = new List<Bot>();
             foreach (var poiSpawn in _spawnDistributions)
             {
                 var poiSpawnAmount = _amountToSpawn * poiSpawn.Distribution;
-                for (int i = 0; i < poiSpawnAmount; i++)
+                for (var i = 0; i < poiSpawnAmount; i++)
                 {
-                    Vector3 offset = CalculateSpawnOffset(poiSpawn);
-                    
+                    var offset = CalculateSpawnOffset(poiSpawn);
+
                     var newBot = Instantiate(_botPrefab, poiSpawn.PointOfInterest.transform.position + offset,
                         Quaternion.identity, _botsParent);
-                    
+
                     var botConfigIndex = Random.Range(0, botsList.Count);
                     newBot.Initialize(botsList[botConfigIndex]);
                     botsList.RemoveAt(botConfigIndex);
@@ -44,20 +46,19 @@ namespace Objects.LevelControllers
         {
             Vector3 offset = Random.insideUnitCircle;
             offset *= poiSpawn.MaxDistanceOffset - poiSpawn.MinDistanceOffset;
-            offset.x = Mathf.Sign(offset.x)*Mathf.Clamp(Math.Abs(offset.x)+poiSpawn.MinDistanceOffset,
+            offset.x = Mathf.Sign(offset.x) * Mathf.Clamp(Math.Abs(offset.x) + poiSpawn.MinDistanceOffset,
                 poiSpawn.MinDistanceOffset,
                 poiSpawn.MaxDistanceOffset);
-            offset.y = Mathf.Sign(offset.y)*Mathf.Clamp(Math.Abs(offset.y)+poiSpawn.MinDistanceOffset,
+            offset.y = Mathf.Sign(offset.y) * Mathf.Clamp(Math.Abs(offset.y) + poiSpawn.MinDistanceOffset,
                 poiSpawn.MinDistanceOffset,
                 poiSpawn.MaxDistanceOffset);
             return offset;
         }
-        
+
         private void SortSpawnDistribution()
         {
             Array.Sort(_spawnDistributions);
         }
-        
     }
 
     [Serializable]
