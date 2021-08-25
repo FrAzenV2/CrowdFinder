@@ -8,7 +8,7 @@ namespace Managers
     public class ClickManager : MonoBehaviour
     {
         [SerializeField] private LayerMask clickLayers;
-
+    
         private void OnClick(){
             bool clicked = false;
             Vector3 worldPos = Camera.main.ScreenToWorldPoint((Vector3) _pointerPosition);
