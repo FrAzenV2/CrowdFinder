@@ -11,7 +11,7 @@ namespace Traits
         public Bot Sender { get; set; }
 
         public bool IsTraitOfMainTarget { get; set; }
-        [SerializeField] private string[] _directionsText = {"Downwards,Upwards,Left,Right"};
+        [SerializeField] private string[] _directionsText = {"Downwards", "Upwards", "Left", "Right"};
 
 
         public string GetTraitText()

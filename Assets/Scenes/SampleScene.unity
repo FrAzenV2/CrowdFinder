@@ -1083,6 +1083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialog Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3328620049697928361, guid: c13f6bc060d455e46b2bb6e5c6cd80c6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3328620049697928363, guid: c13f6bc060d455e46b2bb6e5c6cd80c6, type: 3}
       propertyPath: _dialogBoxPrefab
       value: 
