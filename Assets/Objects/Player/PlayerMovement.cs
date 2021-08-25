@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MovingBehaviour
 {
+
     private Vector2 _pointerPosition;
+    
     protected override void Start()
     {
         base.Start();

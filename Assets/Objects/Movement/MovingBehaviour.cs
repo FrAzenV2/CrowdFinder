@@ -67,13 +67,14 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         _targetPosition = transform.position;
     }
 
-    public void Freeze()
+    public void DisableMovement(bool stop = true)
     {
         _isFrozen = true;
-        Stop();
+        if(stop)
+            Stop();
     }
 
-    public void Unfreeze()
+    public void EnableMovement()
     {
         _isFrozen = false;
     }
