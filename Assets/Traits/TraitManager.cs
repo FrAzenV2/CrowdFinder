@@ -80,8 +80,13 @@ namespace Managers
                 else
                 {
                     trait = ScriptableObject.CreateInstance<ClothTrait>();
-                    ((ClothTrait) trait).Cloth =
-                        traitTarget.Config.Clothes[Random.Range(0, traitTarget.Config.Clothes.Length - 1)];
+                    var cloth = traitTarget.Config.Clothes[Random.Range(0, traitTarget.Config.Clothes.Length - 1)];
+                    if (cloth == null)
+                    {
+                        trait = null;
+                        continue;
+                    }
+                    ((ClothTrait) trait).Cloth = cloth;
                 }
 
                 trait.Sender = bot;
@@ -93,7 +98,7 @@ namespace Managers
                     _traits.Add(trait);
                     break;
                 }
-            } while (attempts < _maxTryGetTraitsAttempts);
+            } while (trait==null && attempts < _maxTryGetTraitsAttempts);
 
             if (attempts >= _maxTryGetTraitsAttempts)
             {
