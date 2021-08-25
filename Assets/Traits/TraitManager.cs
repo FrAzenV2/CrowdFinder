@@ -87,7 +87,13 @@ namespace Managers
                 trait.Sender = bot;
                 trait.Target = traitTarget;
                 trait.IsTraitOfMainTarget = isTraitAboutTarget;
-            } while (!_traits.Contains(trait) && attempts < _maxTryGetTraitsAttempts);
+
+                if (!_traits.Contains(trait))
+                {
+                    _traits.Add(trait);
+                    break;
+                }
+            } while (attempts < _maxTryGetTraitsAttempts);
 
             if (attempts >= _maxTryGetTraitsAttempts)
             {

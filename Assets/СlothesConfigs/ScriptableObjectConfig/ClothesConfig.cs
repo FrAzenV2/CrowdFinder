@@ -2,7 +2,7 @@
 
 namespace СlothesConfigs.ScriptableObjectConfig
 {
-    [CreateAssetMenu(fileName = "New Cloth Config", menuName = "Cloth/Cloth Config", order = 0)]
+    [CreateAssetMenu(fileName = "New Clothes Config", menuName = "Clothes/Clothes Config", order = 0)]
     public class ClothesConfig : ScriptableObject
     {
         [SerializeField] private ClothType _clothType;
