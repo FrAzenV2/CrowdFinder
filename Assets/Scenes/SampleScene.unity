@@ -3678,10 +3678,6 @@ PrefabInstance:
       propertyPath: _botSpawner
       value: 
       objectReference: {fileID: 1832286467}
-    - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
-      propertyPath: _chanceOfPOITraitGeneration
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674846, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: m_Name
       value: Trait Manager
