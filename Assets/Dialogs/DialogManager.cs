@@ -11,6 +11,7 @@ namespace Managers
     {
         //[SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
+        [SerializeField] private DialogBox _dialogBoxPrefab;
         
         // Start is called before the first frame update
         private void Awake()
@@ -28,11 +29,19 @@ namespace Managers
         public void OpenDialog(DialogSO dialog)
         {
             print("Opening dialog with text " + dialog.text);
+            DialogBox dialogBox = Instantiate(_dialogBoxPrefab, dialog.fromBot.transform.position, Quaternion.identity, dialog.fromBot.transform) as DialogBox;
+            dialogBox.Initialize(dialog);
+            _currentDialog = dialogBox;
         }
 
         public void CloseDialog()
         {
-
+            if (_currentDialog == null)
+                return;
+            print("Closing dialog");
+            _currentDialog.Close();
         }
+
+        private DialogBox _currentDialog;
     }
 }

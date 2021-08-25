@@ -23,6 +23,8 @@ namespace Objects.Bots.Scripts
             _playerInteractZone.OnZoneEntered += OnPlayerEntered;
             _playerInteractZone.OnZoneExited += OnPlayerExited;
             _clickInteractor.OnClicked += OnClicked;
+            _clickInteractor.OnReleased += OnReleased;
+            //_dialogEventChannel.OnDialogClosed += OnDialogClosed;
         }
 
         public void Initialize(BotConfig config)
@@ -36,24 +38,24 @@ namespace Objects.Bots.Scripts
             _trait = trait;
         }
 
-        public void ReleaseClick()
-        {
-            _waitingForPlayer = false;
-        }
-
         private void OnPlayerInteracted()
         {
+            if (_inDialog)
+                return;
             // Request a trait if we don't have one
             if (_trait == null)
                 _traitEventChannel.RequestTrait(this);
             
             DialogSO dialog = ScriptableObject.CreateInstance<DialogSO>();
+            dialog.fromBot = this;
             if (_trait != null)
                 dialog.text = _trait.GetTraitText();
             else
                 dialog.text = "No trait :(";
 
             _dialogEventChannel.OpenDialog(dialog);
+            _dialogEventChannel.OnDialogClosed += OnDialogClosed;
+            _inDialog = true;
         }
 
         private void OnPlayerEntered(GameObject player)
@@ -61,8 +63,7 @@ namespace Objects.Bots.Scripts
             _nearPlayer = true;
             // If we were waiting for player, stop them
             if (_waitingForPlayer){
-                _player = player.GetComponent<PlayerMovement>();
-                _player.Stop();
+                player.GetComponent<PlayerMovement>().Stop();
                 OnPlayerInteracted();
             }
         }
@@ -70,22 +71,33 @@ namespace Objects.Bots.Scripts
         private void OnPlayerExited(GameObject player)
         {
             _nearPlayer = false;
-            _player = null;
+            if (_inDialog)
+                _dialogEventChannel.CloseDialog();
         }
 
         private void OnClicked()
         {
             _waitingForPlayer = true;
-            //if (_nearPlayer){
-            //    _player.Stop();
-            //}
+        }
+
+        private void OnReleased()
+        {
+            _waitingForPlayer = false;
+            if (_inDialog)
+                _dialogEventChannel.CloseDialog();
+        }
+
+        private void OnDialogClosed()
+        {
+            _inDialog = false;
+            _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
         }
 
         private BotConfig _config;
         private ITrait _trait;
         private ClickInteractor _clickInteractor;
         private bool _waitingForPlayer;
-        private PlayerMovement _player;
         private bool _nearPlayer;
+        private bool _inDialog;
     }
 }
