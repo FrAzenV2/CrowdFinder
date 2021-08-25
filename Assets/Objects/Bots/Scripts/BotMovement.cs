@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class BotMovement : MovingBehaviour
 {
@@ -23,6 +25,7 @@ public class BotMovement : MovingBehaviour
         Vector2 wanderPosition = _startPosition + Random.insideUnitCircle * wanderRadius;
         MoveAt(wanderPosition);
     }
+
 
     // Coroutines
     IEnumerator WanderCoroutine(){

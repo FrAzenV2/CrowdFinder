@@ -10,17 +10,40 @@ namespace Objects.Bots.Scripts
 
         public void SetupHat(Sprite hatSprite)
         {
-            _hatRenderer.sprite = hatSprite;
+            if(hatSprite==null) _hatRenderer.color = Color.clear;
+            else
+            {
+                _hatRenderer.sprite = hatSprite;
+                _hatRenderer.color = Color.white;
+            }
+            
         }
 
         public void SetupShirt(Sprite shirtSprite)
         {
-            _shirtRenderer.sprite = shirtSprite;
+            if(shirtSprite==null) _shirtRenderer.color = Color.clear;
+            else
+            {
+                _shirtRenderer.sprite = shirtSprite;
+                _shirtRenderer.color = Color.white;
+            }
         }
 
         public void SetupPants(Sprite pantsSprite)
         {
-            _pantsRenderer.sprite = pantsSprite;
+            if(pantsSprite==null) _pantsRenderer.color = Color.clear;
+            else
+            {
+                _pantsRenderer.sprite = pantsSprite;
+                _pantsRenderer.color = Color.white;
+            }
+        }
+
+        public void UpdateSortingOrder(int sortingOrder)
+        {
+            _hatRenderer.sortingOrder = sortingOrder;
+            _pantsRenderer.sortingOrder = sortingOrder;
+            _shirtRenderer.sortingOrder = sortingOrder;
         }
     }
 }
