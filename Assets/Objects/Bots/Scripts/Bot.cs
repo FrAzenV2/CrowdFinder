@@ -40,6 +40,7 @@ namespace Objects.Bots.Scripts
 
         private void OnPlayerInteracted()
         {
+            _waitingForPlayer = false;
             if (_inDialog)
                 return;
             // Request a trait if we don't have one
@@ -63,7 +64,6 @@ namespace Objects.Bots.Scripts
             _nearPlayer = true;
             // If we were waiting for player, stop them
             if (_waitingForPlayer){
-                player.GetComponent<PlayerMovement>().Stop();
                 OnPlayerInteracted();
             }
         }
@@ -77,7 +77,11 @@ namespace Objects.Bots.Scripts
 
         private void OnClicked()
         {
-            _waitingForPlayer = true;
+            if (_nearPlayer){
+                OnPlayerInteracted();
+            } else {
+                _waitingForPlayer = true;
+            }
         }
 
         private void OnReleased()

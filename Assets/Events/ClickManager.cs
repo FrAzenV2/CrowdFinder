@@ -10,18 +10,22 @@ namespace Managers
         [SerializeField] private LayerMask clickLayers;
 
         private void OnClick(){
+            bool clicked = false;
             Vector3 worldPos = Camera.main.ScreenToWorldPoint((Vector3) _pointerPosition);
             Vector2 mousePos2D = (Vector2) worldPos;
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero, Mathf.Infinity, clickLayers);
             if (hit.collider != null) {
                 if (hit.collider.TryGetComponent(out ClickInteractor clickInteractor)){
-                    clickInteractor.Click();
                     if (_lastInteractorClicked != null && _lastInteractorClicked != clickInteractor)
                         _lastInteractorClicked.Release();
+                    clickInteractor.Click();
+                    clicked = true;
                     _lastInteractorClicked = clickInteractor;
                 }
             }
+            if (!clicked && _lastInteractorClicked != null)
+                _lastInteractorClicked.Release();
         }
 
         private void OnPointerPosition(InputValue value)

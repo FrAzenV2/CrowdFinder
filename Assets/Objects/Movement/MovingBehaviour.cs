@@ -15,6 +15,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     private SpriteRenderer sprite;
 
     protected bool _isMoving;
+    protected bool _isFrozen;
     protected float _currentSpeed;
     protected Vector2 _targetDirection;
     protected Vector2 _targetPosition;
@@ -56,11 +57,24 @@ public class MovingBehaviour : MonoBehaviour, IMoving
 
     public void MoveAt(Vector2 point)
     {
+        if (_isFrozen)
+            return;
         _targetPosition = point;
     }
 
     public void Stop()
     {
         _targetPosition = transform.position;
+    }
+
+    public void Freeze()
+    {
+        _isFrozen = true;
+        Stop();
+    }
+
+    public void Unfreeze()
+    {
+        _isFrozen = false;
     }
 }

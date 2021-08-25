@@ -16,8 +16,8 @@ namespace Managers
         // Start is called before the first frame update
         private void Awake()
         {
-            _dialogEventChannel.OnDialogOpened = OpenDialog;
-            _dialogEventChannel.OnDialogClosed = CloseDialog;
+            _dialogEventChannel.OnDialogOpened += OpenDialog;
+            _dialogEventChannel.OnDialogClosed += CloseDialog;
         }
 
         public void OpenDialog(DialogSO dialog)
@@ -29,10 +29,8 @@ namespace Managers
 
         public void CloseDialog()
         {
-            if (_currentDialog == null)
-                return;
-            print("Closing dialog");
-            _currentDialog.Close();
+            if (_currentDialog != null)
+                _currentDialog.Close();
         }
 
         private DialogBox _currentDialog;
