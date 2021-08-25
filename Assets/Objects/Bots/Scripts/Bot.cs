@@ -19,7 +19,6 @@ namespace Objects.Bots.Scripts
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         public Transform dialogPoint;
-
         [SerializeField] private ClickInteractor _clickInteractor;
         public BotConfig Config => _config;
         public bool IsTarget;
