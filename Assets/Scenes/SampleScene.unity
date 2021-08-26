@@ -3744,6 +3744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Click Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 206336681635989731, guid: 1e97816083d8e054e92612ef491fdf44, type: 3}
+      propertyPath: clickLayers.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e97816083d8e054e92612ef491fdf44, type: 3}
 --- !u!1001 &1391686534849148187

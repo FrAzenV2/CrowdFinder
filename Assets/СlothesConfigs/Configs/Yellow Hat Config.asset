@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Yellow Hat Config
   m_EditorClassIdentifier: 
   _clothType: 0
-  _clothSprite: {fileID: 21300000, guid: 7efd2e6628deca048ab87e877c4fe435, type: 3}
+  _clothSprite: {fileID: 21300000, guid: 113072257aca1664780392ab9cbca900, type: 3}
   _clothName: Yellow hat

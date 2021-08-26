@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Green pants Config
   m_EditorClassIdentifier: 
   _clothType: 2
-  _clothSprite: {fileID: 21300000, guid: c24d45fe9faf91345a4facefde7e5064, type: 3}
+  _clothSprite: {fileID: 21300000, guid: adeb2644fabdff047a3ae3ff4d0db7ed, type: 3}
   _clothName: Green pants

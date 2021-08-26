@@ -17,5 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0c3396b61c4e0134bb6239813689f50d, type: 2}
   - {fileID: 0}
   - {fileID: 11400000, guid: db5ebbba55acc7c4fab68c4fd9cb1f07, type: 2}
-  _baseSprite: {fileID: 21300000, guid: 739b971010a888a4d8e1b57e471e640d, type: 3}
+  _baseSprite: {fileID: 21300000, guid: b2bec2cb43fe1244fbb6b527517e3309, type: 3}
   _botId: 25
