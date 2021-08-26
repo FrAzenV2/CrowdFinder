@@ -257,7 +257,7 @@ MonoBehaviour:
   movementSmooth: 24
   stopDistance: 0.25
   sprite: {fileID: 5529757030046555261}
-  doWander: 1
+  doWander: 0
   wanderRadius: 1.5
   wanderTime: 5
   wanderTimeRandom: 1
