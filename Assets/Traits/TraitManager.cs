@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,18 +6,13 @@ using Traits;
 using EventChannels;
 using Objects.Bots.Scripts;
 using Objects.LevelControllers.Scripts;
+using Random = UnityEngine.Random;
 
 namespace Managers
 {
     public class TraitManager : MonoBehaviour
     {
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
-
-        [Header("Traits Prefabs")] [SerializeField]
-        private ClothTrait _clothTraitPrefab;
-
-        [SerializeField] private POITrait _poiTraitPrefab;
-        [SerializeField] private DirectionTrait _directionTraitPrefab;
 
         [Header("Traits Generation Stats")] [SerializeField] [Range(0, 1)]
         private float _chanceOfGivingTrait = 0.05f;
@@ -72,8 +68,10 @@ namespace Managers
                 if (Random.value <= _chanceOfPOITraitGeneration)
                 {
                     trait = ScriptableObject.CreateInstance<POITrait>();
-                    //TODO add logic to track what da fuk POI target is in
-                    //((POITrait) trait).TargetPoi = _poiList.
+                    ((POITrait) trait).TargetPoi = traitTarget.CurrentPOI;
+                    
+                    if (traitTarget.CurrentPOI == null)
+                        throw new ArgumentNullException();
                 }
                 else if (Random.value <= _chanceOfDirectionTraitGeneration)
                 {

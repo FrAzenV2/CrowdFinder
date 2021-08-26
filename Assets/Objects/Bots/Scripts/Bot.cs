@@ -3,6 +3,7 @@ using Bots_Configs.ScriptableObjectConfig;
 using EventChannels;
 using Traits;
 using Dialogs;
+using Objects.LevelControllers;
 using UnityEngine;
 using СlothesConfigs.ScriptableObjectConfig;
 
@@ -21,15 +22,15 @@ namespace Objects.Bots.Scripts
         public Transform dialogPoint;
         [SerializeField] private ClickInteractor _clickInteractor;
         public BotConfig Config => _config;
+        
         public bool IsTarget;
-
+        public POI CurrentPOI;
+        
         private void Awake(){
-            //_clickInteractor = GetComponent<ClickInteractor>();
             _playerInteractZone.OnZoneEntered += OnPlayerEntered;
             _playerInteractZone.OnZoneExited += OnPlayerExited;
             _clickInteractor.OnClicked += OnClicked;
             _clickInteractor.OnReleased += OnReleased;
-            //_dialogEventChannel.OnDialogClosed += OnDialogClosed;
         }
 
         public void Initialize(BotConfig config)
@@ -55,6 +56,11 @@ namespace Objects.Bots.Scripts
                         throw new ArgumentOutOfRangeException();
                 }
             }
+        }
+
+        public void SetCurrentPoi(POI poi)
+        {
+            CurrentPOI = poi;
         }
 
         public void AssignTrait(ITrait trait)
@@ -138,9 +144,13 @@ namespace Objects.Bots.Scripts
         }
 
         private BotConfig _config;
+
         private ITrait _trait;
+
         private bool _waitingForPlayer;
+
         private bool _nearPlayer;
+
         private bool _inDialog;
     }
 }
