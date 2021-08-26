@@ -13,6 +13,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
 
     [Header("Visual Settings")]
     [SerializeField] private Transform _spriteHolder;
+    [SerializeField] private Animator _animator;
 
     protected bool _isMoving;
     protected bool _isFrozen;
@@ -43,6 +44,8 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         // Update velocity
         var targetSpeed = _isMoving ? _movementSpeed : 0f;
         _currentSpeed = Mathf.Lerp(_currentSpeed, targetSpeed, Time.deltaTime * _movementSmooth);
+        if (_currentSpeed < 0.1e-3f)
+            _currentSpeed = 0;
         _rb.velocity = _targetDirection * _currentSpeed;
     }
 
@@ -54,6 +57,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
             else if (_targetDirection.x < 0)
                 FlipSprite(true);
         }
+        _animator.SetFloat("Speed", _currentSpeed);
     }
 
     public void MoveAt(Vector2 point)
