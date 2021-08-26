@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _botName: Maresha
   _clothes:
+  - {fileID: 11400000, guid: 0c3396b61c4e0134bb6239813689f50d, type: 2}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _baseSprite: {fileID: 21300000, guid: 09736319b06bd3b4b9f92a8cc4cc8e02, type: 3}
+  - {fileID: 11400000, guid: db5ebbba55acc7c4fab68c4fd9cb1f07, type: 2}
+  _baseSprite: {fileID: 21300000, guid: 739b971010a888a4d8e1b57e471e640d, type: 3}
   _botId: 68

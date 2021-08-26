@@ -9,20 +9,9 @@ namespace Dialogs
     public class DialogBox : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _textLabel;
-        private void Awake()
-        {   
-            
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            
-        }
-
         public void Initialize(DialogSO dialog){
             _dialog = dialog;
-            _textLabel.text = dialog.text;
+            _textLabel.text = $"{dialog.fromBot.Config.BotName}:\n{dialog.text}";
         }
 
         public void Close(){

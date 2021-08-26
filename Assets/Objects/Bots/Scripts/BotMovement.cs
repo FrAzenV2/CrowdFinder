@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class BotMovement : MovingBehaviour
 {
@@ -24,11 +26,12 @@ public class BotMovement : MovingBehaviour
         MoveAt(wanderPosition);
     }
 
+
     // Coroutines
     IEnumerator WanderCoroutine(){
         while (doWander){
-            Wander();
             yield return new WaitForSeconds(wanderTime + Random.Range(-wanderTimeRandom, wanderTimeRandom));
+            Wander();
         }
     }
 

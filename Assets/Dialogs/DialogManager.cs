@@ -12,6 +12,7 @@ namespace Managers
         //[SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         [SerializeField] private DialogBox _dialogBoxPrefab;
+        [SerializeField] private Transform _dialogParent;
         
         // Start is called before the first frame update
         private void Awake()
@@ -22,7 +23,9 @@ namespace Managers
 
         public void OpenDialog(DialogSO dialog)
         {
-            DialogBox dialogBox = Instantiate(_dialogBoxPrefab, dialog.fromBot.dialogPoint.position, Quaternion.identity, dialog.fromBot.dialogPoint);
+            var canvasPosition = Camera.main.WorldToScreenPoint(dialog.fromBot.dialogPoint.transform.position);
+            DialogBox dialogBox = Instantiate(_dialogBoxPrefab, canvasPosition , Quaternion.identity, _dialogParent);
+
             dialogBox.Initialize(dialog);
             _currentDialog = dialogBox;
         }

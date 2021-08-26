@@ -1,8 +1,10 @@
-﻿using Bots_Configs.ScriptableObjectConfig;
+﻿using System;
+using Bots_Configs.ScriptableObjectConfig;
 using EventChannels;
 using Traits;
 using Dialogs;
 using UnityEngine;
+using СlothesConfigs.ScriptableObjectConfig;
 
 
 namespace Objects.Bots.Scripts
@@ -11,16 +13,18 @@ namespace Objects.Bots.Scripts
     public class Bot : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _renderer;
+        [SerializeField] private BotClothes _botClothes;
+        
         [SerializeField] private CollisionInteractor _playerInteractZone;
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         public Transform dialogPoint;
-
+        [SerializeField] private ClickInteractor _clickInteractor;
         public BotConfig Config => _config;
         public bool IsTarget;
 
         private void Awake(){
-            _clickInteractor = GetComponent<ClickInteractor>();
+            //_clickInteractor = GetComponent<ClickInteractor>();
             _playerInteractZone.OnZoneEntered += OnPlayerEntered;
             _playerInteractZone.OnZoneExited += OnPlayerExited;
             _clickInteractor.OnClicked += OnClicked;
@@ -32,6 +36,25 @@ namespace Objects.Bots.Scripts
         {
             _config = config;
             _renderer.sprite = _config.BodySprite;
+            foreach (var cloth in config.Clothes)    
+            {
+                if(cloth==null) continue;
+                
+                switch (cloth.ClothType)
+                {
+                    case ClothType.Hat:
+                        _botClothes.SetupHat(cloth.ClothSprite);
+                        break;
+                    case ClothType.Shirt:
+                        _botClothes.SetupShirt(cloth.ClothSprite);
+                        break;
+                    case ClothType.Pants:
+                        _botClothes.SetupPants(cloth.ClothSprite);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
         }
 
         public void AssignTrait(ITrait trait)
@@ -107,9 +130,15 @@ namespace Objects.Bots.Scripts
             _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
         }
 
+        private void LateUpdate()
+        {
+            var sortingOrder = (int) -transform.position.y;
+            _renderer.sortingOrder = sortingOrder;
+            _botClothes.UpdateSortingOrder(sortingOrder);
+        }
+
         private BotConfig _config;
         private ITrait _trait;
-        private ClickInteractor _clickInteractor;
         private bool _waitingForPlayer;
         private bool _nearPlayer;
         private bool _inDialog;
