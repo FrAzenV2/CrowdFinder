@@ -44,13 +44,13 @@ namespace Objects.Bots.Scripts
                 switch (cloth.ClothType)
                 {
                     case ClothType.Hat:
-                        _botClothes.SetupHat(cloth.ClothSprite);
+                        _botClothes.SetupHat(cloth.ClothSprite, cloth.ClothColor);
                         break;
                     case ClothType.Shirt:
-                        _botClothes.SetupShirt(cloth.ClothSprite);
+                        _botClothes.SetupShirt(cloth.ClothSprite, cloth.ClothColor);
                         break;
                     case ClothType.Pants:
-                        _botClothes.SetupPants(cloth.ClothSprite);
+                        _botClothes.SetupPants(cloth.ClothSprite, cloth.ClothColor);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();

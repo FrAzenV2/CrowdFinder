@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a26b8b4fbbd453c8db7c203a5955c32, type: 3}
+  m_Name: Shirts set
+  m_EditorClassIdentifier: 
+  Clothes:
+  - {fileID: 11400000, guid: 6c774fe556d057b42a0c3e27a02fc5b9, type: 2}
+  - {fileID: 11400000, guid: dd3e1fdc2dcfc1749b47e1a6c664f9a5, type: 2}
+  - {fileID: 11400000, guid: 0c49eb9a214f08d49b4e649520727705, type: 2}
+  - {fileID: 11400000, guid: 5187304158fe04e48becb62fef0ef96f, type: 2}
+  - {fileID: 11400000, guid: 1f9d600b4a2b0294989340f662f3642d, type: 2}
+  - {fileID: 11400000, guid: 7cdeda23d91189b49ad3f45107562f59, type: 2}
+  - {fileID: 11400000, guid: c1a60630a3d6b4d43849f4c55192319c, type: 2}
+  - {fileID: 11400000, guid: e4b25b6f1a88c8745a9b6b0bc11967e4, type: 2}
+  - {fileID: 11400000, guid: f469271ec2a4d924b8abfa6bee1a84c6, type: 2}
+  - {fileID: 11400000, guid: 33333da119a34ae48b84a20489695d2d, type: 2}
+  - {fileID: 11400000, guid: 87910764602ec5d4ca68f4c08acd07bb, type: 2}
+  - {fileID: 11400000, guid: 86907c6ee73e6304dab0fcb903219603, type: 2}
+  - {fileID: 11400000, guid: d7139db836bddc04ca920d5badd62261, type: 2}
+  - {fileID: 11400000, guid: 9647aa105e0cf5748b4937e56026c76a, type: 2}
+  - {fileID: 11400000, guid: 32f9e2e276844624bab02fe4c1e52c96, type: 2}
+  - {fileID: 11400000, guid: 6a0f74ab54148c3458b35e70b263fa15, type: 2}
+  - {fileID: 11400000, guid: 31094a994c202364f9bf21961f617cfe, type: 2}
+  - {fileID: 11400000, guid: c33ff0c4cf5a759439e357e2adb251fe, type: 2}
+  - {fileID: 11400000, guid: 6369d23b7b517b54d9d2642d1c3be26b, type: 2}
+  - {fileID: 11400000, guid: aec1e9fff9ff37b4f925ba1818b1a679, type: 2}
+  - {fileID: 11400000, guid: 90ed1fbb538fb794eae17a9b505ef81c, type: 2}

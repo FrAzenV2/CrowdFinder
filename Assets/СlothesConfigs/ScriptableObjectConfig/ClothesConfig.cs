@@ -7,11 +7,14 @@ namespace СlothesConfigs.ScriptableObjectConfig
     {
         [SerializeField] private ClothType _clothType;
         [SerializeField] private Sprite _clothSprite;
+        [SerializeField] private Color _clothColor;
         [SerializeField] private string _clothName;
-            
+        
         public ClothType ClothType => _clothType;
         public Sprite ClothSprite => _clothSprite;
+        public Color ClothColor => _clothColor;
         public string ClothName => _clothName;
+        
     }
 
     public enum ClothType
