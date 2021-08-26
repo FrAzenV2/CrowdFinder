@@ -7,7 +7,6 @@ using Objects.LevelControllers;
 using UnityEngine;
 using СlothesConfigs.ScriptableObjectConfig;
 
-
 namespace Objects.Bots.Scripts
 {
     [RequireComponent(typeof(ClickInteractor))]
@@ -28,6 +27,7 @@ namespace Objects.Bots.Scripts
         public POI CurrentPOI;
         
         private void Awake(){
+            _botMovement = GetComponent<BotMovement>();
             _playerInteractZone.OnZoneEntered += OnPlayerEntered;
             _playerInteractZone.OnZoneExited += OnPlayerExited;
             _clickInteractor.OnClicked += OnClicked;
@@ -99,6 +99,7 @@ namespace Objects.Bots.Scripts
             _dialogEventChannel.OpenDialog(dialog);
             _dialogEventChannel.OnDialogClosed += OnDialogClosed;
             _inDialog = true;
+            _botMovement.DisableMovement();
         }
 
         private void OnPlayerEntered(GameObject player)
@@ -137,8 +138,10 @@ namespace Objects.Bots.Scripts
         {
             _inDialog = false;
             _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
+            _botMovement.EnableMovement();
         }
 
+        private BotMovement _botMovement;
         private BotConfig _config;
 
         private ITrait _trait;
