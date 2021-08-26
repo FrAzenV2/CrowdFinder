@@ -197,10 +197,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78daddd325704dd4284e7b82d6789b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4.5
-  movementSmooth: 24
-  stopDistance: 0.25
-  sprite: {fileID: 2057388212546105321}
+  _movementSpeed: 4.5
+  _movementSmooth: 24
+  _stopDistance: 0.25
+  _spriteHolder: {fileID: 2057388212546105322}
 --- !u!114 &309729272
 MonoBehaviour:
   m_ObjectHideFlags: 0

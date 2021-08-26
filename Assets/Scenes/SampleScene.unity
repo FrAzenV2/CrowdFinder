@@ -1568,7 +1568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22324657, y: 12.422973, z: -20}
+  m_LocalPosition: {x: 23.223248, y: -1.5770271, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2002,6 +2002,22 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &896660073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2057388212546105323, guid: d7a31d17b581a9342b0c6c0a9213ef1c, type: 3}
+  m_PrefabInstance: {fileID: 2044023241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &896660074
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896660073}
+  m_Enabled: 1
+  m_SortingLayerID: -615519149
+  m_SortingLayer: 1
+  m_SortingOrder: 0
 --- !u!1 &1021043193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,6 +3348,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2057388212546105321, guid: d7a31d17b581a9342b0c6c0a9213ef1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2057388212546105321, guid: d7a31d17b581a9342b0c6c0a9213ef1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -615519149
+      objectReference: {fileID: 0}
     - target: {fileID: 2057388213447941850, guid: d7a31d17b581a9342b0c6c0a9213ef1c, type: 3}
       propertyPath: m_RootOrder
       value: 4

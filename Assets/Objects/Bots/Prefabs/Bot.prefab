@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -615519149
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: adeb2644fabdff047a3ae3ff4d0db7ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5529757030046555260}
   - component: {fileID: 5529757030046555261}
+  - component: {fileID: 535181998101217955}
   m_Layer: 7
   m_Name: BaseBody
   m_TagString: Untagged
@@ -165,6 +166,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!210 &535181998101217955
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529757030046555262}
+  m_Enabled: 1
+  m_SortingLayerID: -615519149
+  m_SortingLayer: 1
+  m_SortingOrder: 0
 --- !u!1 &5529757030228761895
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,10 +265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43310f3fb5f22a14e9a1e31636bcf29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4.5
-  movementSmooth: 24
-  stopDistance: 0.25
-  sprite: {fileID: 5529757030046555261}
+  _movementSpeed: 4.5
+  _movementSmooth: 24
+  _stopDistance: 0.25
+  _spriteHolder: {fileID: 5529757030046555260}
   doWander: 0
   wanderRadius: 1.5
   wanderTime: 5
@@ -281,6 +293,7 @@ MonoBehaviour:
   dialogPoint: {fileID: 7275399767925203795}
   _clickInteractor: {fileID: 4574721851673579101}
   IsTarget: 0
+  CurrentPOI: {fileID: 0}
 --- !u!114 &7785947067272810867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +476,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -615519149
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a55ae56a86cc3864e94b87394a64ed51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -545,7 +558,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -615519149
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 01ca939a64cb048408e202f0a8bc559f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

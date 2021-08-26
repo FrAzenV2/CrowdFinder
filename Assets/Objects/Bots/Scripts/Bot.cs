@@ -136,13 +136,6 @@ namespace Objects.Bots.Scripts
             _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
         }
 
-        private void LateUpdate()
-        {
-            var sortingOrder = (int) -transform.position.y;
-            _renderer.sortingOrder = sortingOrder;
-            _botClothes.UpdateSortingOrder(sortingOrder);
-        }
-
         private BotConfig _config;
 
         private ITrait _trait;
