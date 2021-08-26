@@ -3026,7 +3026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _botsParent: {fileID: 1050188349}
   _fakeTargetsAmount: 2
-  _botsSet: {fileID: 11400000, guid: c70bba53c1054d14cab07160b809f9fc, type: 2}
+  _botsSet: {fileID: 11400000, guid: c0eef085409ad5748a4d24cf01a5206d, type: 2}
   _botPrefab: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
   spawnRegions:
   - center: {x: -1.71, y: -0.71}
