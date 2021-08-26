@@ -38,7 +38,6 @@ namespace Objects.LevelControllers
         {
             PlayerSteppedIn?.Invoke();
             _camera.Priority = 10;
-            print("changed to " + POIName);
         }
     }
 }

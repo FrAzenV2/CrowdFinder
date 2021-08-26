@@ -18,5 +18,14 @@ namespace Traits
             var trait = Target.Config.BotName + " is around " + TargetPoi.POIName;
             return trait;
         }
+
+        public bool Equals(ITrait other)
+        {
+            if (other.GetType() != GetType())
+                return false;
+            if (other.Target == Target && ((POITrait) other).TargetPoi.Equals(TargetPoi))
+                return true;
+            return false;
+        }
     }
 }

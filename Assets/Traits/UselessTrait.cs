@@ -13,6 +13,11 @@ namespace Traits
 
         public bool IsTraitOfMainTarget { get; set; }
 
+        public bool Equals(ITrait other)
+        {
+            return false;
+        }
+
         public string GetTraitText()
         {
             return text;

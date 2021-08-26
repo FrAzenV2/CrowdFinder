@@ -14,10 +14,21 @@ namespace Traits
 
         public bool IsTraitOfMainTarget { get; set; }
 
+        public bool Equals(ITrait other)
+        {
+            if (other.GetType() != GetType())
+                return false;
+            if (other.Target == Target && ((ClothTrait) other).Cloth.Equals(Cloth))
+                return true;
+            return false;
+        }
+
         public string GetTraitText()
         {
             var trait = Target.Config.BotName + " wearing " + Cloth.ClothName;
             return trait;
         }
+
+        
     }
 }

@@ -1,8 +1,9 @@
-﻿using Objects.Bots.Scripts;
+﻿using System;
+using Objects.Bots.Scripts;
 
 namespace Traits
 {
-    public interface ITrait
+    public interface ITrait : IEquatable<ITrait>
     {
         public Bot Target { get; set; }
         public Bot Sender { get; set; }

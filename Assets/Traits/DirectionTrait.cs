@@ -45,5 +45,10 @@ namespace Traits
             else
                 Direction = y > 0 ? Vector2.up : Vector2.down;
         }
+
+        public bool Equals(ITrait other)
+        {
+            return false;
+        }
     }
 }

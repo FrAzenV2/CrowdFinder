@@ -40,6 +40,8 @@ namespace Managers
 
         private void GenerateTrait(Bot bot)
         {
+            if (bot.IsTarget)
+                return;
             //If no trait is given
             if (Random.value > _chanceOfGivingTrait)
             {
@@ -107,8 +109,11 @@ namespace Managers
                 bot.AssignTrait(null);
                 return;
             }
-
+            
+            //
             bot.AssignTrait(trait);
+            if (trait != null)
+                _traitEventChannel.GenerateTrait(trait);
         }
 
         private List<ITrait> _traits;

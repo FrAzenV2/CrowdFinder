@@ -24,6 +24,7 @@ namespace Objects.Bots.Scripts
         public BotConfig Config => _config;
         
         public bool IsTarget;
+        public bool IsFakeTarget;
         public POI CurrentPOI;
         
         private void Awake(){
@@ -85,13 +86,15 @@ namespace Objects.Bots.Scripts
             else
                 dialog.text = "No trait :(";
             
+            if (IsFakeTarget)
+                dialog.text = "I'm not the one you're looking for :(";
+            
             // TODO: Use events
             if (IsTarget)
             {
                 GetComponentInChildren<SpriteRenderer>().color = Color.green;
                 dialog.text = "Hey! You found me!";
             }
-                
 
             _dialogEventChannel.OpenDialog(dialog);
             _dialogEventChannel.OnDialogClosed += OnDialogClosed;

@@ -61,6 +61,7 @@ namespace Objects.LevelControllers
             for (var i = 0; i < _fakeTargetsAmount; i++)
             {
                 var fakeTarget = _bots[Random.Range(0, _bots.Count-1)];
+                fakeTarget.IsFakeTarget = true;
                 fakeTarget.Config.SetName(_targetBot.Config.BotName);
                 _bots.Remove(fakeTarget);
                 _fakeTargets.Add(fakeTarget);
