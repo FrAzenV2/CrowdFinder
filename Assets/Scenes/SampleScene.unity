@@ -1568,7 +1568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.223248, y: -1.5770271, z: -10}
+  m_LocalPosition: {x: 0.22324657, y: 12.422973, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3013,31 +3013,31 @@ MonoBehaviour:
   _botsSet: {fileID: 11400000, guid: c70bba53c1054d14cab07160b809f9fc, type: 2}
   _botPrefab: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
   spawnRegions:
-  - center: {x: -1.8, y: 4.4}
-    size: {x: 2, y: 15.71}
+  - center: {x: -1.71, y: -0.71}
+    size: {x: 2, y: 6.93}
     maxSpawnAmount: 5
     minDistance: 2
   - center: {x: 19.3, y: 10.1}
     size: {x: 2, y: 6.63}
     maxSpawnAmount: 5
     minDistance: 2
-  - center: {x: 27.4, y: -2.2}
+  - center: {x: 27.1, y: -2.2}
     size: {x: 12.25, y: 8.85}
     maxSpawnAmount: 10
     minDistance: 2
-  - center: {x: 27.85, y: 8.57}
+  - center: {x: 26.7, y: 9.7}
     size: {x: 9.65, y: 7.2}
     maxSpawnAmount: 40
     minDistance: 2
-  - center: {x: 3.56, y: 9.13}
+  - center: {x: 3.86, y: 9.43}
     size: {x: 6.25, y: 6.6}
     maxSpawnAmount: 10
     minDistance: 2
-  - center: {x: 5.02, y: 14.3}
-    size: {x: 27.5, y: 1.96}
+  - center: {x: 0.9, y: 14.3}
+    size: {x: 20.07, y: 1.96}
     maxSpawnAmount: 15
     minDistance: 2
-  - center: {x: -1.79, y: -6.01}
+  - center: {x: -1.84, y: -6.01}
     size: {x: 16.08, y: 1.96}
     maxSpawnAmount: 15
     minDistance: 2
