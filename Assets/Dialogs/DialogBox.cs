@@ -10,19 +10,23 @@ namespace Dialogs
     {
         [SerializeField] private TextMeshProUGUI _textLabel;
 
-        private void Awake() {
+        private void Awake()
+        {
             _animator = GetComponent<Animator>();
         }
-        public void Initialize(DialogSO dialog){
+        public void Initialize(DialogSO dialog)
+        {
             _dialog = dialog;
-            _textLabel.text = $"{dialog.fromBot.Config.BotName}:\n{dialog.text}";
+            _textLabel.text = $"<b>{dialog.fromBot.Config.BotName}</b>\n{dialog.text}";
         }
 
-        public void Close(){
+        public void Close()
+        {
             _animator.Play("Hide");
         }
 
-        public void Remove(){
+        public void Remove()
+        {
             Destroy(gameObject);
         }
 
