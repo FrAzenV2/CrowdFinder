@@ -15,6 +15,7 @@ namespace Objects.LevelControllers.Scripts
 
         public Bot TargetBot => _targetBot;
         public IReadOnlyList<Bot> FakeTargets => _fakeTargets;
+        public IReadOnlyList<Bot> Bots => _bots;
         
         protected Bot _targetBot;
         protected List<Bot> _fakeTargets;

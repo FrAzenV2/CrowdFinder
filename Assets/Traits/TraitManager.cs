@@ -21,6 +21,7 @@ namespace Managers
         [SerializeField] [Range(0, 1)] private float _chanceOfClothTraitGeneration = 0.6f;
         [SerializeField] [Range(0, 1)] private float _chanceOfDirectionTraitGeneration = 0.25f;
         [SerializeField] [Range(0, 1)] private float _chanceOfPOITraitGeneration = 0.15f;
+        [SerializeField] [Range(0, 1)] private float _chanceOfFriendTraitGeneration = 0.1f;
 
 
         [Header("Runtime Bots data access")] [SerializeField]
@@ -74,8 +75,12 @@ namespace Managers
                     traitTarget = _botSpawner.FakeTargets[Random.Range(0, _botSpawner.FakeTargets.Count - 1)];
                 }
 
-                trait = GenerateRandomTraitForTarget(bot, traitTarget);
-                trait.IsTraitOfMainTarget = isTraitAboutTarget;
+                if (Random.value <= _chanceOfFriendTraitGeneration){
+                    trait = GenerateFriendTrait(bot, traitTarget, isTraitAboutTarget);
+                }else{
+                    trait = GenerateRandomTraitForTarget(bot, traitTarget);
+                    trait.IsTraitOfMainTarget = isTraitAboutTarget;
+                }
 
                 if (!_traits.Contains(trait))
                 {
@@ -129,6 +134,57 @@ namespace Managers
             trait.Sender = traitSource;
             return trait;
         }
+
+        private ITrait GenerateFriendTrait(Bot traitSource, Bot traitTarget, bool isTraitAboutTarget)
+        {
+            ITrait trait;
+
+            int attempt = 0;
+            Bot friend = _botSpawner.Bots[Random.Range(0, _botSpawner.Bots.Count - 1)];
+            while (attempt < 20){
+                if (friend != traitSource)
+                    break;
+                
+                friend = _botSpawner.Bots[Random.Range(0, _botSpawner.Bots.Count - 1)];
+                attempt++;
+            }
+            
+            // Generate extra traits
+            ITrait trait1 = GenerateRandomTraitForTarget(traitSource, friend);
+            ITrait trait2 = GenerateRandomTraitForTarget(traitSource, friend);
+
+            // Generate unique second trait
+            attempt = 0;
+            while (attempt < 20){
+                if (trait2 != trait1)
+                    break;
+                
+                trait2 = GenerateRandomTraitForTarget(traitSource, friend);
+                attempt++;
+            }
+            
+            ConfigureTrait(trait1, traitSource, friend);
+            ConfigureTrait(trait2, traitSource, friend);
+
+            // Generate a trait for the friend
+            ITrait friendsTrait = GenerateRandomTraitForTarget(traitSource, traitTarget);
+            friendsTrait.IsTraitOfMainTarget = isTraitAboutTarget;
+            friend.AssignTrait(friendsTrait);
+
+            // Create friend trait
+            trait = ScriptableObject.CreateInstance<FriendTrait>();
+            ((FriendTrait) trait).trait1 = trait1;
+            ((FriendTrait) trait).trait2 = trait2;
+            ConfigureTrait(trait, traitSource, friend);
+            return trait;
+        }
+
+        private void ConfigureTrait(ITrait trait, Bot sender, Bot target)
+        {
+            trait.Sender = sender;
+            trait.Target = target;
+        }
+
 
         private List<ITrait> _traits;
     }
