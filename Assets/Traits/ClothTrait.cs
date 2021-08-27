@@ -1,5 +1,6 @@
 ﻿using Objects.Bots.Scripts;
 using UnityEngine;
+using System;
 using СlothesConfigs.ScriptableObjectConfig;
 
 namespace Traits
@@ -25,10 +26,8 @@ namespace Traits
 
         public string GetTraitText()
         {
-            var trait = Target.Config.BotName + " wearing " + Cloth.ClothName;
+            var trait = $"<color=\"red\">{Target.Config.BotName}</color> is wearing {Cloth.ClothName}";
             return trait;
         }
-
-        
     }
 }

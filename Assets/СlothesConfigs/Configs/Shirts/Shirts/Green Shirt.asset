@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _clothType: 1
   _clothSprite: {fileID: 21300000, guid: 01ca939a64cb048408e202f0a8bc559f, type: 3}
-  _clothColor: {r: 0.33333334, g: 0.7176471, b: 0.21960784, a: 1}
+  _clothColor: {r: 0.70980394, g: 0.91764706, b: 0.84313726, a: 1}
   _clothName: Green Shirt

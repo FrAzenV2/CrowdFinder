@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _clothType: 2
   _clothSprite: {fileID: 21300000, guid: f2f695cf8923ace4b9df277ea9a80dc5, type: 3}
-  _clothColor: {r: 0.9854994, g: 1, b: 0.0603773, a: 1}
+  _clothColor: {r: 1, g: 0.9607843, b: 0.7294118, a: 1}
   _clothName: Yellow Sweatpants

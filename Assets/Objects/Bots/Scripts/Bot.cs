@@ -93,9 +93,10 @@ namespace Objects.Bots.Scripts
             } else {
                 if (_trait == null)
                     _traitEventChannel.RequestTrait(this);
+                else if (!(_trait is UselessTrait))
+                    _traitEventChannel.GenerateTrait(_trait);
                 dialog = DialogManager.GetDialogFromTrait(_trait);
             }
-
             _dialogEventChannel.OpenDialog(dialog);
             _inDialog = true;
             _botMovement.DisableMovement();
