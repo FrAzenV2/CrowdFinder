@@ -44,5 +44,5 @@ public class TraitList : MonoBehaviour
     }
 
     private List<ITrait> _traitList = new List<ITrait>();
-    private bool _isListVisible = false;
+    private bool _isListVisible = true;
 }
