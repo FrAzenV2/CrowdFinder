@@ -47,18 +47,18 @@ namespace Managers
         {
             if (bot.IsTarget)
                 return;
+
             //If no trait is given
             if (Random.value > _chanceOfGivingTrait)
             {
                 // TODO: Separate trait generation & trait assignment
-                ITrait newTrait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
-                newTrait.Sender = bot;
-                bot.AssignTrait(newTrait);
+                bot.AssignTrait(GenerateUselessTrait(bot));
                 return;
             }
 
-            Bot traitTarget;
             ITrait trait;
+            Bot traitTarget;
+            
             var attempts = 0;
             do
             {
@@ -74,36 +74,7 @@ namespace Managers
                     traitTarget = _botSpawner.FakeTargets[Random.Range(0, _botSpawner.FakeTargets.Count - 1)];
                 }
 
-
-                if (Random.value <= _chanceOfPOITraitGeneration)
-                {
-                    trait = ScriptableObject.CreateInstance<POITrait>();
-                    ((POITrait) trait).TargetPoi = traitTarget.CurrentPOI;
-                    
-                    if (traitTarget.CurrentPOI == null)
-                        throw new ArgumentNullException();
-                }
-                else if (Random.value <= _chanceOfDirectionTraitGeneration)
-                {
-                    trait = ScriptableObject.CreateInstance<DirectionTrait>();
-                    ((DirectionTrait) trait).CalculateDirection(traitTarget, bot);
-                }
-                else
-                {
-                    trait = ScriptableObject.CreateInstance<ClothTrait>();
-                    var cloth = traitTarget.Config.Clothes[Random.Range(0, traitTarget.Config.Clothes.Length - 1)];
-                    if (cloth == null)
-                    {
-                        trait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
-                        trait.Sender = bot;
-                        continue;
-                    }
-
-                    ((ClothTrait) trait).Cloth = cloth;
-                }
-
-                trait.Sender = bot;
-                trait.Target = traitTarget;
+                trait = GenerateRandomTraitForTarget(bot, traitTarget);
                 trait.IsTraitOfMainTarget = isTraitAboutTarget;
 
                 if (!_traits.Contains(trait))
@@ -115,15 +86,48 @@ namespace Managers
 
             if (attempts >= _maxTryGetTraitsAttempts)
             {
-                ITrait newTrait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
-                newTrait.Sender = bot;
-                bot.AssignTrait(newTrait);
+                bot.AssignTrait(GenerateUselessTrait(bot));
                 return;
             }
             
-            //
             bot.AssignTrait(trait);
             _traitEventChannel.GenerateTrait(trait);
+        }
+
+        private ITrait GenerateRandomTraitForTarget(Bot traitSource, Bot traitTarget)
+        {
+            ITrait trait;
+            if (Random.value <= _chanceOfPOITraitGeneration)
+            {
+                trait = ScriptableObject.CreateInstance<POITrait>();
+                ((POITrait) trait).TargetPoi = traitTarget.CurrentPOI;
+                
+                if (traitTarget.CurrentPOI == null)
+                    throw new ArgumentNullException();
+            }
+            else if (Random.value <= _chanceOfDirectionTraitGeneration)
+            {
+                trait = ScriptableObject.CreateInstance<DirectionTrait>();
+                ((DirectionTrait) trait).CalculateDirection(traitTarget, traitSource);
+            }
+            else
+            {
+                trait = ScriptableObject.CreateInstance<ClothTrait>();
+                var cloth = traitTarget.Config.Clothes[Random.Range(0, traitTarget.Config.Clothes.Length - 1)];
+                ((ClothTrait) trait).Cloth = cloth;
+            }
+
+            trait.Sender = traitSource;
+            trait.Target = traitTarget;
+            return trait;
+        }
+
+        private ITrait GenerateUselessTrait(Bot traitSource)
+        {
+            ITrait trait;
+            trait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
+            trait.Sender = traitSource;
+            return trait;
         }
 
         private List<ITrait> _traits;
