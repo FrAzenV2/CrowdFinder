@@ -19,5 +19,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d997c1efe5ed8a742bd93e6d3d531bde, type: 2}
   _baseSprite: {fileID: 21300000, guid: b2bec2cb43fe1244fbb6b527517e3309, type: 3}
   _botId: 63
+  TargetFoundDialog: {fileID: 11400000, guid: 17e7e4da5ef442943883e0eaf93de998, type: 2}
   FakeTargetDialog: {fileID: 11400000, guid: ea926c084ac875f45aab7d2bdfebbe55, type: 2}
   CorrectTargetDialog: {fileID: 11400000, guid: 72d866a3f485c814591ee1a6e093ef82, type: 2}

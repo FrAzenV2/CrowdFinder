@@ -44,7 +44,9 @@ namespace Objects.LevelControllers
                     var botConfigIndex = Random.Range(0, botsList.Count);
                     var newBot = Instantiate(_botPrefab, sampledPositions[i],
                         Quaternion.identity, _botsParent);
-                    newBot.Initialize(botsList[botConfigIndex]);
+                    var config = ScriptableObject.CreateInstance<BotConfig>();
+                    config.Initialize(botsList[botConfigIndex]);
+                    newBot.Initialize(config);
                     if (_targetBot==null)
                     {
                         _targetBot = newBot;

@@ -1,5 +1,6 @@
 using Dialogs;
 using EventChannels;
+using Objects.Bots.Scripts;
 using UnityEngine;
 
 namespace Objects.Player
@@ -9,7 +10,24 @@ namespace Objects.Player
     {
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         private PlayerMovement _playerMovement;
+        public bool BotInteractable => _canInteractWithBots;
+        public Bot CurrentFollower => _currentFollower;
+        public void SetBotInteractableStatus(bool canInteract)
+        {
+            _canInteractWithBots = canInteract;
+        }
 
+        public void SetCurrentFollower(Bot bot)
+        {
+            _currentFollower = bot;
+        }
+
+        public void ResetCurrentFollower()
+        {
+            _currentFollower.StopFollowing();
+            _currentFollower = null;
+        }
+  
         public bool IsChangingArea
         {
             get => _isChangningArea;
@@ -50,5 +68,7 @@ namespace Objects.Player
         }
 
         private bool _isChangningArea;
+        private bool _canInteractWithBots = true;
+        private Bot _currentFollower;
     }
 }

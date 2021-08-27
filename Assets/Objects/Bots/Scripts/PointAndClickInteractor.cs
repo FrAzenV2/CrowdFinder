@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Objects.Player;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,12 +7,20 @@ public class PointAndClickInteractor : MonoBehaviour
     [SerializeField] private ClickInteractor _clickInteractor;
     [SerializeField] private CollisionInteractor _collisionInteractor;
     [SerializeField] private GameObject _highlight;
+    [SerializeField] private bool _ignoreInteractionRestrictions;
     
-    [HideInInspector] public GameObject _interactingObject;
+    [HideInInspector] public GameObject InteractingObject;
+    
     public UnityAction OnHighlighted;
     public UnityAction OnDehighlighted;
     public UnityAction OnStartedInteraction;
     public UnityAction OnEndedInteraction;
+    
+    public void TryBlockPlayerInteractions()
+    {
+        if(!InteractingObject.TryGetComponent(out Player player)) return;
+        player.SetBotInteractableStatus(false);
+    }
 
     private void Awake() {
         _clickInteractor.OnClicked += OnClicked;
@@ -55,7 +62,18 @@ public class PointAndClickInteractor : MonoBehaviour
     private void OnZoneEntered(GameObject obj)
     {
         _objectInZone = true;
-        _interactingObject = obj;
+        InteractingObject = obj;
+
+        if (!_ignoreInteractionRestrictions && InteractingObject.TryGetComponent(out Player player))
+        {
+            if (!player.BotInteractable)
+            {
+                InteractingObject = null;
+                _objectInZone = false;
+                return;
+            }
+        }
+        
         if (_state == State.IDLE)
             SetState(State.HIGHLIGHTED);
         else if (_state == State.WAITING)
@@ -65,7 +83,7 @@ public class PointAndClickInteractor : MonoBehaviour
     private void OnZoneExited(GameObject obj)
     {
         _objectInZone = false;
-        _interactingObject = null;
+        InteractingObject = null;
         if (_state == State.HIGHLIGHTED || _state == State.INTERACTING)
             SetState(State.IDLE);
     }
@@ -118,6 +136,8 @@ public class PointAndClickInteractor : MonoBehaviour
         INTERACTING
         
     }
+
     private bool _objectInZone = false;
+
     private State _state = State.IDLE;
 }
