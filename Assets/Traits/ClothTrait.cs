@@ -29,7 +29,5 @@ namespace Traits
             var trait = $"<color=\"red\">{Target.Config.BotName}</color> is wearing {Cloth.ClothName}";
             return trait;
         }
-
-        
     }
 }
