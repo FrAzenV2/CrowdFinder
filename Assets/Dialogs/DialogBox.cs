@@ -20,7 +20,10 @@ namespace Dialogs
 
         public void Close(){
             _animator.Play("Hide");
-            Destroy(gameObject, 0.5f);
+        }
+
+        public void Remove(){
+            Destroy(gameObject);
         }
 
         private DialogSO _dialog;
