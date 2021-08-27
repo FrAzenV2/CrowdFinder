@@ -10,7 +10,6 @@ namespace Managers
 {
     public class DialogManager : MonoBehaviour
     {
-        //[SerializeField] private TraitEventChannelSO _traitEventChannel = default;
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         [SerializeField] private DialogBox _dialogBoxPrefab;
         [SerializeField] private Transform _dialogParent;

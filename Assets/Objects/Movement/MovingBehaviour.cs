@@ -9,7 +9,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     [SerializeField] private float _movementSpeed = 4.5f;
 
     [SerializeField] private float _movementSmooth = 24.0f;
-    [SerializeField] protected float _stopDistance = 0.25f;
+    [SerializeField] protected float _stopBaseDistance = 0.25f;
 
     [Header("Visual Settings")]
     [SerializeField] private Transform _spriteHolder;
@@ -25,6 +25,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     {
         _rb = GetComponent<Rigidbody2D>();
         _initialSpriteScale = _spriteHolder.localScale;
+        _currentStopDistance = _stopBaseDistance;
         Stop();
     }
 
@@ -36,7 +37,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     protected virtual void FixedUpdate()
     {
         // Check distances
-        _isMoving = Vector2.Distance(transform.position, _targetPosition) > _stopDistance;
+        _isMoving = Vector2.Distance(transform.position, _targetPosition) > _currentStopDistance;
 
         // Update direction
         _targetDirection = (_targetPosition - (Vector2) transform.position).normalized;
@@ -90,6 +91,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         _spriteHolder.localScale = scale;
     }
 
+    protected float _currentStopDistance;
     private Vector3 _initialSpriteScale;
     private Rigidbody2D _rb;
 }

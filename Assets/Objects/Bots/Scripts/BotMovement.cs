@@ -24,8 +24,17 @@ public class BotMovement : MovingBehaviour
         doWander = false;
         _following = true;
         _followTarget = target;
-        _stopDistance = followMinDistance;
+        _currentStopDistance = followMinDistance;
         StartCoroutine(FollowCoroutine());
+    }
+
+    public void StopFollowing()
+    {
+        doWander = true;
+        _following = false;
+        _followTarget = null;
+        _currentStopDistance = _stopBaseDistance;
+        StartCoroutine(WanderCoroutine());
     }
 
     protected override void Start()

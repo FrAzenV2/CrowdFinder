@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Objects.Player;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,8 +7,10 @@ public class PointAndClickInteractor : MonoBehaviour
     [SerializeField] private ClickInteractor _clickInteractor;
     [SerializeField] private CollisionInteractor _collisionInteractor;
     [SerializeField] private GameObject _highlight;
+    [SerializeField] private bool _ignoreInteractionRestrictions;
     
     [HideInInspector] public GameObject InteractingObject;
+    
     public UnityAction OnHighlighted;
     public UnityAction OnDehighlighted;
     public UnityAction OnStartedInteraction;
@@ -64,7 +64,7 @@ public class PointAndClickInteractor : MonoBehaviour
         _objectInZone = true;
         InteractingObject = obj;
 
-        if (InteractingObject.TryGetComponent(out Player player))
+        if (!_ignoreInteractionRestrictions && InteractingObject.TryGetComponent(out Player player))
         {
             if (!player.BotInteractable)
             {
@@ -136,6 +136,8 @@ public class PointAndClickInteractor : MonoBehaviour
         INTERACTING
         
     }
+
     private bool _objectInZone = false;
+
     private State _state = State.IDLE;
 }

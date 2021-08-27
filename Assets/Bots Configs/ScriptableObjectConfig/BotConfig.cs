@@ -12,6 +12,8 @@ namespace Bots_Configs.ScriptableObjectConfig
         [SerializeField] private Sprite _baseSprite;
         [SerializeField] private int _botId;
 
+        public bool IsBotStatic;
+        
         public DialogSO TargetFoundDialog;
         public DialogSO FakeTargetDialog;
         public DialogSO CorrectTargetDialog;
@@ -39,6 +41,16 @@ namespace Bots_Configs.ScriptableObjectConfig
         public void SetClothes(ClothesConfig[] clothesConfigs)
         {
             _clothes = clothesConfigs;
+        }
+
+        public void Initialize(BotConfig config)
+        {
+            _botName = config.BotName;
+            _clothes = config.Clothes;
+            _baseSprite = config.BodySprite;
+            TargetFoundDialog = config.TargetFoundDialog;
+            FakeTargetDialog = config.FakeTargetDialog;
+            CorrectTargetDialog = config.CorrectTargetDialog;
         }
     }
 }

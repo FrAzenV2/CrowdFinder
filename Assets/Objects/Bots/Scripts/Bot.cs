@@ -19,6 +19,8 @@ namespace Objects.Bots.Scripts
         public BotConfig Config => _config;
         public bool IsTarget;
         public bool IsFakeTarget;
+
+        [SerializeField] private BotConfig _staticBotConfig;
         [HideInInspector] public POI CurrentPOI;
 
         [Header("Events")]
@@ -30,6 +32,12 @@ namespace Objects.Bots.Scripts
             _playerInteractor = GetComponent<PointAndClickInteractor>();
             _playerInteractor.OnStartedInteraction += OnStartedInteraction;
             _playerInteractor.OnEndedInteraction += OnEndedInteraction;
+        }
+
+        private void Start()
+        {
+            if(_staticBotConfig != null)
+                Initialize(_staticBotConfig);
         }
 
         public void Initialize(BotConfig config)
@@ -67,14 +75,21 @@ namespace Objects.Bots.Scripts
             _trait = trait;
         }
 
+        public void StopFollowing()
+        {
+            _botMovement.StopFollowing();
+        }
+
         private void OnStartedInteraction()
         {
+            if(_config.IsBotStatic) return;
             DialogSO dialog;
             if (IsFakeTarget || IsTarget){
                 dialog = Config.TargetFoundDialog;
                 dialog.fromBot = this;
-                _botMovement.StartFollowing(_playerInteractor.InteractingObject.transform);
+                SetPlayerFollower();
                 _playerInteractor.TryBlockPlayerInteractions();
+                
             } else {
                 if (_trait == null)
                     _traitEventChannel.RequestTrait(this);
@@ -92,6 +107,14 @@ namespace Objects.Bots.Scripts
             _dialogEventChannel.CloseDialog();
             _botMovement.EnableMovement();
         }
+
+        private void SetPlayerFollower()
+        {
+            if(!_playerInteractor.InteractingObject.TryGetComponent(out Player.Player player)) return;
+            _botMovement.StartFollowing(_playerInteractor.InteractingObject.transform);
+            player.SetCurrentFollower(this);
+        }
+
 
         // private void OnPlayerEntered(GameObject player)
         // {
