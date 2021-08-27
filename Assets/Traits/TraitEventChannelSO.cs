@@ -11,6 +11,7 @@ namespace EventChannels
     {
         public UnityAction<Bot> OnTraitRequested = default;
         public UnityAction<ITrait> OnTraitGenerated = default;
+        public UnityAction<ITrait> OnTraitRemoved = default;
 
         public void RequestTrait(Bot bot)
         {
@@ -22,6 +23,12 @@ namespace EventChannels
         {
             if (OnTraitGenerated != null)
                 OnTraitGenerated.Invoke(trait);
+        }
+
+        public void RemoveTrait(ITrait trait)
+        {
+            if (OnTraitRemoved != null)
+                OnTraitRemoved.Invoke(trait);
         }
     }
 }

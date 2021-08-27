@@ -1,5 +1,6 @@
 ﻿using Objects.Bots.Scripts;
 using UnityEngine;
+using System;
 using СlothesConfigs.ScriptableObjectConfig;
 
 namespace Traits
