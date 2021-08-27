@@ -12,6 +12,7 @@ namespace Bots_Configs.ScriptableObjectConfig
         [SerializeField] private Sprite _baseSprite;
         [SerializeField] private int _botId;
 
+        public DialogSO TargetFoundDialog;
         public DialogSO FakeTargetDialog;
         public DialogSO CorrectTargetDialog;
 

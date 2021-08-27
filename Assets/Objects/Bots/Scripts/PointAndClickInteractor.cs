@@ -9,7 +9,7 @@ public class PointAndClickInteractor : MonoBehaviour
     [SerializeField] private CollisionInteractor _collisionInteractor;
     [SerializeField] private GameObject _highlight;
     
-    [HideInInspector] public GameObject _interactingObject;
+    [HideInInspector] public GameObject InteractingObject;
     public UnityAction OnHighlighted;
     public UnityAction OnDehighlighted;
     public UnityAction OnStartedInteraction;
@@ -55,7 +55,7 @@ public class PointAndClickInteractor : MonoBehaviour
     private void OnZoneEntered(GameObject obj)
     {
         _objectInZone = true;
-        _interactingObject = obj;
+        InteractingObject = obj;
         if (_state == State.IDLE)
             SetState(State.HIGHLIGHTED);
         else if (_state == State.WAITING)
@@ -65,7 +65,7 @@ public class PointAndClickInteractor : MonoBehaviour
     private void OnZoneExited(GameObject obj)
     {
         _objectInZone = false;
-        _interactingObject = null;
+        InteractingObject = null;
         if (_state == State.HIGHLIGHTED || _state == State.INTERACTING)
             SetState(State.IDLE);
     }

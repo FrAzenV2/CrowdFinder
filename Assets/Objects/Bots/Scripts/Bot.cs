@@ -70,12 +70,10 @@ namespace Objects.Bots.Scripts
         private void OnStartedInteraction()
         {
             DialogSO dialog;
-            if (IsFakeTarget){
-                dialog = Config.FakeTargetDialog;
+            if (IsFakeTarget || IsTarget){
+                dialog = Config.TargetFoundDialog;
                 dialog.fromBot = this;
-            }else if (IsTarget) {
-                dialog = Config.CorrectTargetDialog;
-                dialog.fromBot = this;
+                _botMovement.StartFollowing(_playerInteractor.InteractingObject.transform);
             } else {
                 if (_trait == null)
                     _traitEventChannel.RequestTrait(this);

@@ -9,7 +9,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     [SerializeField] private float _movementSpeed = 4.5f;
 
     [SerializeField] private float _movementSmooth = 24.0f;
-    [SerializeField] private float _stopDistance = 0.25f;
+    [SerializeField] protected float _stopDistance = 0.25f;
 
     [Header("Visual Settings")]
     [SerializeField] private Transform _spriteHolder;
