@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Dialogs;
 using СlothesConfigs.ScriptableObjectConfig;
 
 namespace Bots_Configs.ScriptableObjectConfig
@@ -11,6 +12,9 @@ namespace Bots_Configs.ScriptableObjectConfig
         [SerializeField] private Sprite _baseSprite;
         [SerializeField] private int _botId;
 
+        public DialogSO FakeTargetDialog;
+        public DialogSO CorrectTargetDialog;
+
         public int BotId
         {
             get => _botId;
@@ -20,7 +24,7 @@ namespace Bots_Configs.ScriptableObjectConfig
         public string BotName => _botName;
         public ClothesConfig[] Clothes => _clothes;
         public Sprite BodySprite => _baseSprite;
-
+    
         public void SetName(string botName)
         {
             _botName = botName;

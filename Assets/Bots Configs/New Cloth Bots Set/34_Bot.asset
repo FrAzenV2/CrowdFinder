@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78da6ec12154f2c8f358bdf2db1732d, type: 3}
   m_Name: 34_Bot
   m_EditorClassIdentifier: 
-  _botName: Sabrea
+  _botName: Eloisa
   _clothes:
   - {fileID: 11400000, guid: 1fb5468b6cac1654f95fdb9d51cbe25d, type: 2}
   - {fileID: 11400000, guid: d7139db836bddc04ca920d5badd62261, type: 2}
   - {fileID: 11400000, guid: 05f850b7ab5f33e48b9a47fe441a3f31, type: 2}
   _baseSprite: {fileID: 21300000, guid: b2bec2cb43fe1244fbb6b527517e3309, type: 3}
   _botId: 33
+  FakeTargetDialog: {fileID: 11400000, guid: ea926c084ac875f45aab7d2bdfebbe55, type: 2}
+  CorrectTargetDialog: {fileID: 11400000, guid: 72d866a3f485c814591ee1a6e093ef82, type: 2}

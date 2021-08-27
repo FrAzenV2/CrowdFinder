@@ -5,33 +5,31 @@ using Traits;
 using Dialogs;
 using Objects.LevelControllers;
 using UnityEngine;
+using Managers;
 using СlothesConfigs.ScriptableObjectConfig;
 
 namespace Objects.Bots.Scripts
 {
-    [RequireComponent(typeof(ClickInteractor))]
+    [RequireComponent(typeof(PointAndClickInteractor), typeof(BotMovement))]
     public class Bot : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private BotClothes _botClothes;
-        
-        [SerializeField] private CollisionInteractor _playerInteractZone;
-        [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
-        [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         public Transform dialogPoint;
-        [SerializeField] private ClickInteractor _clickInteractor;
         public BotConfig Config => _config;
-        
         public bool IsTarget;
         public bool IsFakeTarget;
-        public POI CurrentPOI;
+        [HideInInspector] public POI CurrentPOI;
+
+        [Header("Events")]
+        [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
+        [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         
         private void Awake(){
             _botMovement = GetComponent<BotMovement>();
-            _playerInteractZone.OnZoneEntered += OnPlayerEntered;
-            _playerInteractZone.OnZoneExited += OnPlayerExited;
-            _clickInteractor.OnClicked += OnClicked;
-            _clickInteractor.OnReleased += OnReleased;
+            _playerInteractor = GetComponent<PointAndClickInteractor>();
+            _playerInteractor.OnStartedInteraction += OnStartedInteraction;
+            _playerInteractor.OnEndedInteraction += OnEndedInteraction;
         }
 
         public void Initialize(BotConfig config)
@@ -69,87 +67,76 @@ namespace Objects.Bots.Scripts
             _trait = trait;
         }
 
-        private void OnPlayerInteracted()
+        private void OnStartedInteraction()
         {
-                //print("Found target!");
-            _waitingForPlayer = false;
-            if (_inDialog)
-                return;
-            // Request a trait if we don't have one
-            if (_trait == null)
-                _traitEventChannel.RequestTrait(this);
-            
-            DialogSO dialog = ScriptableObject.CreateInstance<DialogSO>();
-            dialog.fromBot = this;
-            if (_trait != null)
-                dialog.text = _trait.GetTraitText();
-            else
-                dialog.text = "No trait :(";
-            
-            if (IsFakeTarget)
-                dialog.text = "I'm not the one you're looking for :(";
-            
-            // TODO: Use events
-            if (IsTarget)
-            {
-                GetComponentInChildren<SpriteRenderer>().color = Color.green;
-                dialog.text = "Hey! You found me!";
+            DialogSO dialog;
+            if (IsFakeTarget){
+                dialog = Config.FakeTargetDialog;
+                dialog.fromBot = this;
+            }else if (IsTarget) {
+                dialog = Config.CorrectTargetDialog;
+                dialog.fromBot = this;
+            } else {
+                if (_trait == null)
+                    _traitEventChannel.RequestTrait(this);
+                dialog = DialogManager.GetDialogFromTrait(_trait);
             }
 
             _dialogEventChannel.OpenDialog(dialog);
-            _dialogEventChannel.OnDialogClosed += OnDialogClosed;
             _inDialog = true;
             _botMovement.DisableMovement();
         }
 
-        private void OnPlayerEntered(GameObject player)
-        {
-            _nearPlayer = true;
-            // If we were waiting for player, stop them
-            if (_waitingForPlayer){
-                OnPlayerInteracted();
-            }
-        }
-
-        private void OnPlayerExited(GameObject player)
-        {
-            _nearPlayer = false;
-            if (_inDialog)
-                _dialogEventChannel.CloseDialog();
-        }
-
-        private void OnClicked()
-        {
-            if (_nearPlayer){
-                OnPlayerInteracted();
-            } else {
-                _waitingForPlayer = true;
-            }
-        }
-
-        private void OnReleased()
-        {
-            _waitingForPlayer = false;
-            if (_inDialog)
-                _dialogEventChannel.CloseDialog();
-        }
-
-        private void OnDialogClosed()
+        private void OnEndedInteraction()
         {
             _inDialog = false;
-            _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
+            _dialogEventChannel.CloseDialog();
             _botMovement.EnableMovement();
         }
 
+        // private void OnPlayerEntered(GameObject player)
+        // {
+        //     _nearPlayer = true;
+        //     // If we were waiting for player, stop them
+        //     if (_waitingForPlayer){
+        //         OnPlayerInteracted();
+        //     }
+        // }
+
+        // private void OnPlayerExited(GameObject player)
+        // {
+        //     _nearPlayer = false;
+        //     if (_inDialog)
+        //         _dialogEventChannel.CloseDialog();
+        // }
+
+        // private void OnClicked()
+        // {
+        //     if (_nearPlayer){
+        //         OnPlayerInteracted();
+        //     } else {
+        //         _waitingForPlayer = true;
+        //     }
+        // }
+
+        // private void OnReleased()
+        // {
+        //     _waitingForPlayer = false;
+        //     if (_inDialog)
+        //         _dialogEventChannel.CloseDialog();
+        // }
+
+        // private void OnDialogClosed()
+        // {
+        //     _inDialog = false;
+        //     _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
+        //     _botMovement.EnableMovement();
+        // }
+
         private BotMovement _botMovement;
+        private PointAndClickInteractor _playerInteractor;
         private BotConfig _config;
-
-        private ITrait _trait;
-
-        private bool _waitingForPlayer;
-
-        private bool _nearPlayer;
-
         private bool _inDialog;
+        private ITrait _trait;
     }
 }

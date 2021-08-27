@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78da6ec12154f2c8f358bdf2db1732d, type: 3}
   m_Name: 60_Bot
   m_EditorClassIdentifier: 
-  _botName: Tenita
+  _botName: Glendon
   _clothes:
   - {fileID: 11400000, guid: c4220583f495b0e4795f3882005511aa, type: 2}
   - {fileID: 11400000, guid: c1a60630a3d6b4d43849f4c55192319c, type: 2}
   - {fileID: 11400000, guid: 6b38134fb5d64754ab28cb447f47a766, type: 2}
   _baseSprite: {fileID: 21300000, guid: b2bec2cb43fe1244fbb6b527517e3309, type: 3}
   _botId: 59
+  FakeTargetDialog: {fileID: 11400000, guid: ea926c084ac875f45aab7d2bdfebbe55, type: 2}
+  CorrectTargetDialog: {fileID: 11400000, guid: 72d866a3f485c814591ee1a6e093ef82, type: 2}

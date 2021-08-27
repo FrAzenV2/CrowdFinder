@@ -4018,6 +4018,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
+      propertyPath: _uselessTraits.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfCorrectTargetTrait
       value: 0.5
       objectReference: {fileID: 0}
@@ -4025,6 +4029,10 @@ PrefabInstance:
       propertyPath: _chanceOfPOITraitGeneration
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
+      propertyPath: _uselessTraits.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 22117659df29c884c890366f6657061c, type: 2}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfClothTraitGeneration
       value: 0.6

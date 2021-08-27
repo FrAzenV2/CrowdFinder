@@ -2,18 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Traits;
-using EventChannels;
 using Objects.Bots.Scripts;
 using Objects.LevelControllers.Scripts;
 using Random = UnityEngine.Random;
+using Traits;
+using Dialogs;
+using EventChannels;
 
 namespace Managers
 {
     public class TraitManager : MonoBehaviour
     {
-        [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
-
         [Header("Traits Generation Stats")] [SerializeField] [Range(0, 1)]
         private float _chanceOfGivingTrait = 0.05f;
 
@@ -28,6 +27,12 @@ namespace Managers
         private LevelBotSpawner _botSpawner;
 
         [SerializeField] private PoiList _poiList;
+        
+        [Header("Traits")]
+        [SerializeField] private List<UselessTrait> _uselessTraits;
+
+        [Header("Events")]
+        [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
 
 
         // Start is called before the first frame update
@@ -45,7 +50,10 @@ namespace Managers
             //If no trait is given
             if (Random.value > _chanceOfGivingTrait)
             {
-                bot.AssignTrait(null);
+                // TODO: Separate trait generation & trait assignment
+                ITrait newTrait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
+                newTrait.Sender = bot;
+                bot.AssignTrait(newTrait);
                 return;
             }
 
@@ -86,7 +94,8 @@ namespace Managers
                     var cloth = traitTarget.Config.Clothes[Random.Range(0, traitTarget.Config.Clothes.Length - 1)];
                     if (cloth == null)
                     {
-                        trait = null;
+                        trait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
+                        trait.Sender = bot;
                         continue;
                     }
 
@@ -106,14 +115,15 @@ namespace Managers
 
             if (attempts >= _maxTryGetTraitsAttempts)
             {
-                bot.AssignTrait(null);
+                ITrait newTrait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
+                newTrait.Sender = bot;
+                bot.AssignTrait(newTrait);
                 return;
             }
             
             //
             bot.AssignTrait(trait);
-            if (trait != null)
-                _traitEventChannel.GenerateTrait(trait);
+            _traitEventChannel.GenerateTrait(trait);
         }
 
         private List<ITrait> _traits;

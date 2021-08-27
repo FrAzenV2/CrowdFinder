@@ -4,6 +4,7 @@ using UnityEngine;
 using Objects.Bots.Scripts;
 using EventChannels;
 using Dialogs;
+using Traits;
 
 namespace Managers
 {
@@ -13,8 +14,7 @@ namespace Managers
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         [SerializeField] private DialogBox _dialogBoxPrefab;
         [SerializeField] private Transform _dialogParent;
-        
-        // Start is called before the first frame update
+
         private void Awake()
         {
             _dialogEventChannel.OnDialogOpened += OpenDialog;
@@ -34,6 +34,15 @@ namespace Managers
         {
             if (_currentDialog != null)
                 _currentDialog.Close();
+        }
+
+        public static DialogSO GetDialogFromTrait(ITrait trait)
+        {
+            DialogSO dialog = ScriptableObject.CreateInstance<DialogSO>();
+            dialog.fromBot = trait.Sender;
+            dialog.text = trait.GetTraitText();
+            
+            return dialog;
         }
 
         private DialogBox _currentDialog;
