@@ -12,7 +12,6 @@ namespace Dialogs
 
         private void Awake() {
             _animator = GetComponent<Animator>();
-            _animator.SetBool("Open", true);
         }
         public void Initialize(DialogSO dialog){
             _dialog = dialog;
@@ -20,7 +19,7 @@ namespace Dialogs
         }
 
         public void Close(){
-            _animator.SetBool("Open", false);
+            _animator.Play("Hide");
             Destroy(gameObject, 0.5f);
         }
 
