@@ -27,7 +27,7 @@ namespace Traits
             else
                 traitText = _directionsText[3];
 
-            return traitText;
+            return $"<color=\"red\">{Target.Config.BotName}</color> is to the {traitText}";
         }
 
         public void CalculateDirection(Bot target, Bot sender)

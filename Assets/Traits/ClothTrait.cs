@@ -26,7 +26,7 @@ namespace Traits
 
         public string GetTraitText()
         {
-            var trait = Target.Config.BotName + " wearing " + Cloth.ClothName;
+            var trait = $"<color=\"red\">{Target.Config.BotName}</color> is wearing {Cloth.ClothName}";
             return trait;
         }
 

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _clothType: 2
   _clothSprite: {fileID: 21300000, guid: f2f695cf8923ace4b9df277ea9a80dc5, type: 3}
-  _clothColor: {r: 0.33333334, g: 0.7176471, b: 0.21960784, a: 1}
+  _clothColor: {r: 0.70980394, g: 0.91764706, b: 0.84313726, a: 1}
   _clothName: Green Sweatpants

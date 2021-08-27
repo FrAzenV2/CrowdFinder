@@ -15,7 +15,7 @@ namespace Traits
 
         public string GetTraitText()
         {
-            var trait = Target.Config.BotName + " is around " + TargetPoi.POIName;
+            var trait = $"<color=\"red\">{Target.Config.BotName}</color> is around {TargetPoi.POIName}";
             return trait;
         }
 
