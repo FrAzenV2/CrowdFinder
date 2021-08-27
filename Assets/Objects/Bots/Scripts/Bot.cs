@@ -79,6 +79,8 @@ namespace Objects.Bots.Scripts
             } else {
                 if (_trait == null)
                     _traitEventChannel.RequestTrait(this);
+                else
+                    _traitEventChannel.GenerateTrait(_trait);
                 dialog = DialogManager.GetDialogFromTrait(_trait);
             }
 

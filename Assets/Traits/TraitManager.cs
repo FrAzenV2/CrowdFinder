@@ -81,6 +81,8 @@ namespace Managers
                 {
                     _traits.Add(trait);
                     break;
+                }else{
+                    print("Already contains: " + trait.GetTraitText());
                 }
             } while (trait == null && attempts < _maxTryGetTraitsAttempts);
 

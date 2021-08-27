@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class PlayerMovement : MovingBehaviour
 {
@@ -16,6 +17,8 @@ public class PlayerMovement : MovingBehaviour
     // Callbacks
     private void OnClick()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
         var worldPosition = (Vector2) Camera.main.ScreenToWorldPoint(_pointerPosition);
         MoveAt(worldPosition);
     }
