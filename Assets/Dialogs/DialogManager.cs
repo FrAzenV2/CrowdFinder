@@ -24,7 +24,6 @@ namespace Managers
         {
             var canvasPosition = Camera.main.WorldToScreenPoint(dialog.fromBot.dialogPoint.transform.position);
             DialogBox dialogBox = Instantiate(_dialogBoxPrefab, canvasPosition , Quaternion.identity, _dialogParent);
-
             dialogBox.Initialize(dialog);
             _currentDialog = dialogBox;
         }

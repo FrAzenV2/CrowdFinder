@@ -121,9 +121,8 @@ namespace Managers
                 var cloth = traitTarget.Config.Clothes[Random.Range(0, traitTarget.Config.Clothes.Length - 1)];
                 ((ClothTrait) trait).Cloth = cloth;
             }
-
-            trait.Sender = traitSource;
-            trait.Target = traitTarget;
+            print("Trait from " + traitSource.Config.BotName + " to " + traitTarget.Config.BotName);
+            ConfigureTrait(trait, traitSource, traitTarget);
             return trait;
         }
 

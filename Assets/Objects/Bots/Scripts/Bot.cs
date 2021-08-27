@@ -89,7 +89,6 @@ namespace Objects.Bots.Scripts
                 dialog.fromBot = this;
                 SetPlayerFollower();
                 _playerInteractor.TryBlockPlayerInteractions();
-                
             } else {
                 if (_trait == null)
                     _traitEventChannel.RequestTrait(this);
