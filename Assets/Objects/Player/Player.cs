@@ -9,6 +9,11 @@ namespace Objects.Player
     {
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
         private PlayerMovement _playerMovement;
+        public bool BotInteractable => _canInteractWithBots;
+        public void SetBotInteractableStatus(bool canInteract)
+        {
+            _canInteractWithBots = canInteract;
+        }
 
         public bool IsChangingArea
         {
@@ -50,5 +55,6 @@ namespace Objects.Player
         }
 
         private bool _isChangningArea;
+        private bool _canInteractWithBots = true;
     }
 }

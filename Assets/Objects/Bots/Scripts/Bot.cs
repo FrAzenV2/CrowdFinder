@@ -74,6 +74,7 @@ namespace Objects.Bots.Scripts
                 dialog = Config.TargetFoundDialog;
                 dialog.fromBot = this;
                 _botMovement.StartFollowing(_playerInteractor.InteractingObject.transform);
+                _playerInteractor.TryBlockPlayerInteractions();
             } else {
                 if (_trait == null)
                     _traitEventChannel.RequestTrait(this);

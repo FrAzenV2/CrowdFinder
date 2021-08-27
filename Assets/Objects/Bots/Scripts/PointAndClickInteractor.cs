@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Objects.Player;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,6 +15,12 @@ public class PointAndClickInteractor : MonoBehaviour
     public UnityAction OnDehighlighted;
     public UnityAction OnStartedInteraction;
     public UnityAction OnEndedInteraction;
+    
+    public void TryBlockPlayerInteractions()
+    {
+        if(!InteractingObject.TryGetComponent(out Player player)) return;
+        player.SetBotInteractableStatus(false);
+    }
 
     private void Awake() {
         _clickInteractor.OnClicked += OnClicked;
@@ -56,6 +63,17 @@ public class PointAndClickInteractor : MonoBehaviour
     {
         _objectInZone = true;
         InteractingObject = obj;
+
+        if (InteractingObject.TryGetComponent(out Player player))
+        {
+            if (!player.BotInteractable)
+            {
+                InteractingObject = null;
+                _objectInZone = false;
+                return;
+            }
+        }
+        
         if (_state == State.IDLE)
             SetState(State.HIGHLIGHTED);
         else if (_state == State.WAITING)
