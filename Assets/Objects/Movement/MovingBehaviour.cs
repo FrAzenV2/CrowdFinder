@@ -45,7 +45,7 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         // Update velocity
         var targetSpeed = _isMoving ? _movementSpeed : 0f;
         _currentSpeed = Mathf.Lerp(_currentSpeed, targetSpeed, Time.deltaTime * _movementSmooth);
-        if (_currentSpeed < 0.1e-3f)
+        if (_currentSpeed < 1e-2f)
             _currentSpeed = 0;
         _rb.velocity = _targetDirection * _currentSpeed;
     }
