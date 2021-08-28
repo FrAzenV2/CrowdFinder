@@ -46,6 +46,15 @@ public class BotMovement : MovingBehaviour
 
     void Wander(){
         Vector2 wanderPosition = _startPosition + Random.insideUnitCircle * wanderRadius;
+        // for (int i = 0; i < 10; i++)
+        // {
+        //     Vector2 wanderDirection = Random.insideUnitCircle;
+        //     wanderPosition = _startPosition + wanderDirection * wanderRadius;
+        //     RaycastHit2D hit = Physics2D.Raycast(_startPosition, wanderDirection, wanderRadius, wanderMask);
+        //     if (hit.collider == null)
+        //         break;
+        // }
+        
         MoveAt(wanderPosition);
     }
 

@@ -12,7 +12,9 @@ namespace Objects.Bots.Scripts
         
         [Header("Events")]
         [SerializeField] private DialogEventChannelSO _dialogEventChannel = default;
+        [SerializeField] private GameEventChannelSO _gameEventChannel = default;
 
+        [Header("Dialogs")]
         [SerializeField] private string _correctTargetFoundDialog = "Yeah, thanks for finding him!";
         [SerializeField] private string _fakeTargetFoundDialog = "Idk who is that...";
         [SerializeField] private string _noTargetFoundDialog = "Hope you will find him soon";
@@ -38,6 +40,7 @@ namespace Objects.Bots.Scripts
                 {
                     dialog.text = _correctTargetFoundDialog;
                     CorrectTargetFound?.Invoke();
+                    _gameEventChannel.Win();
                 }
 
                 if (player.CurrentFollower.IsFakeTarget)
