@@ -11,6 +11,7 @@ namespace Objects.LevelControllers.Scripts
         [SerializeField] protected int _fakeTargetsAmount = 2;
         [SerializeField] protected BotsSet _botsSet;
         [SerializeField] protected Bot _botPrefab;
+        [SerializeField] protected string _targetNameOverride;
 
 
         public Bot TargetBot => _targetBot;

@@ -50,6 +50,8 @@ namespace Objects.LevelControllers
                     if (_targetBot==null)
                     {
                         _targetBot = newBot;
+                        if (_targetNameOverride != "")
+                            _targetBot.Config.BotName = _targetNameOverride;
                         _targetBot.IsTarget = true;
                     }
                     else

@@ -415,8 +415,8 @@ MonoBehaviour:
   _thisBot: {fileID: 147794603}
   _dialogEventChannel: {fileID: 11400000, guid: d1d6826ed227a194a81fcdaa97b5fd75, type: 2}
   _correctTargetFoundDialog: Yeah, thanks for finding him!
-  _fakeTargetFoundDialog: Idk who is that...
-  _noTargetFoundDialog: Hope you will find him soon
+  _fakeTargetFoundDialog: Nah, that's not him...
+  _noTargetFoundDialog: Hope you will find him soon!
 --- !u!114 &147794603 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
@@ -1619,6 +1619,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &373768434 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1391686535759959532, guid: cc83a000f90590249becba24fd556080, type: 3}
+  m_PrefabInstance: {fileID: 797374661}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d8066bd182459eab2bab8993c7b664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &384837636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,8 +2494,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667873077}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.8201, y: 14.297, z: 0}
-  m_LocalScale: {x: 2.5721343, y: 33.62435, z: 1}
+  m_LocalPosition: {x: 2.9304, y: 14.297, z: 0}
+  m_LocalScale: {x: 2.5721343, y: 31.40516, z: 1}
   m_Children: []
   m_Father: {fileID: 1021043194}
   m_RootOrder: 8
@@ -2748,6 +2759,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755642977}
   m_CullTransparentMesh: 1
+--- !u!1001 &797374661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1479426941}
+    m_Modifications:
+    - target: {fileID: 1391686534207193116, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959532, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: POIName
+      value: Picnic Zone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391686535759959534, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_Name
+      value: PicnicZone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc83a000f90590249becba24fd556080, type: 3}
+--- !u!4 &797374662 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1391686535759959533, guid: cc83a000f90590249becba24fd556080, type: 3}
+  m_PrefabInstance: {fileID: 797374661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &822378498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4100,6 +4181,7 @@ Transform:
   - {fileID: 1299783444}
   - {fileID: 1941836002}
   - {fileID: 482083649}
+  - {fileID: 797374662}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4121,6 +4203,7 @@ MonoBehaviour:
   - {fileID: 1610277996}
   - {fileID: 1525478470}
   - {fileID: 2044421829}
+  - {fileID: 373768434}
 --- !u!1 &1523305891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4553,6 +4636,7 @@ MonoBehaviour:
   _fakeTargetsAmount: 1
   _botsSet: {fileID: 11400000, guid: c70bba53c1054d14cab07160b809f9fc, type: 2}
   _botPrefab: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
+  _targetNameOverride: Ivan
   spawnRegions:
   - center: {x: -1.71, y: -0.71}
     size: {x: 2, y: 4.13}
@@ -4566,7 +4650,7 @@ MonoBehaviour:
     size: {x: 6.7, y: 8.2}
     maxSpawnAmount: 10
     minDistance: 2
-  - center: {x: 27.82, y: 9.7}
+  - center: {x: 27.82, y: 11.52}
     size: {x: 9.65, y: 5.52}
     maxSpawnAmount: 40
     minDistance: 2
@@ -4585,6 +4669,10 @@ MonoBehaviour:
   - center: {x: 29.4, y: 1.2}
     size: {x: 9.3, y: 2.63}
     maxSpawnAmount: 7
+    minDistance: 1.5
+  - center: {x: -24.15, y: 12.3}
+    size: {x: 15.6, y: 9.5}
+    maxSpawnAmount: 20
     minDistance: 1.5
   iterationsPerPoint: 30
 --- !u!1 &1910960259
