@@ -29,7 +29,7 @@ namespace Traits
 
         public string GetTraitText()
         {
-            var trait = $"My friend {trait1.GetTraitText()} and {trait2.GetTraitText()}";
+            var trait = $"My friend {trait1.GetTraitText()} and {trait2.GetTraitText()}, they might help";
             return trait;
         }
     }
