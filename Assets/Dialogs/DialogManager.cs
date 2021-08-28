@@ -44,6 +44,14 @@ namespace Managers
             return dialog;
         }
 
+        public static DialogSO CreateDialog(Bot fromBot, string text)
+        {
+            DialogSO dialog = ScriptableObject.CreateInstance<DialogSO>();
+            dialog.fromBot = fromBot;
+            dialog.text = text;
+            return dialog;
+        }
+
         private void ClampToScreen(RectTransform canvas, RectTransform obj)
         {
             var sizeDelta = canvas.sizeDelta - obj.sizeDelta;
