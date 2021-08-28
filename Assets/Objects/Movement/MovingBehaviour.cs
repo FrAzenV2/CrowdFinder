@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,7 +34,8 @@ public class MovingBehaviour : MonoBehaviour, IMoving
     {
         AnimationsUpdate();
     }
-
+    
+    
     protected virtual void FixedUpdate()
     {
         // Check distances
@@ -46,7 +48,10 @@ public class MovingBehaviour : MonoBehaviour, IMoving
         var targetSpeed = _isMoving ? _movementSpeed : 0f;
         _currentSpeed = Mathf.Lerp(_currentSpeed, targetSpeed, Time.deltaTime * _movementSmooth);
         if (_currentSpeed < 1e-2f)
+        {
             _currentSpeed = 0;
+        }
+
         _rb.velocity = _targetDirection * _currentSpeed;
     }
 
