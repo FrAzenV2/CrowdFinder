@@ -51,12 +51,12 @@ namespace Objects.LevelControllers
                     {
                         _targetBot = newBot;
                         _targetBot.IsTarget = true;
-                        botsList.RemoveAt(botConfigIndex);
                     }
                     else
                     {
                         _bots.Add(newBot);
                     }
+                    botsList.RemoveAt(botConfigIndex);
                 }
             }
 
