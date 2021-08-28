@@ -6,8 +6,8 @@ namespace Objects.LevelControllers.Scripts
 {
     public class PoiList : MonoBehaviour
     {
+        [SerializeField] private POI _defaultPlayerPOI;
         public List<POI> Pois;
-
         public POI CurrentPlayerPOI => _currentPOI;
         
         private void OnEnable()
@@ -16,6 +16,8 @@ namespace Objects.LevelControllers.Scripts
             {
                 poi.PlayerSteppedIn += ResetAllCameraPriorities;
             }
+
+            _currentPOI = _defaultPlayerPOI;
         }
 
         private void OnDisable()
