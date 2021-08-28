@@ -17,6 +17,7 @@ namespace Managers
         private void Awake()
         {
             _dialogEventChannel.OnDialogOpened += OpenDialog;
+            _dialogEventChannel.OnDialogUpdated += UpdateDialog;
             _dialogEventChannel.OnDialogClosed += CloseDialog;
         }
 
@@ -28,6 +29,13 @@ namespace Managers
             dialogBox.Initialize(dialog);
             ClampToScreen(_dialogParent.GetComponent<RectTransform>(), dialogBox.GetComponent<RectTransform>());
             _currentDialog = dialogBox;
+        }
+
+        public void UpdateDialog(DialogSO dialog)
+        {
+            if (_currentDialog == null)
+                return;
+            _currentDialog.Initialize(dialog);
         }
 
         public void CloseDialog()
