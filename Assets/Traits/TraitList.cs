@@ -27,7 +27,6 @@ public class TraitList : MonoBehaviour
     {
         if (_traitList.Contains(trait))
             return;
-
         TraitListEntry listEntry = Instantiate(_traitListEntryPrefab, Vector3.zero, Quaternion.identity, _traitGroup);
         listEntry.Initialize(trait);
         _traitList.Add(trait);

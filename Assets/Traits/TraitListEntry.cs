@@ -14,7 +14,7 @@ public class TraitListEntry : MonoBehaviour
     }
     public void Initialize(ITrait trait){
         _trait = trait;
-        _text.text = $"{trait.Sender.Config.BotName}: {trait.GetTraitText()}";
+        _text.text = $"<b>{trait.Sender.Config.BotName}</b>: {trait.GetTraitText()}";
     }
 
     public void Close(){

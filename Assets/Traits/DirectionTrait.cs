@@ -48,6 +48,8 @@ namespace Traits
 
         public bool Equals(ITrait other)
         {
+            if (other.Sender == Sender)
+                return true;
             return false;
         }
     }

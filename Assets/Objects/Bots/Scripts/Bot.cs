@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Bots_Configs.ScriptableObjectConfig;
 using EventChannels;
 using Traits;
@@ -115,45 +115,12 @@ namespace Objects.Bots.Scripts
             player.SetCurrentFollower(this);
         }
 
-
-        // private void OnPlayerEntered(GameObject player)
-        // {
-        //     _nearPlayer = true;
-        //     // If we were waiting for player, stop them
-        //     if (_waitingForPlayer){
-        //         OnPlayerInteracted();
-        //     }
-        // }
-
-        // private void OnPlayerExited(GameObject player)
-        // {
-        //     _nearPlayer = false;
-        //     if (_inDialog)
-        //         _dialogEventChannel.CloseDialog();
-        // }
-
-        // private void OnClicked()
-        // {
-        //     if (_nearPlayer){
-        //         OnPlayerInteracted();
-        //     } else {
-        //         _waitingForPlayer = true;
-        //     }
-        // }
-
-        // private void OnReleased()
-        // {
-        //     _waitingForPlayer = false;
-        //     if (_inDialog)
-        //         _dialogEventChannel.CloseDialog();
-        // }
-
-        // private void OnDialogClosed()
-        // {
-        //     _inDialog = false;
-        //     _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
-        //     _botMovement.EnableMovement();
-        // }
+        private void OnDrawGizmos() {
+            if (_inDialog){
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(transform.position, 1.0f);
+            }
+        }
 
         private BotMovement _botMovement;
         private PointAndClickInteractor _playerInteractor;

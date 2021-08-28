@@ -9,12 +9,19 @@ namespace EventChannels
     public class DialogEventChannelSO : ScriptableObject
     {
         public UnityAction<DialogSO> OnDialogOpened;
+        public UnityAction<DialogSO> OnDialogUpdated;
         public UnityAction OnDialogClosed;
 
         public void OpenDialog(DialogSO dialog)
         {
             if (OnDialogOpened != null)
                 OnDialogOpened.Invoke(dialog);
+        }
+
+        public void UpdateDialog(DialogSO dialog)
+        {
+            if (OnDialogUpdated != null)
+                OnDialogUpdated.Invoke(dialog);
         }
 
         public void CloseDialog()
