@@ -72,8 +72,6 @@ namespace Objects.Bots.Scripts
 
         public void AssignTrait(ITrait trait)
         {
-            print($"Assigned trait (name={trait.Sender.Config.BotName}) to {Config.BotName}");
-            print(trait.Sender == this);
             _trait = trait;
         }
 
@@ -85,10 +83,6 @@ namespace Objects.Bots.Scripts
         private void OnStartedInteraction()
         {
             if(_config.IsBotStatic) return;
-            print($"Starting interaction with name={_config.BotName}");
-            if (_trait != null && _trait.Sender != this){
-                print("<color=\"red\">??????????????????????????????????????????????????</color>");
-            }
             DialogSO dialog;
             if (IsFakeTarget || IsTarget){
                 dialog = Config.TargetFoundDialog;

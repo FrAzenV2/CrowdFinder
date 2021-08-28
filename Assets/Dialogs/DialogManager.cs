@@ -27,7 +27,6 @@ namespace Managers
             DialogBox dialogBox = Instantiate(_dialogBoxPrefab, canvasPosition , Quaternion.identity, _dialogParent);
             dialogBox.Initialize(dialog);
             _currentDialog = dialogBox;
-            print($"Opening dialog at {canvasPosition} for {dialog.fromBot} (name={dialog.fromBot.Config.BotName})");
         }
 
         public void CloseDialog()
