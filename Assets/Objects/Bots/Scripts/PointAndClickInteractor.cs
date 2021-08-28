@@ -1,3 +1,4 @@
+using System;
 using Objects.Player;
 using UnityEngine;
 using UnityEngine.Events;
@@ -22,12 +23,20 @@ public class PointAndClickInteractor : MonoBehaviour
         player.SetBotInteractableStatus(false);
     }
 
-    private void Awake() {
+    private void OnEnable() {
         _clickInteractor.OnClicked += OnClicked;
         _clickInteractor.OnReleased += OnReleased;
         _collisionInteractor.OnZoneEntered += OnZoneEntered;
         _collisionInteractor.OnZoneExited += OnZoneExited;
         SetState(State.IDLE);
+    }
+
+    private void OnDisable()
+    {
+        _clickInteractor.OnClicked -= OnClicked;
+        _clickInteractor.OnReleased -= OnReleased;
+        _collisionInteractor.OnZoneEntered -= OnZoneEntered;
+        _collisionInteractor.OnZoneExited -= OnZoneExited;
     }
 
     private void OnClicked()
