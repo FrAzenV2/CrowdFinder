@@ -30,7 +30,7 @@ namespace Managers
         [SerializeField] private PoiList _poiList;
         
         [Header("Traits")]
-        [SerializeField] private List<UselessTrait> _uselessTraits;
+        [SerializeField] private List<String> _uselessTraitStrings;
 
         [Header("Events")]
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
@@ -48,7 +48,6 @@ namespace Managers
         {
             if (bot.IsTarget)
                 return;
-
             //If no trait is given
             if (Random.value > _chanceOfGivingTrait)
             {
@@ -121,15 +120,14 @@ namespace Managers
                 var cloth = traitTarget.Config.Clothes[Random.Range(0, traitTarget.Config.Clothes.Length - 1)];
                 ((ClothTrait) trait).Cloth = cloth;
             }
-            print("Trait from " + traitSource.Config.BotName + " to " + traitTarget.Config.BotName);
             ConfigureTrait(trait, traitSource, traitTarget);
             return trait;
         }
 
         private ITrait GenerateUselessTrait(Bot traitSource)
         {
-            ITrait trait;
-            trait = _uselessTraits[Random.Range(0, _uselessTraits.Count - 1)];
+            UselessTrait trait = ScriptableObject.CreateInstance<UselessTrait>();
+            trait.text = _uselessTraitStrings[Random.Range(0, _uselessTraitStrings.Count - 1)];
             trait.Sender = traitSource;
             return trait;
         }

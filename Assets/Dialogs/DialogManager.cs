@@ -22,10 +22,12 @@ namespace Managers
 
         public void OpenDialog(DialogSO dialog)
         {
+            
             var canvasPosition = Camera.main.WorldToScreenPoint(dialog.fromBot.dialogPoint.transform.position);
             DialogBox dialogBox = Instantiate(_dialogBoxPrefab, canvasPosition , Quaternion.identity, _dialogParent);
             dialogBox.Initialize(dialog);
             _currentDialog = dialogBox;
+            print($"Opening dialog at {canvasPosition} for {dialog.fromBot} (name={dialog.fromBot.Config.BotName})");
         }
 
         public void CloseDialog()
@@ -39,7 +41,6 @@ namespace Managers
             DialogSO dialog = ScriptableObject.CreateInstance<DialogSO>();
             dialog.fromBot = trait.Sender;
             dialog.text = trait.GetTraitText();
-            
             return dialog;
         }
 
