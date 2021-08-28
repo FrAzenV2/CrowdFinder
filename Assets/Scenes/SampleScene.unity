@@ -457,7 +457,7 @@ Transform:
   m_Children:
   - {fileID: 147794599}
   m_Father: {fileID: 2096195325}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &199071475
 GameObject:
@@ -3205,6 +3205,108 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &883824581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883824582}
+  - component: {fileID: 883824584}
+  - component: {fileID: 883824583}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &883824582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883824581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096195325}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883824583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883824581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477624f2428f83849bcc83d0b7907675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _confettiParticles: {fileID: 0}
+  _timerText: {fileID: 0}
+  _gameEventChannel: {fileID: 0}
+--- !u!114 &883824584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883824581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 248e506f182fa1247849fa5017583018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _botsParent: {fileID: 1050188349}
+  _fakeTargetsAmount: 1
+  _botsSet: {fileID: 11400000, guid: c70bba53c1054d14cab07160b809f9fc, type: 2}
+  _botPrefab: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
+  _targetNameOverride: Ivan
+  spawnRegions:
+  - center: {x: -1.71, y: -0.71}
+    size: {x: 2, y: 4.13}
+    maxSpawnAmount: 5
+    minDistance: 2
+  - center: {x: 19.3, y: 10.1}
+    size: {x: 2, y: 6.63}
+    maxSpawnAmount: 5
+    minDistance: 2
+  - center: {x: 22.36, y: -2.2}
+    size: {x: 6.7, y: 8.2}
+    maxSpawnAmount: 10
+    minDistance: 2
+  - center: {x: 27.82, y: 11.52}
+    size: {x: 9.65, y: 5.52}
+    maxSpawnAmount: 40
+    minDistance: 2
+  - center: {x: 3.86, y: 9.82}
+    size: {x: 6.25, y: 4.76}
+    maxSpawnAmount: 10
+    minDistance: 2
+  - center: {x: 0.9, y: 14.3}
+    size: {x: 20.07, y: 1.96}
+    maxSpawnAmount: 15
+    minDistance: 2
+  - center: {x: -1.84, y: -6.01}
+    size: {x: 16.08, y: 1.96}
+    maxSpawnAmount: 15
+    minDistance: 2
+  - center: {x: 29.4, y: 1.2}
+    size: {x: 9.3, y: 2.63}
+    maxSpawnAmount: 7
+    minDistance: 1.5
+  - center: {x: -24.15, y: 12.3}
+    size: {x: 15.6, y: 9.5}
+    maxSpawnAmount: 20
+    minDistance: 1.5
+  iterationsPerPoint: 30
 --- !u!1 &927773596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6115,6 +6217,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1832286466}
+  - {fileID: 883824582}
   - {fileID: 835629289}
   - {fileID: 848436653}
   - {fileID: 215786741}
@@ -6131,7 +6234,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 206336681635989728, guid: 1e97816083d8e054e92612ef491fdf44, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 206336681635989728, guid: 1e97816083d8e054e92612ef491fdf44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6253,7 +6356,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3328620049697928360, guid: c13f6bc060d455e46b2bb6e5c6cd80c6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3328620049697928360, guid: c13f6bc060d455e46b2bb6e5c6cd80c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6326,7 +6429,7 @@ PrefabInstance:
       objectReference: {fileID: 1832286467}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfGivingTrait
-      value: 0.675
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _uselessTraits.Array.size
@@ -6398,7 +6501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674847, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674847, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: m_LocalPosition.x
