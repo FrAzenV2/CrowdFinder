@@ -10,7 +10,7 @@ namespace Objects.LevelControllers
         public string POIName;
         [SerializeField] private CinemachineVirtualCamera _camera;
         [SerializeField] private POIPlayerCatcher[] _playerCatchers;
-        public event Action PlayerSteppedIn;
+        public event EventHandler PlayerSteppedIn;
 
         public void ResetCameraPriority()
         {
@@ -36,7 +36,7 @@ namespace Objects.LevelControllers
 
         private void OnPlayerWalkedIn()
         {
-            PlayerSteppedIn?.Invoke();
+            PlayerSteppedIn?.Invoke(this,EventArgs.Empty);
             _camera.Priority = 10;
         }
     }

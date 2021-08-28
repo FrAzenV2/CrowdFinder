@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Objects.LevelControllers.Scripts
@@ -9,6 +8,8 @@ namespace Objects.LevelControllers.Scripts
     {
         public List<POI> Pois;
 
+        public POI CurrentPlayerPOI => _currentPOI;
+        
         private void OnEnable()
         {
             foreach (var poi in Pois)
@@ -25,12 +26,16 @@ namespace Objects.LevelControllers.Scripts
             }
         }
 
-        private void ResetAllCameraPriorities()
+        private void ResetAllCameraPriorities(object sender, EventArgs eventArgs)
         {
             foreach (var poi in Pois)
             {
                 poi.ResetCameraPriority();
             }
+
+            _currentPOI = (POI) sender;
         }
+
+        private POI _currentPOI;
     }
 }
