@@ -8,6 +8,9 @@ using EventChannels;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Parameters")]
+    [SerializeField] private float _maxGameTime = 180f;
+
     [Header("Objects")]
     [SerializeField] private Player _player;
 
@@ -21,11 +24,13 @@ public class GameManager : MonoBehaviour
     private void Awake() {
         _gameEventChannel.OnGameStarted += OnGameStarted;
         _gameEventChannel.OnGameWon += OnGameWon;
+        _gameEventChannel.OnGameLost += OnGameLost;
     }
 
     private void OnGameStarted()
     {
-
+        _gameStarted = true;
+        _gameTimer = _maxGameTime;
     }
 
     private void OnGameWon()
@@ -33,6 +38,21 @@ public class GameManager : MonoBehaviour
         Instantiate(_confettiParticles, _player.transform.position, Quaternion.identity);
     }
 
+    private void OnGameLost()
+    {
+        print("Game over!");
+    }
+
+    private void Update() {
+        if (_gameStarted){
+            _gameTimer += Time.deltaTime;
+            // Update game timer
+            int minutes = Mathf.FloorToInt(_gameTimer / 60);
+            int seconds = Mathf.FloorToInt(_gameTimer % 60);
+            _timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        }
+    }
+
     private bool _gameStarted = false;
-    private float _gameTime = 0f;
+    private float _gameTimer = 0f;
 }
