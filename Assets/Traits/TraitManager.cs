@@ -84,14 +84,14 @@ namespace Managers
             _traitEventChannel.GenerateTrait(trait);
         }
 
-        private ITrait GenerateRandomTraitForTarget(Bot traitSource, Bot traitTarget = null, int maxAttempts = 20)
+        private ITrait GenerateRandomTraitForTarget(Bot traitSource, Bot traitTarget = null)
         {
             ITrait trait;
             int attempt = 0;
             var isTraitAboutTarget = false;
             bool randomTarget = traitTarget == null;
 
-            while (attempt < maxAttempts)
+            while (attempt < _maxTryGetTraitsAttempts)
             {
                 attempt++;
                 if (randomTarget)
@@ -130,7 +130,7 @@ namespace Managers
                 trait.IsTraitOfMainTarget = isTraitAboutTarget;
                 if (!_traits.Contains(trait))
                     return trait;
-                else if (attempt == maxAttempts - 1)
+                else if (attempt == _maxTryGetTraitsAttempts - 1)
                     return trait;
             }
             return null;
@@ -176,17 +176,6 @@ namespace Managers
             _traits.Add(trait1);
             ITrait trait2 = GenerateRandomTraitForTarget(traitSource, friend);
             _traits.Add(trait2);
-
-            // Generate unique second trait
-            // attempt = 0;
-            // while (attempt < 20)
-            // {
-            //     if (!trait2.Equals(trait1))
-            //         break;
-
-            //     trait2 = GenerateRandomTraitForTarget(traitSource, friend);
-            //     attempt++;
-            // }
 
             ConfigureTrait(trait1, traitSource, friend);
             ConfigureTrait(trait2, traitSource, friend);
