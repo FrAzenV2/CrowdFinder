@@ -58,6 +58,9 @@ public class MovingBehaviour : MonoBehaviour, IMoving
             else if (_targetDirection.x < 0)
                 FlipSprite(true);
         }
+        //float speed = _rb.velocity.magnitude;
+        //if (speed < 0.15f)
+        //    speed = 0f;
         _animator.SetFloat("Speed", _currentSpeed);
     }
 

@@ -7,10 +7,17 @@ namespace EventChannels
     [CreateAssetMenu(fileName = "newGameEventChannel", menuName = "Events/Game Event Channel")]
     public class GameEventChannelSO : ScriptableObject
     {
+        public UnityAction OnGameStarted;
         public UnityAction OnGameWon;
         public UnityAction OnGameLost;
         public UnityAction OnCutsceneStarted;
         public UnityAction OnCutsceneEnded;
+
+        public void StartGame()
+        {
+            if (OnGameStarted != null)
+                OnGameStarted.Invoke();
+        }
 
         public void Win()
         {

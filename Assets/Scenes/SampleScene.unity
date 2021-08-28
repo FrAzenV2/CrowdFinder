@@ -414,6 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _thisBot: {fileID: 147794603}
   _dialogEventChannel: {fileID: 11400000, guid: d1d6826ed227a194a81fcdaa97b5fd75, type: 2}
+  _gameEventChannel: {fileID: 11400000, guid: 64078cf34d84a75429ee234334665820, type: 2}
   _correctTargetFoundDialog: Yeah, thanks for finding him!
   _fakeTargetFoundDialog: Nah, that's not him...
   _noTargetFoundDialog: Hope you will find him soon!
@@ -3214,7 +3215,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883824582}
-  - component: {fileID: 883824584}
   - component: {fileID: 883824583}
   m_Layer: 0
   m_Name: GameManager
@@ -3249,64 +3249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477624f2428f83849bcc83d0b7907675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _confettiParticles: {fileID: 0}
+  _player: {fileID: 1916828335}
+  _confettiParticles: {fileID: 4269100533438892118, guid: 308c7830eb68da24db2a5b77f2dc4a32, type: 3}
   _timerText: {fileID: 0}
-  _gameEventChannel: {fileID: 0}
---- !u!114 &883824584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883824581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 248e506f182fa1247849fa5017583018, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _botsParent: {fileID: 1050188349}
-  _fakeTargetsAmount: 1
-  _botsSet: {fileID: 11400000, guid: c70bba53c1054d14cab07160b809f9fc, type: 2}
-  _botPrefab: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
-  _targetNameOverride: Ivan
-  spawnRegions:
-  - center: {x: -1.71, y: -0.71}
-    size: {x: 2, y: 4.13}
-    maxSpawnAmount: 5
-    minDistance: 2
-  - center: {x: 19.3, y: 10.1}
-    size: {x: 2, y: 6.63}
-    maxSpawnAmount: 5
-    minDistance: 2
-  - center: {x: 22.36, y: -2.2}
-    size: {x: 6.7, y: 8.2}
-    maxSpawnAmount: 10
-    minDistance: 2
-  - center: {x: 27.82, y: 11.52}
-    size: {x: 9.65, y: 5.52}
-    maxSpawnAmount: 40
-    minDistance: 2
-  - center: {x: 3.86, y: 9.82}
-    size: {x: 6.25, y: 4.76}
-    maxSpawnAmount: 10
-    minDistance: 2
-  - center: {x: 0.9, y: 14.3}
-    size: {x: 20.07, y: 1.96}
-    maxSpawnAmount: 15
-    minDistance: 2
-  - center: {x: -1.84, y: -6.01}
-    size: {x: 16.08, y: 1.96}
-    maxSpawnAmount: 15
-    minDistance: 2
-  - center: {x: 29.4, y: 1.2}
-    size: {x: 9.3, y: 2.63}
-    maxSpawnAmount: 7
-    minDistance: 1.5
-  - center: {x: -24.15, y: 12.3}
-    size: {x: 15.6, y: 9.5}
-    maxSpawnAmount: 20
-    minDistance: 1.5
-  iterationsPerPoint: 30
+  _gameEventChannel: {fileID: 11400000, guid: 64078cf34d84a75429ee234334665820, type: 2}
 --- !u!1 &927773596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5092,17 +5038,13 @@ MonoBehaviour:
     size: {x: 2, y: 4.13}
     maxSpawnAmount: 5
     minDistance: 2
-  - center: {x: 19.3, y: 10.1}
-    size: {x: 2, y: 6.63}
-    maxSpawnAmount: 5
+  - center: {x: 26.9, y: -2.6}
+    size: {x: 14.5, y: 8}
+    maxSpawnAmount: 25
     minDistance: 2
-  - center: {x: 22.36, y: -2.2}
-    size: {x: 6.7, y: 8.2}
-    maxSpawnAmount: 10
-    minDistance: 2
-  - center: {x: 27.82, y: 11.52}
+  - center: {x: 27.82, y: 9.69}
     size: {x: 9.65, y: 5.52}
-    maxSpawnAmount: 40
+    maxSpawnAmount: 20
     minDistance: 2
   - center: {x: 3.86, y: 9.82}
     size: {x: 6.25, y: 4.76}
@@ -5116,14 +5058,22 @@ MonoBehaviour:
     size: {x: 16.08, y: 1.96}
     maxSpawnAmount: 15
     minDistance: 2
-  - center: {x: 29.4, y: 1.2}
-    size: {x: 9.3, y: 2.63}
-    maxSpawnAmount: 7
-    minDistance: 1.5
   - center: {x: -24.15, y: 12.3}
     size: {x: 15.6, y: 9.5}
     maxSpawnAmount: 20
-    minDistance: 1.5
+    minDistance: 2
+  - center: {x: 16.72, y: 14.28}
+    size: {x: 5.7, y: 1.8}
+    maxSpawnAmount: 4
+    minDistance: 2
+  - center: {x: 19.2, y: 9.74}
+    size: {x: 2.07, y: 5.5}
+    maxSpawnAmount: 3
+    minDistance: 2
+  - center: {x: 15.29, y: -6.1}
+    size: {x: 5.39, y: 2.16}
+    maxSpawnAmount: 3
+    minDistance: 2
   iterationsPerPoint: 30
 --- !u!1 &1910960259
 GameObject:
@@ -5290,6 +5240,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916155774}
   m_CullTransparentMesh: 1
+--- !u!114 &1916828335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 309729272, guid: d7a31d17b581a9342b0c6c0a9213ef1c, type: 3}
+  m_PrefabInstance: {fileID: 2044023241}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3bd38713e5deb469f1d0e8592f95ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1941836001
 PrefabInstance:
   m_ObjectHideFlags: 0
