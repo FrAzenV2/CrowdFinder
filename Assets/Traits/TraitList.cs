@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EventChannels;
 using Traits;
+using TMPro;
 
 public class TraitList : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class TraitList : MonoBehaviour
     [SerializeField] private TraitListEntry _traitListEntryPrefab;
     [SerializeField] private RectTransform _traitHolder;
     [SerializeField] private RectTransform _traitGroup;
+    [SerializeField] private TMP_Text _toggleButtonText;
+    [SerializeField] private string[] _toggleButtonLabels = {"Show Trait List", "Hide Trait List"};
 
     private void Awake()
     {
@@ -40,6 +43,7 @@ public class TraitList : MonoBehaviour
     public void ToggleListVisibility()
     {
         _isListVisible = !_isListVisible;
+        _toggleButtonText.text = _toggleButtonLabels[_isListVisible ? 1 : 0];
         _traitHolder.gameObject.SetActive(_isListVisible);
     }
 
