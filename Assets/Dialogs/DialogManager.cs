@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,16 +15,24 @@ namespace Managers
         [SerializeField] private DialogBox _dialogBoxPrefab;
         [SerializeField] private Transform _dialogParent;
 
-        private void Awake()
+        private void OnEnable()
         {
             _dialogEventChannel.OnDialogOpened += OpenDialog;
             _dialogEventChannel.OnDialogUpdated += UpdateDialog;
             _dialogEventChannel.OnDialogClosed += CloseDialog;
         }
 
+        private void OnDisable()
+        {
+            _dialogEventChannel.OnDialogOpened -= OpenDialog;
+            _dialogEventChannel.OnDialogUpdated -= UpdateDialog;
+            _dialogEventChannel.OnDialogClosed -= CloseDialog;
+        }
+
         public void OpenDialog(DialogSO dialog)
         {
             var canvasPosition = Camera.main.WorldToScreenPoint(dialog.fromBot.dialogPoint.transform.position);
+            print(_dialogParent);
             DialogBox dialogBox = Instantiate(_dialogBoxPrefab, canvasPosition , Quaternion.identity, _dialogParent);
             dialogBox.Initialize(dialog, dialog.fromBot.dialogPoint.transform);
             

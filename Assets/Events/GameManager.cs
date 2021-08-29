@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,10 +25,17 @@ public class GameManager : MonoBehaviour
     [Header("Events")]
     [SerializeField] private GameEventChannelSO _gameEventChannel; 
 
-    private void Awake() {
+    private void OnEnable() {
         _gameEventChannel.OnGameStarted += OnGameStarted;
         _gameEventChannel.OnGameWon += OnGameWon;
         _gameEventChannel.OnGameLost += OnGameLost;
+    }
+
+    private void OnDisable()
+    {
+        _gameEventChannel.OnGameStarted -= OnGameStarted;
+        _gameEventChannel.OnGameWon -= OnGameWon;
+        _gameEventChannel.OnGameLost -= OnGameLost;
     }
 
     private void OnGameStarted()
@@ -64,7 +72,7 @@ public class GameManager : MonoBehaviour
 
     private void RestartScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
     }
 
     private IEnumerator FadeInScreen(float duration)

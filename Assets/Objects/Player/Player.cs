@@ -1,3 +1,4 @@
+using System;
 using Dialogs;
 using EventChannels;
 using Objects.Bots.Scripts;
@@ -46,10 +47,16 @@ namespace Objects.Player
             }
         }
 
-        private void Awake() {
+        private void OnEnable() {
             _playerMovement = GetComponent<PlayerMovement>();
             _dialogEventChannel.OnDialogOpened += OnDialogOpened;
             _dialogEventChannel.OnDialogClosed += OnDialogClosed;
+        }
+
+        private void OnDisable()
+        {
+            _dialogEventChannel.OnDialogOpened -= OnDialogOpened;
+            _dialogEventChannel.OnDialogClosed -= OnDialogClosed;
         }
 
         private void OnDialogOpened(DialogSO dialog)

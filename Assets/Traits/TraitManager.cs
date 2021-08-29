@@ -37,14 +37,21 @@ namespace Managers
 
         [Header("Events")]
         [SerializeField] private TraitEventChannelSO _traitEventChannel = default;
-
-
-        // Start is called before the first frame update
-
+        
         private void Awake()
         {
-            _traitEventChannel.OnTraitRequested += GenerateTrait;
             _traits = new List<ITrait>();
+        }
+
+        private void OnEnable()
+        {
+            _traitEventChannel.OnTraitRequested += GenerateTrait;
+            
+        }
+
+        private void OnDisable()
+        {
+            _traitEventChannel.OnTraitRequested += GenerateTrait;
         }
 
         private void GenerateTrait(Bot bot)

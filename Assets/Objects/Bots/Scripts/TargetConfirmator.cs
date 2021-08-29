@@ -25,6 +25,12 @@ namespace Objects.Bots.Scripts
             _playerInteractor.OnEndedInteraction += OnEndedInteraction;
         }
 
+        private void OnDisable()
+        {
+            _playerInteractor.OnStartedInteraction -= OnStartedInteraction;
+            _playerInteractor.OnEndedInteraction -= OnEndedInteraction;
+        }
+
         public event Action CorrectTargetFound;
         public event Action FakeTargetFound;
         
