@@ -156,7 +156,7 @@ namespace Managers
 
             Bot traitTarget;
             var isTraitAboutTarget = false;
-            if (Random.value <= _chanceOfCorrectTargetTrait)
+            if (Random.value <= _chanceOfCorrectTargetTrait * 1.5f)
             {
                 traitTarget = _botSpawner.TargetBot;
                 isTraitAboutTarget = true;
