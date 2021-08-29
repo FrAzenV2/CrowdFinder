@@ -4094,6 +4094,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1479426941}
     m_Modifications:
+    - target: {fileID: 855085056653699395, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 855085056653699395, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.38
+      objectReference: {fileID: 0}
     - target: {fileID: 1391686535759959532, guid: cc83a000f90590249becba24fd556080, type: 3}
       propertyPath: POIName
       value: Food Zone
@@ -9928,6 +9936,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1479426941}
     m_Modifications:
+    - target: {fileID: 855085056653699395, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 855085056653699395, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.97
+      objectReference: {fileID: 0}
     - target: {fileID: 1391686534207193116, guid: cc83a000f90590249becba24fd556080, type: 3}
       propertyPath: m_Priority
       value: 0
@@ -14843,6 +14859,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1479426941}
     m_Modifications:
+    - target: {fileID: 855085056653699395, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 855085056653699395, guid: cc83a000f90590249becba24fd556080, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.07
+      objectReference: {fileID: 0}
     - target: {fileID: 1391686534207193116, guid: cc83a000f90590249becba24fd556080, type: 3}
       propertyPath: m_Priority
       value: 0
