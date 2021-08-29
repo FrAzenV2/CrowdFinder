@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using EventChannels;
 
 namespace Objects.LevelControllers.Scripts
 {
@@ -22,6 +23,7 @@ namespace Objects.LevelControllers.Scripts
 
         [Header("Required To enable on Gameplay")] [SerializeField]
         private GameObject _gameScreen;
+        [SerializeField] private GameEventChannelSO _gameEventChannel;
         
         public void StartBeforeLevelDialog()
         {
@@ -47,6 +49,7 @@ namespace Objects.LevelControllers.Scripts
             _playerMovement.UnblockPlayerInput();
             _player.IsChangingArea = false;
             _gameScreen.gameObject.SetActive(true);
+            _gameEventChannel.StartGame();
         }
 
         private IEnumerator WaitForDelay()
