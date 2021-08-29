@@ -72,22 +72,22 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.68139905
-      value: 0.29523933
-      inSlope: -2.1780586
-      outSlope: -2.1780586
+      time: 0.6943843
+      value: 0.4148072
+      inSlope: -2.6320164
+      outSlope: -2.6320164
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.09488465
+      inWeight: 0.16886535
       outWeight: 0.30923694
     - serializedVersion: 3
-      time: 1
+      time: 0.7598877
       value: 0
-      inSlope: -1.004095
-      outSlope: -1.004095
+      inSlope: -0.21440078
+      outSlope: -0.21440078
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.44536656
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
