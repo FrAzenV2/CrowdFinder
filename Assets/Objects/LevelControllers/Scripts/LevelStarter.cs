@@ -15,6 +15,8 @@ namespace Objects.LevelControllers.Scripts
         [SerializeField] private PlayerMovement _playerMovement;
         [SerializeField] private Player.Player _player;
         [SerializeField] private BotMovement _botMovement;
+        [SerializeField] private PointAndClickInteractor _botClickInteractor;
+        [SerializeField] private ClickInteractor _clickInteractor;
         [SerializeField] private Transform _botEndPosition;
         [SerializeField] private Transform _playerEndPosition;
         [SerializeField] private Vector2 _botPositionOffset = Vector2.left*3;
@@ -25,6 +27,8 @@ namespace Objects.LevelControllers.Scripts
         
         public void StartBeforeLevelDialog()
         {
+            _botClickInteractor.enabled = false;
+            _clickInteractor.gameObject.SetActive(false);
             _playerMovement.Stop();
             _playerMovement.BlockPlayerInput();
             _botMovement.MoveAt((Vector2)_playerMovement.transform.position+_botPositionOffset);
@@ -33,6 +37,8 @@ namespace Objects.LevelControllers.Scripts
 
         private void EndOnboarding()
         {
+            _botClickInteractor.enabled = true;
+            _clickInteractor.gameObject.SetActive(true);
             _botMovement.MoveAt(_botEndPosition.position);
             _playerMovement.MoveAt(_playerEndPosition.position);
             StartCoroutine(WaitForDelay());
