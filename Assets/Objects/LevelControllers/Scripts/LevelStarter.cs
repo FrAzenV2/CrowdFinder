@@ -37,8 +37,6 @@ namespace Objects.LevelControllers.Scripts
 
         private void EndOnboarding()
         {
-            _botClickInteractor.enabled = true;
-            _clickInteractor.gameObject.SetActive(true);
             _botMovement.MoveAt(_botEndPosition.position);
             _playerMovement.MoveAt(_playerEndPosition.position);
             StartCoroutine(WaitForDelay());
@@ -46,6 +44,8 @@ namespace Objects.LevelControllers.Scripts
 
         private void StartGameplay()
         {
+            _botClickInteractor.enabled = true;
+            _clickInteractor.gameObject.SetActive(true);
             _playerMovement.UnblockPlayerInput();
             _player.IsChangingArea = false;
             _gameScreen.gameObject.SetActive(true);

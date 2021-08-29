@@ -457,6 +457,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43310f3fb5f22a14e9a1e31636bcf29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &147794605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5776614021357363643, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
+  m_PrefabInstance: {fileID: 147794598}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147794600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc954968d533a3b46a67fc4730a5a175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &151043671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,9 +3121,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2044023242}
     - target: {fileID: 1382846230511226160, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
+      propertyPath: _clickInteractor
+      value: 
+      objectReference: {fileID: 147794602}
+    - target: {fileID: 1382846230511226160, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
       propertyPath: _gameEventChannel
       value: 
       objectReference: {fileID: 11400000, guid: 64078cf34d84a75429ee234334665820, type: 2}
+    - target: {fileID: 1382846230511226160, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
+      propertyPath: _botClickInteractor
+      value: 
+      objectReference: {fileID: 147794605}
     - target: {fileID: 1382846230511226161, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
       propertyPath: m_RootOrder
       value: 6
