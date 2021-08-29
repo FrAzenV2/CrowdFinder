@@ -383,6 +383,10 @@ PrefabInstance:
       propertyPath: _ignoreInteractionRestrictions
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7275399767925203795, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7426370519305549537, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1231,7 +1235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &273211221
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3187,7 +3191,7 @@ PrefabInstance:
       objectReference: {fileID: 147794603}
     - target: {fileID: 1382846230511226167, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
       propertyPath: _dialogDelay
-      value: 3
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 1382846230511226167, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
       propertyPath: _clickManager
@@ -3197,6 +3201,22 @@ PrefabInstance:
       propertyPath: _clickInteractor
       value: 
       objectReference: {fileID: 147794602}
+    - target: {fileID: 1382846230511226167, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
+      propertyPath: _dialog.Array.data[1]
+      value: We are short on time here
+      objectReference: {fileID: 0}
+    - target: {fileID: 1382846230511226167, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
+      propertyPath: _dialog.Array.data[2]
+      value: Remember I told you about <color="red">Ivan</color>?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1382846230511226167, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
+      propertyPath: _dialog.Array.data[3]
+      value: Well, he is going with us
+      objectReference: {fileID: 0}
+    - target: {fileID: 1382846230511226167, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
+      propertyPath: _dialog.Array.data[6]
+      value: I will wait for you here, at the entrance!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9703301e4b3e4ae42bb3ceb5fb7985bc, type: 3}
 --- !u!4 &749652211 stripped
@@ -3751,7 +3771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477624f2428f83849bcc83d0b7907675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxGameTime: 600
+  _maxGameTime: 300
   _player: {fileID: 1916828335}
   _confettiParticles: {fileID: 4269100533438892118, guid: 308c7830eb68da24db2a5b77f2dc4a32, type: 3}
   _timerText: {fileID: 384104140}
@@ -5789,8 +5809,8 @@ MonoBehaviour:
   _traitGroup: {fileID: 367968933}
   _toggleButtonText: {fileID: 1965887925}
   _toggleButtonLabels:
-  - Show Trait List
-  - Hide Trait List
+  - Show Clue List
+  - Hide Clue List
 --- !u!222 &1573868488
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5941,7 +5961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _botsParent: {fileID: 1050188349}
-  _fakeTargetsAmount: 1
+  _fakeTargetsAmount: 2
   _botsSet: {fileID: 11400000, guid: c70bba53c1054d14cab07160b809f9fc, type: 2}
   _botPrefab: {fileID: 4692975365591623083, guid: 86b8382a17c77d64fad28d5f6042efc2, type: 3}
   _targetNameOverride: Ivan
@@ -6372,7 +6392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hide Trait List
+  m_text: Show Clue List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7325,7 +7345,11 @@ PrefabInstance:
       objectReference: {fileID: 1832286467}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfGivingTrait
-      value: 0.3
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
+      propertyPath: _maxTryGetTraitsAttempts
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _uselessTraits.Array.size
@@ -7333,7 +7357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfCorrectTargetTrait
-      value: 0.5
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfPOITraitGeneration
@@ -7357,7 +7381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfFriendTraitGeneration
-      value: 0.1
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _uselessTraitStrings.Array.size
@@ -7365,7 +7389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _chanceOfDirectionTraitGeneration
-      value: 0.15
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7222326388958674844, guid: 0b397c9dc879d55469f302df44179ed1, type: 3}
       propertyPath: _uselessTraitStrings.Array.data[0]
