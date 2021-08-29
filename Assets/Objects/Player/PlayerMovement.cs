@@ -6,17 +6,21 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MovingBehaviour
 {
-
     private Vector2 _pointerPosition;
-    
-    protected override void Start()
+    private bool _isPlayerInputBlocked;
+    public void BlockPlayerInput()
     {
-        base.Start();
+        _isPlayerInputBlocked = true;
     }
 
-    // Callbacks
+    public void UnblockPlayerInput()
+    {
+        _isPlayerInputBlocked = false;
+    }
+
     private void OnClick()
     {
+        if(_isPlayerInputBlocked) return;
         if (EventSystem.current.IsPointerOverGameObject())
             return;
         var worldPosition = (Vector2) Camera.main.ScreenToWorldPoint(_pointerPosition);
