@@ -3840,7 +3840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477624f2428f83849bcc83d0b7907675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxGameTime: 10
+  _maxGameTime: 280
   _player: {fileID: 1916828335}
   _confettiParticles: {fileID: 4269100533438892118, guid: 308c7830eb68da24db2a5b77f2dc4a32, type: 3}
   _timerText: {fileID: 384104140}
