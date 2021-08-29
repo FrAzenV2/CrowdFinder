@@ -24,9 +24,7 @@ namespace Objects.LevelControllers.Scripts
 
         protected virtual void Awake()
         {
-            print("Spawning bots!");
             SpawnBots();
-            print(_bots.Count);
         }
 
         protected virtual void SpawnBots()
