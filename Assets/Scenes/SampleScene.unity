@@ -236,6 +236,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1364911265}
+  - {fileID: 991227419}
   - {fileID: 917257225}
   - {fileID: 1536931001}
   m_Father: {fileID: 1070819225}
@@ -3750,7 +3751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477624f2428f83849bcc83d0b7907675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxGameTime: 3
+  _maxGameTime: 600
   _player: {fileID: 1916828335}
   _confettiParticles: {fileID: 4269100533438892118, guid: 308c7830eb68da24db2a5b77f2dc4a32, type: 3}
   _timerText: {fileID: 384104140}
@@ -3865,7 +3866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512674262737061743, guid: ede4ca79bae6d7e478e52a1efc652cd5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2512674262737061743, guid: ede4ca79bae6d7e478e52a1efc652cd5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4067,6 +4068,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &991227418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991227419}
+  m_Layer: 0
+  m_Name: TextBoxesHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &991227419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991227418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 80197908}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1021043193
 GameObject:
   m_ObjectHideFlags: 0
@@ -5569,7 +5605,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 80197908}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7265,7 +7301,7 @@ PrefabInstance:
     - target: {fileID: 3328620049697928363, guid: c13f6bc060d455e46b2bb6e5c6cd80c6, type: 3}
       propertyPath: _dialogParent
       value: 
-      objectReference: {fileID: 80197908}
+      objectReference: {fileID: 991227419}
     - target: {fileID: 3328620049697928363, guid: c13f6bc060d455e46b2bb6e5c6cd80c6, type: 3}
       propertyPath: _dialogBoxPrefab
       value: 

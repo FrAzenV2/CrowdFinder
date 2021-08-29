@@ -32,7 +32,6 @@ namespace Managers
         public void OpenDialog(DialogSO dialog)
         {
             var canvasPosition = Camera.main.WorldToScreenPoint(dialog.fromBot.dialogPoint.transform.position);
-            print(_dialogParent);
             DialogBox dialogBox = Instantiate(_dialogBoxPrefab, canvasPosition , Quaternion.identity, _dialogParent);
             dialogBox.Initialize(dialog, dialog.fromBot.dialogPoint.transform);
             
