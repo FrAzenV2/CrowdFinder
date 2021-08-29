@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 9ce0e7a746588ed44b2d2780683cb389
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - BotNames: {fileID: 4900000, guid: e8f20995d043b0140b1474a412328a9c, type: 3}
+  - HatsSet: {instanceID: 0}
+  - ShirtSet: {instanceID: 0}
+  - PantsSet: {instanceID: 0}
+  - DefaultBodySprite: {fileID: 21300114, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

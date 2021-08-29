@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78da6ec12154f2c8f358bdf2db1732d, type: 3}
+  m_Name: 56_Bot
+  m_EditorClassIdentifier: 
+  _botName: Jahmar
+  _clothes:
+  - {fileID: 11400000, guid: cb1bb388c0b8a204e90745812bde94c4, type: 2}
+  - {fileID: 11400000, guid: 9647aa105e0cf5748b4937e56026c76a, type: 2}
+  - {fileID: 11400000, guid: 7fd0aad65064f224d8ddf26b305246d7, type: 2}
+  _baseSprite: {fileID: 21300000, guid: b2bec2cb43fe1244fbb6b527517e3309, type: 3}
+  _botId: 55
+  TargetFoundDialog: {fileID: 11400000, guid: 17e7e4da5ef442943883e0eaf93de998, type: 2}
+  FakeTargetDialog: {fileID: 11400000, guid: ea926c084ac875f45aab7d2bdfebbe55, type: 2}
+  CorrectTargetDialog: {fileID: 11400000, guid: 72d866a3f485c814591ee1a6e093ef82, type: 2}

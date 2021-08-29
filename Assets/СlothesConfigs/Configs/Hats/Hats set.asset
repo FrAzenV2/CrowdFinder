@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a26b8b4fbbd453c8db7c203a5955c32, type: 3}
+  m_Name: Hats set
+  m_EditorClassIdentifier: 
+  Clothes:
+  - {fileID: 11400000, guid: 1b1aaa4783f0b994bbedc7b43076837e, type: 2}
+  - {fileID: 11400000, guid: d4290672f2f991b40828bac25ce75628, type: 2}
+  - {fileID: 11400000, guid: 92a7cc3f4a4a78b43bbc836d8fa74625, type: 2}
+  - {fileID: 11400000, guid: dfe7ff5e949212645b2318cec178c52c, type: 2}
+  - {fileID: 11400000, guid: e0d9516dda3248a46a8081400296a347, type: 2}
+  - {fileID: 11400000, guid: 5503e25cbb613e8429ed7a8d88b41019, type: 2}
+  - {fileID: 11400000, guid: 1fb5468b6cac1654f95fdb9d51cbe25d, type: 2}
+  - {fileID: 11400000, guid: 3432f420dd553a946817f2a7da7f2ba2, type: 2}
+  - {fileID: 11400000, guid: 6f9916a4f5c83ad4fb570c90cb0daab9, type: 2}
+  - {fileID: 11400000, guid: acb4b305fe277d34d8f1d8611a9ee368, type: 2}
+  - {fileID: 11400000, guid: c4220583f495b0e4795f3882005511aa, type: 2}
+  - {fileID: 11400000, guid: 2e974bd5e99ee994691dcd7d8812e320, type: 2}
+  - {fileID: 11400000, guid: 3c7a5e258f22d7d49b40353d6c1c5bda, type: 2}
+  - {fileID: 11400000, guid: cb1bb388c0b8a204e90745812bde94c4, type: 2}
+  - {fileID: 11400000, guid: a750875041d348d439631dc466dc3488, type: 2}
+  - {fileID: 11400000, guid: b408d9e3b9ad150418bc61bf0815de9f, type: 2}
+  - {fileID: 11400000, guid: 575672e448f908d4f9f2d967311f4431, type: 2}
+  - {fileID: 11400000, guid: a553faf0d2f039044825907a0e274faa, type: 2}
+  - {fileID: 11400000, guid: 463db6558baf0294797993d2498143be, type: 2}
+  - {fileID: 11400000, guid: 1edef5f6ca3685a49b7f1962357664bf, type: 2}
+  - {fileID: 11400000, guid: b164e482ef0d22648bc57100aea850a7, type: 2}

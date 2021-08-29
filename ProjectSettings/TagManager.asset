@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Bot
+  - Clickable
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BodyLayer
+    uniqueID: 3679448147
+    locked: 0
+  - name: Cloth
+    uniqueID: 3916147675
     locked: 0

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78da6ec12154f2c8f358bdf2db1732d, type: 3}
+  m_Name: 29_Bot
+  m_EditorClassIdentifier: 
+  _botName: Nisha
+  _clothes:
+  - {fileID: 11400000, guid: 5503e25cbb613e8429ed7a8d88b41019, type: 2}
+  - {fileID: 11400000, guid: 6c774fe556d057b42a0c3e27a02fc5b9, type: 2}
+  - {fileID: 11400000, guid: 9612b1f5db0c45146a83712dc9fe812f, type: 2}
+  _baseSprite: {fileID: 21300000, guid: b2bec2cb43fe1244fbb6b527517e3309, type: 3}
+  _botId: 28
+  IsBotStatic: 0
+  TargetFoundDialog: {fileID: 11400000, guid: 17e7e4da5ef442943883e0eaf93de998, type: 2}
+  FakeTargetDialog: {fileID: 11400000, guid: ea926c084ac875f45aab7d2bdfebbe55, type: 2}
+  CorrectTargetDialog: {fileID: 11400000, guid: 72d866a3f485c814591ee1a6e093ef82, type: 2}
