@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject _confettiParticles;
     [SerializeField] private TMP_Text _timerText;
-    [SerializeField] private Image _fadeImage;
+    [SerializeField] private Animator _gameEndScreen;
 
     [Header("Events")]
     [SerializeField] private GameEventChannelSO _gameEventChannel; 
@@ -47,13 +47,16 @@ public class GameManager : MonoBehaviour
     private void OnGameWon()
     {
         _gameStarted = false;
-        StartCoroutine(FadeOutScreen(1.0f, 3.0f));
+        //_gameEndScreen.gameObject.SetActive(true);
+        _gameEndScreen.Play("GameEnd");
         Instantiate(_confettiParticles, _player.transform.position, Quaternion.identity);
     }
 
     private void OnGameLost()
     {
-        StartCoroutine(FadeOutScreen(1.0f));
+        _gameStarted = false;
+        //_gameEndScreen.gameObject.SetActive(true);
+        _gameEndScreen.Play("GameEnd");
     }
 
     private void Update() {
@@ -63,44 +66,16 @@ public class GameManager : MonoBehaviour
             int minutes = Mathf.FloorToInt(_gameTimer / 60);
             int seconds = Mathf.FloorToInt(_gameTimer % 60);
             if (seconds >= 0)
-                _timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+                _timerText.text = $"{minutes.ToString("00")}:{seconds.ToString("00")}";
 
             if (_gameTimer <= 0f)
                 _gameEventChannel.Lose();
         }
     }
 
-    private void RestartScene()
+    public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-    }
-
-    private IEnumerator FadeInScreen(float duration)
-    {
-        float time = 0f;
-        while (time <= duration)
-        {
-            time += Time.deltaTime;
-            Color col = _fadeImage.color;
-            col.a = (1.0f - Mathf.Clamp01(time / duration));
-            _fadeImage.color = col;
-            yield return null;
-        }
-    }
-
-    private IEnumerator FadeOutScreen(float duration, float delay = 0f)
-    {
-        yield return new WaitForSeconds(delay);
-        float time = 0f;
-        while (time <= duration)
-        {
-            time += Time.deltaTime;
-            Color col = _fadeImage.color;
-            col.a = Mathf.Clamp01(time / duration);
-            _fadeImage.color = col;
-            yield return null;
-        }
-        RestartScene();
     }
 
     private bool _gameStarted = false;

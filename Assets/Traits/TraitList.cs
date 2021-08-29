@@ -14,10 +14,14 @@ public class TraitList : MonoBehaviour
     [SerializeField] private TMP_Text _toggleButtonText;
     [SerializeField] private string[] _toggleButtonLabels = {"Show Trait List", "Hide Trait List"};
 
-    private void Awake()
-    {
+    private void OnEnable() {
         _traitEventChannel.OnTraitGenerated += OnTraitGenerated;
         _traitEventChannel.OnTraitRemoved += OnTraitRemoved;
+    }
+
+    private void OnDisable() {
+        _traitEventChannel.OnTraitGenerated -= OnTraitGenerated;
+        _traitEventChannel.OnTraitRemoved -= OnTraitRemoved;
     }
 
     // Update is called once per frame

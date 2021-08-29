@@ -30,8 +30,16 @@ namespace Objects.Bots.Scripts
         private void Awake(){
             _botMovement = GetComponent<BotMovement>();
             _playerInteractor = GetComponent<PointAndClickInteractor>();
+        }
+
+        private void OnEnable() {
             _playerInteractor.OnStartedInteraction += OnStartedInteraction;
             _playerInteractor.OnEndedInteraction += OnEndedInteraction;
+        }
+
+        private void OnDisable() {
+            _playerInteractor.OnStartedInteraction -= OnStartedInteraction;
+            _playerInteractor.OnEndedInteraction -= OnEndedInteraction;
         }
 
         private void Start()

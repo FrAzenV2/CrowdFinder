@@ -24,6 +24,7 @@ namespace Objects.LevelControllers
         protected override void SpawnBots()
         {
             base.SpawnBots();
+            print("Spawning bots " + _targetBot);
             var botsList = new List<BotConfig>(_botsSet.BotConfigs);
             botsList.Shuffle();
 
@@ -70,6 +71,11 @@ namespace Objects.LevelControllers
                 _bots.Remove(fakeTarget);
                 _fakeTargets.Add(fakeTarget);
             }
+            foreach (Bot bot in _fakeTargets)
+            {
+                print("Fake target bot " + bot);
+            }
+            print("Spawned bot - correct - target " + _targetBot);
         }
 
         protected void OnDrawGizmosSelected()

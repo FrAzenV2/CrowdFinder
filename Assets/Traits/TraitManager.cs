@@ -46,12 +46,11 @@ namespace Managers
         private void OnEnable()
         {
             _traitEventChannel.OnTraitRequested += GenerateTrait;
-            
         }
 
         private void OnDisable()
         {
-            _traitEventChannel.OnTraitRequested += GenerateTrait;
+            _traitEventChannel.OnTraitRequested -= GenerateTrait;
         }
 
         private void GenerateTrait(Bot bot)
@@ -177,7 +176,6 @@ namespace Managers
                 friend = _botSpawner.Bots[Random.Range(0, _botSpawner.Bots.Count - 1)];
                 attempt++;
             }
-
             // Generate extra traits
             ITrait trait1 = GenerateRandomTraitForTarget(traitSource, friend);
             _traits.Add(trait1);

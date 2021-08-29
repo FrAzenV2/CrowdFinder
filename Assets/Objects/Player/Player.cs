@@ -47,8 +47,11 @@ namespace Objects.Player
             }
         }
 
-        private void OnEnable() {
+        private void Awake() {
             _playerMovement = GetComponent<PlayerMovement>();
+        }
+
+        private void OnEnable() {
             _dialogEventChannel.OnDialogOpened += OnDialogOpened;
             _dialogEventChannel.OnDialogClosed += OnDialogClosed;
         }
